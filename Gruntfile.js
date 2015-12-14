@@ -53,6 +53,12 @@ module.exports = function(grunt) {
         files: '**/*.jade',
         tasks: ['jade'],
       },
+    },
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: '**/*'
     }
   });
 
@@ -61,4 +67,5 @@ module.exports = function(grunt) {
   grunt.registerTask('resources', ['copy']);
   grunt.registerTask('default', ['html', 'css', 'resources']);
   grunt.registerTask('dev', ['default', 'watch']);
+  grunt.registerTask('publish', ['gh-pages']);
 };
