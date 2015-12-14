@@ -1,0 +1,56 @@
+
+@function contrast-color($color, $lightness:90) {
+  // dark color on light background
+  @if (lightness($color) > $lightness) {
+    @return #000000;
+  }
+  // Light color on dark background
+  @else {
+    @return #ffffff;
+  }
+}
+
+@function secondary-contrast-color($color, $lightness:90) {
+  // dark color on light background
+  @if (lightness($color) > $lightness) {
+    @return $gray-dark;
+  }
+  // Light color on dark background
+  @else {
+    @return $gray-lighter;
+  }
+}
+
+@mixin bg-variant-contrast($parent, $color) {
+  #{$parent} {
+    color: contrast-color($color) !important;
+    background-color: $color !important;
+  }
+  a#{$parent} {
+    @include hover-focus {
+      background-color: darken($color, 10%);
+    }
+  }
+}
+
+$brand-primary: map_get($primary-colours, BLUE);
+$brand-success: map_get($primary-colours, GREEN-PEA);
+$brand-info: map_get($primary-colours, EGGSHELL);
+$brand-warning: map_get($primary-colours, ORANGINE);
+$brand-danger: map_get($primary-colours, TOMATITO);
+
+@each $name, $colour in map-merge($primary-colours, $extended-colours) {
+  @include bg-variant-contrast('.bg-#{to_lower_case($name)}', $colour);
+  @include text-emphasis-variant('.text-#{to_lower_case($name)}', $colour);
+}
+
+@each $name, $colour in $grayscale-colours {
+  @include bg-variant('.bg-#{to_lower_case($name)}', $colour);
+  @include text-emphasis-variant('.text-#{to_lower_case($name)}', $colour);
+}
+
+/* Utilities */
+.font-weight-lighter {
+  font-weight: lighter;
+}
+

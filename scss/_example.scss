@@ -1,0 +1,15 @@
+.color-box {
+  display: table;
+  border-spacing: 1rem;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 100px;
+}
+
+.color-label {
+  display: table-cell;
+  font-weight: 300;
+  vertical-align: bottom;
+  text-align: left;
+}
+

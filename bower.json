@@ -1,0 +1,28 @@
+{
+  "name": "gudstrap4",
+  "version": "0.0.1",
+  "authors": [
+    "EF frontend team@Amsterdam"
+  ],
+  "description": "EF DGUD Design guidlines + Bootstrap 4",
+  "main": "scss/main.scss",
+  "moduleType": [],
+  "keywords": [
+    "bootstrap",
+    "bs4",
+    "gud",
+    "ef"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}

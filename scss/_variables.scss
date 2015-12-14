@@ -1,0 +1,40 @@
+$headings-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headings-font-weight: 700;
+
+/* primary application colours */
+$primary-colours: (
+        BLACK: #000,
+        BLUE: #0078FF,
+        WARM-PAPER: #F1EAE1,
+        WHITE: #FFF,
+        EF-PINK: #FF0084,
+        GREEN-PEA: #74D17F,
+        TOMATITO: #DE4C4C,
+        MATTE-GOLD: #C9B188,
+        EGGSHELL: #FAF7F2,
+        RAIN: #8B8B8B,
+        DARK-GRAY: #666666
+);
+
+/* extended colours */
+$extended-colours: (
+        AQUA: #09B79D,
+        TOXIC-MINT: #38DDB9,
+        OLIVE: #98D01F,
+        MANGO: #F9BA2D,
+        TANGERINE: #F79546,
+        SUMRF: #3BA0DC,
+        BARNEY: #8B6DB2,
+        PINK: #F66F9F,
+        BORING-PINK: #F1385A,
+        ORANGINE: #FF6100,
+);
+
+/* gray scale colours */
+$grayscale-colours: (
+        GRAY-DARK: #666666,
+        GRAY: #55595c,
+        GRAY-LIGHT: #818a91,
+        GRAY-LIGHTER: #eceeef,
+        GRAY-LIGHTEST: #f7f7f9,
+);

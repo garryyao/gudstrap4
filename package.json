@@ -1,0 +1,22 @@
+{
+  "name": "gudstrap4",
+  "version": "0.0.1",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EF frontend team@Amsterdam",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-postcss": "^0.7.1",
+    "grunt-sass": "^1.1.0",
+    "pixrem": "^3.0.0"
+  }
+}
