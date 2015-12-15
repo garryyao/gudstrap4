@@ -1,12 +1,14 @@
 {
   "name": "gudstrap4",
   "version": "0.0.1",
-  "description": "",
+  "description": "EF DGUD Design guidlines + Bootstrap 4",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "EF frontend team@Amsterdam",
+  "repository": "git@github.com:englishtown/gudstrap4.git",
+  "readme": "https://github.com/englishtown/gudstrap4/README.md",
   "license": "ISC",
   "dependencies": {
     "grunt": "^0.4.5",
