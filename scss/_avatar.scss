@@ -1,0 +1,9 @@
+.user-picture {
+  display: inline-block;
+}
+.user-picture-normal {
+  @include size(45px);
+}
+.user-picture-small {
+  @include size(30px);
+}

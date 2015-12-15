@@ -9,6 +9,7 @@ $font-size-h3: 30px;
 $font-size-h4: 20px;
 $font-size-content: 14px;
 $font-family-sans-serif: helvetica45Light, Helvetica, Arial, sans-serif;
+$opacity-hover: 0.2;
 
 /* primary application colours */
 $primary-colours: (
@@ -46,4 +47,13 @@ $grayscale-colours: (
         GRAY-LIGHT: #818a91,
         GRAY-LIGHTER: #eceeef,
         GRAY-LIGHTEST: #f7f7f9,
+);
+
+/* alert background-color */
+$alert-colours: (
+        MATTE-GOLD: map_get($primary-colours, MATTE-GOLD),
+        RAIN: map_get($primary-colours, RAIN),
+        GRAY-DARK: map_get($grayscale-colours, GRAY-DARK),
+        BLACK: map_get($primary-colours, BLACK),
+        WHITE: map_get($primary-colours, WHITE)
 );

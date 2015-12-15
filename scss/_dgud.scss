@@ -23,8 +23,8 @@
 
 @mixin bg-variant-contrast($parent, $color) {
   #{$parent} {
-    color: contrast-color($color) !important;
-    background-color: $color !important;
+    color: contrast-color($color);
+    background-color: $color;
   }
   a#{$parent} {
     @include hover-focus {
@@ -49,3 +49,6 @@ $brand-danger: map_get($primary-colours, TOMATITO);
   @include text-emphasis-variant('.text-#{to_lower_case($name)}', $colour);
 }
 
+@each $name, $colour in $alert-colours {
+  @include bg-variant-contrast('.alert-#{to_lower_case($name)}', $colour);
+}

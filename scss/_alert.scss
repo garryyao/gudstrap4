@@ -1,0 +1,39 @@
+.alert {
+  border: none;
+  padding: 18px 35px 17px 15px;
+
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: italic;
+
+  .user-picture, .alert-msg, a {
+    margin-right: 20px;
+  }
+
+  a {
+    margin-top: 4px;
+
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    box-shadow: none;
+
+    &:hover {
+      background: transparent;
+      text-decoration: none;
+      color: map_get($primary-colours, BLUE);
+    }
+  }
+}
+.alert-white {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.alert-dismissible .close {
+  opacity: 1;
+
+  &:hover {
+    opacity: $opacity-hover;
+  }
+}
