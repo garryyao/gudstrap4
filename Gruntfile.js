@@ -37,10 +37,17 @@ module.exports = function(grunt) {
           "dist/index.html": '*.jade'
         }
       }
-    }
+    },
+    'copy': {
+      'icons': {
+        src: 'icons/*',
+        dest: 'dist/'
+      },
+    },
   });
 
   grunt.registerTask('css', ['sass', 'postcss']);
   grunt.registerTask('html', ['jade']);
-  grunt.registerTask('default', ['html', 'css']);
+  grunt.registerTask('resources', ['copy']);
+  grunt.registerTask('default', ['html', 'css', 'resources']);
 };
