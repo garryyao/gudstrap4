@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      icons: {
+      dist: {
         src: ['icons/*', 'fonts/**'],
         dest: 'dist/'
       },
