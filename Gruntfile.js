@@ -50,7 +50,7 @@ module.exports = function(grunt) {
         tasks: ['css'],
       },
       html: {
-        files: '*.jade',
+        files: '**/*.jade',
         tasks: ['jade'],
       },
     }
