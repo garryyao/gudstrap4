@@ -49,8 +49,3 @@ $brand-danger: map_get($primary-colours, TOMATITO);
   @include text-emphasis-variant('.text-#{to_lower_case($name)}', $colour);
 }
 
-/* Utilities */
-.font-weight-lighter {
-  font-weight: lighter;
-}
-

@@ -40,7 +40,7 @@ module.exports = function(grunt) {
     },
     copy: {
       icons: {
-        src: 'icons/*',
+        src: ['icons/*', 'fonts/**'],
         dest: 'dist/'
       },
     },
