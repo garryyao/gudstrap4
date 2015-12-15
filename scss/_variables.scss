@@ -1,5 +1,15 @@
-$headings-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$headings-font-weight: 700;
+@import "../icons/style.css";
+@import "../icons/variables";
+
+$enable-rounded: false;
+
+$headings-font-family: helvetica75Bold, Helvetica, Arial, sans-serif;
+$font-size-h1: 46px;
+$font-size-h2: 36px;
+$font-size-h3: 30px;
+$font-size-h4: 20px;
+$font-size-content: 14px;
+$font-family-sans-serif: helvetica45Light, Helvetica, Arial, sans-serif;
 
 /* primary application colours */
 $primary-colours: (

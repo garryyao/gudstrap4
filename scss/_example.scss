@@ -4,6 +4,10 @@
   width: 100%;
   height: 250px;
   margin-bottom: 100px;
+
+  &.bg-white {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
 .color-label {
@@ -13,3 +17,40 @@
   text-align: left;
 }
 
+
+.bg-warm-grey {
+  background-color: #edebe8;
+}
+
+.bg-warm-eggshell {
+  background-color: #f9f6f2;
+}
+
+
+.font-card {
+  margin-bottom: 30px;
+
+  .card-text.letters {
+    padding: 30px 0;
+    font-size: $font-size-h3;
+    text-transform: capitalize;
+  }
+
+  p.card-text {
+    color: $gray-light;
+  }
+
+  .card-text.notes {
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  .card-text.contrast {
+    font-size: 25px;
+    font-style: italic;
+  }
+
+  .card-footer {
+    letter-spacing: 1.5px;
+  }
+}

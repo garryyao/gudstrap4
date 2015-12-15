@@ -1,3 +1,55 @@
+h1, h2  {
+  @include fontstack-helvetica-bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include fontstack-helvetica-light;
+  text-transform: uppercase;
+}
+
+h4 {
+  @include fontstack-helvetica-thin;
+}
+
+/* TODO: enumerate all content tags here */
+p {
+  @include fontstack-helvetica-light;
+  font-size: $font-size-content;
+}
+
+.lead {
+  @include fontstack-garamond;
+}
+
 dfn {
   font-family: Garamond Italic;
+}
+
+.lockup {
+  margin-top: $spacer-y;
+  margin-bottom: $spacer-y;
+  @include fontstack-garamond;
+  font-style: italic;
+  white-space: nowrap;
+
+  &:after, &:before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 2em;
+    background-color: $gray-dark;
+  }
+
+  &:before {
+    margin-right: 1.5em;
+  }
+
+  &:after {
+    margin-left: 1.5em;
+  }
+
+  &:after, &:before, & > * {
+    vertical-align: middle;
+  }
 }
