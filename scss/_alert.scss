@@ -1,4 +1,8 @@
-.alert {
+.alert-matte-gold,
+.alert-rain,
+.alert-gray-dark,
+.alert-black,
+.alert-white {
   border: none;
   padding: 18px 35px 17px 15px;
 
@@ -7,12 +11,13 @@
   font-weight: 700;
   font-style: italic;
 
-  .user-picture, .alert-msg, a {
+  img, .alert-msg, a {
     margin-right: 20px;
   }
 
   a {
     margin-top: 4px;
+    padding: 0;
 
     font-family: HelveticaNeue;
     font-style: normal;
@@ -26,14 +31,14 @@
       color: map_get($primary-colours, BLUE);
     }
   }
+  .close {
+    opacity: 1;
+
+    &:hover {
+      opacity: $opacity-hover;
+    }
+  }
 }
 .alert-white {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.alert-dismissible .close {
-  opacity: 1;
-
-  &:hover {
-    opacity: $opacity-hover;
-  }
 }

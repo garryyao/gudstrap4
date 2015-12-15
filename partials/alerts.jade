@@ -1,5 +1,7 @@
 .container
     h2 4.8 INFORMATION BARS & MESSAGES (EXPLORATION)
+
+    h4 4.8.1 fullwidth alerts
     -
       var alert_colours = [
         'MATTE GOLD',
@@ -16,8 +18,24 @@ each colour in alert_colours
       span(aria-hidden="true")
         | &times;
     .container
-      a.pull-lg-right(class='alert-'+color_name, href="#")
-        | GO TO CLASSROOM
       img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
       span.alert-msg
         | Francis Evans: Your private lesson “Describing Clothes” is about to start in 02:59
+      a.pull-lg-right(class='alert-'+color_name, href="#")
+        | GO TO CLASSROOM
+
+
+.container
+  h4 4.8.2 alerts in container
+  each colour in alert_colours
+    - var color_name = colour.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
+    .alert.alert-dismissible.fade.in(class='alert-'+color_name, role="alert")
+      button.close(type="button",data-dismiss="alert",aria-label="Close")
+        span(aria-hidden="true")
+          | &times;
+      .container
+        img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
+        span.alert-msg
+          | Francis Evans: Your private lesson “Describing Clothes” is about to start in 02:59
+        a.pull-lg-right(class='alert-'+color_name, href="#")
+          | GO TO CLASSROOM
