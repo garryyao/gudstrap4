@@ -38,16 +38,27 @@ module.exports = function(grunt) {
         }
       }
     },
-    'copy': {
-      'icons': {
+    copy: {
+      icons: {
         src: 'icons/*',
         dest: 'dist/'
       },
     },
+    watch: {
+      css: {
+        files: 'scss/*.scss',
+        tasks: ['css'],
+      },
+      html: {
+        files: '*.jade',
+        tasks: ['jade'],
+      },
+    }
   });
 
   grunt.registerTask('css', ['sass', 'postcss']);
   grunt.registerTask('html', ['jade']);
   grunt.registerTask('resources', ['copy']);
   grunt.registerTask('default', ['html', 'css', 'resources']);
+  grunt.registerTask('dev', ['default', 'watch']);
 };

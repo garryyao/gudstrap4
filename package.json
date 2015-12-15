@@ -18,6 +18,7 @@
     "autoprefixer": "^6.1.2",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-postcss": "^0.7.1",
     "grunt-sass": "^1.1.0",
     "pixrem": "^3.0.0"
