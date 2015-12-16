@@ -33,6 +33,8 @@
   }
   .close {
     opacity: 1;
+    top: 0;
+    text-shadow: none;
 
     &:hover {
       opacity: $opacity-hover;
