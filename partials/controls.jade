@@ -1,0 +1,24 @@
+section.typography
+    .bg-warm-grey.p-y-3
+        .container
+            h2 4.5 common UI controls
+            .m-y-3
+                h4.text-gray-light Dropdown
+                .row
+                    .col-sm-6
+                        .dropdown.ef-dropdown
+                            button.btn.btn-secondary.dropdown-toggle.text-xs-left(data-toggle="dropdown")
+                                span.text-uppercase Age
+                            .dropdown-menu
+                                - var i = 18;
+                                    while i < 100
+                                        a.dropdown-item(href="javascript:;") #{i++}
+
+                    .col-sm-6(style="min-height:300px")
+                        .dropdown.ef-dropdown.open(data-toggle="dropdown")
+                            button.btn.btn-secondary.dropdown-toggle.text-xs-left(data-toggle="dropdown")
+                                span.text-uppercase Age
+                            .dropdown-menu(style="max-height: 280px")
+                                - var i = 18;
+                                    while i < 100
+                                        a.dropdown-item(href="javascript:;") #{i++}

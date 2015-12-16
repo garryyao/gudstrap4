@@ -1,0 +1,46 @@
+.dropup.ef-dropdown,
+.dropdown.ef-dropdown {
+
+  .dropdown-toggle {
+    position: relative;
+    width: 100%;
+    padding: 16px 20px 16px 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+
+    &:after {
+      position: absolute;
+      top: calc(50% - 2px);
+      right: 10px;
+    }
+
+    @include hover-focus {
+      outline: none;
+    }
+  }
+
+  &.open .dropdown-toggle {
+    border-bottom: 0;
+    @include hover-focus {
+      background-color: transparent;
+    }
+  }
+
+  .dropdown-menu {
+    overflow-y: auto;
+    padding: 0;
+    width: 100%;
+    border: 0;
+    background-color: black;
+  }
+
+  .dropdown-item {
+    padding: 1em 1em 1em 2em;
+    color: white;
+    @include hover-focus {
+      background-color: white;
+      color: black;
+    }
+  }
+}
