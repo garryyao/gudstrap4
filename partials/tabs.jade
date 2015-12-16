@@ -4,7 +4,9 @@ section.ef-tabs
       h2 4.8 HEADER & MENUS/TABS
     .p-y-3
       nav.navbar.navbar-ef.bg-white
-        .container
+        button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse" data-target="#exCollapsingNavbar1")
+          &#9776;
+        .container.collapse.navbar-toggleable-xs#exCollapsingNavbar1
           a.navbar-brand(href="#") EF
           ul.nav.navbar-nav
             li.nav-item.dropdown.open
@@ -27,7 +29,29 @@ section.ef-tabs
               a.nav-link(href="#") help
           ul.nav.navbar-nav.pull-lg-right
             li.nav-item.dropdown.open.dropdown-right
-              a.nav-link(href="#") User A
+              a.nav-link(href="#")
+                img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
+    .p-y-3
+    .p-y-3
+    .p-y-3
+      nav.navbar.navbar-ef.bg-white
+        button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse" data-target="#exCollapsingNavbar2")
+          &#9776;
+        .container.collapse.navbar-toggleable-xs#exCollapsingNavbar2
+          a.navbar-brand(href="#") EF
+          ul.nav.navbar-nav
+            li.nav-item
+              a.nav-link(href="#") course
+            li.nav-item.active
+              a.nav-link(href="#") CLASSES
+            li.nav-item
+              a.nav-link(href="#") ADMIN
+            li.nav-item
+              a.nav-link(href="#") help
+          ul.nav.navbar-nav.pull-lg-right
+            li.nav-item.dropdown.open.dropdown-right
+              a.nav-link(href="#")
+                img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
               .dropdown-menu
                 a.dropdown-item(href="#") YOUR PROFILE
                 .dropdown-divider
