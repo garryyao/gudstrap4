@@ -8,7 +8,7 @@ h3 {
   text-transform: uppercase;
 }
 
-h4 {
+h4,h5,h6 {
   @include fontstack-sans-serif-thin;
   text-transform: uppercase;
 }
