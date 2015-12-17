@@ -1,4 +1,4 @@
-section.ef-alert
+section.section-alert
     .bg-warm-grey.p-y-3
       .container
           h2 4.8 INFORMATION BARS & MESSAGES (EXPLORATION)
@@ -14,7 +14,7 @@ section.ef-alert
       .p-y-3
         each colour in alert_colours
           - var color_name = colour.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
-          .alert.alert-dismissible.fade.in.alert-gotoclassroom(class='alert-'+color_name, role="alert")
+          .alert.ef-alert.alert-dismissible.fade.in.ef-alert-gotoclassroom(class='alert-'+color_name, role="alert")
             button.close(type="button",data-dismiss="alert",aria-label="Close")
               span(aria-hidden="true")
                 | &times;
