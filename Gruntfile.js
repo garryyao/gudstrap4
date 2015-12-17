@@ -40,7 +40,11 @@ module.exports = function(grunt) {
     },
     copy: {
       dist: {
-        src: ['icons/*', 'fonts/**'],
+        src: [
+          'icons/*',
+          'fonts/**',
+          'bower_components/*/dist/**/*.js',
+        ],
         dest: 'dist/'
       },
     },
