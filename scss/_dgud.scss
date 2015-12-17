@@ -25,6 +25,10 @@
   #{$parent} {
     color: contrast-color($color);
     background-color: $color;
+
+    a[href] {
+      color: contrast-color($color);
+    }
   }
   a#{$parent} {
     @include hover-focus {
@@ -45,10 +49,6 @@ $brand-danger: map_get($primary-colours, TOMATITO);
 }
 
 @each $name, $colour in $grayscale-colours {
-  @include bg-variant('.bg-#{to_lower_case($name)}', $colour);
+  @include bg-variant-contrast('.bg-#{to_lower_case($name)}', $colour);
   @include text-emphasis-variant('.text-#{to_lower_case($name)}', $colour);
-}
-
-@each $name, $colour in $alert-colours {
-  @include bg-variant-contrast('.alert-#{to_lower_case($name)}', $colour);
 }

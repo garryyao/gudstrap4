@@ -48,12 +48,3 @@ $grayscale-colours: (
         GRAY-LIGHTER: #eceeef,
         GRAY-LIGHTEST: #f7f7f9,
 );
-
-/* alert background-color */
-$alert-colours: (
-        MATTE-GOLD: map_get($primary-colours, MATTE-GOLD),
-        RAIN: map_get($primary-colours, RAIN),
-        GRAY-DARK: map_get($grayscale-colours, GRAY-DARK),
-        BLACK: map_get($primary-colours, BLACK),
-        WHITE: map_get($primary-colours, WHITE)
-);

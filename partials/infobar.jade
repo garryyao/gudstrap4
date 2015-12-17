@@ -14,7 +14,7 @@ section.section-alert
       .p-y-3
         each colour in alert_colours
           - var color_name = colour.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
-          .alert.ef-alert.alert-dismissible.fade.in.ef-alert-gotoclassroom(class='alert-'+color_name, role="alert")
+          .alert.ef-alert.alert-dismissible.fade.in.ef-infobar(class='bg-'+color_name, role="alert")
             button.close(type="button",data-dismiss="alert",aria-label="Close")
               span(aria-hidden="true")
                 | &times;
@@ -24,5 +24,5 @@ section.section-alert
               span.alert-msg
                 span.user-name Francis Evans:
                 |  Your private lesson “Describing Clothes  Clothes Describing Clothes” is about to start in 02:59
-              a.alert-link(class='alert-'+color_name, href="#")
+              a.alert-link(href="javascript:;")
                 | GO TO CLASSROOM
