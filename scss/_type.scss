@@ -1,26 +1,26 @@
 h1, h2  {
-  @include fontstack-helvetica-bold;
+  @include fontstack-sans-serif-bold;
   text-transform: uppercase;
 }
 
 h3 {
-  @include fontstack-helvetica-light;
+  @include fontstack-sans-serif-light;
   text-transform: uppercase;
 }
 
 h4 {
+  @include fontstack-sans-serif-thin;
   text-transform: uppercase;
-  @include fontstack-helvetica-thin;
 }
 
 /* TODO: enumerate all content tags here */
 p {
-  @include fontstack-helvetica-light;
+  @include fontstack-sans-serif-light;
   font-size: $font-size-content;
 }
 
 .lead {
-  @include fontstack-garamond;
+  @include fontstack-serif-contrast;
 }
 
 dfn {
@@ -30,7 +30,7 @@ dfn {
 .lockup {
   margin-top: $spacer-y;
   margin-bottom: $spacer-y;
-  @include fontstack-garamond;
+  @include fontstack-serif-contrast;
   font-style: italic;
   white-space: nowrap;
 

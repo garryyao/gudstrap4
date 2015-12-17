@@ -1,83 +1,95 @@
 @font-face {
-  font-family: helvetica77BoldCondensed;
-  src: url("fonts/helvetica77-bold-condensed/HelveticaNeueLTPro-BdCn.eot?#iefix");
-  src: url("fonts/helvetica77-bold-condensed/HelveticaNeueLTPro-BdCn.eot?#iefix") format("eot"), url("fonts/helvetica77-bold-condensed/HelveticaNeueLTPro-BdCn.woff") format("woff"), url("fonts/helvetica77-bold-condensed/HelveticaNeueLTPro-BdCn.ttf") format("truetype"), url("fonts/helvetica77-bold-condensed/HelveticaNeueLTPro-BdCn.svg#d90b3358-e1e2-4abb-ba96-356983a54c22") format("svg");
-}
-
-
-@font-face {
-  font-family: helvetica75Bold;
+  font-family: HelveticaNeueLT;
   src: url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.eot?#iefix");
   src: url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.eot?#iefix") format("eot"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.woff") format("woff"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.ttf") format("truetype"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: helvetica75Bold;
+  font-family: HelveticaNeueLT;
   src: url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.eot?#iefix");
   src: url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.eot?#iefix") format("eot"), url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.woff") format("woff"), url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.ttf") format("truetype"), url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-weight: 500;
 }
 
-
 @font-face {
-  font-family: helvetica45Light;
+  font-family: HelveticaNeueLT;
   src: url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.eot?#iefix");
   src: url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.eot?#iefix") format("eot"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.woff") format("woff"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.ttf") format("truetype"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: helvetica45Thin;
+  font-family: HelveticaNeueLT;
   src: url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.eot?#iefix");
   src: url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.eot?#iefix") format("eot"), url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.woff") format("woff"), url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.ttf") format("truetype"), url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-weight: 100;
 }
 
-@mixin fontstack-helvetica-thin {
-  font-family: helvetica45Thin, Helvetica, Arial, sans-serif;
+$font-weight-thin:        100 !default;
+$font-weight-extra-light: 200 !default;
+$font-weight-light:       300 !default;
+$font-weight-default:     400 !default;
+$font-weight-medium:      500 !default;
+$font-weight-semi-bold:   600 !default;
+$font-weight-bold:        700 !default;
+$font-weight-heavy:       800 !default;
+$font-weight-black:       900 !default;
+
+$fontstack-serif-notes: Georgia, Times, 'Times New Roman', serif;
+$fontstack-serif-contrast: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+$fontstack-sans-serif: HelveticaNeueLT, "Helvetica Neue", Helvetica, Arial, "Source Han Sans SC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+
+@mixin fontstack-sans-serif-thin {
+  font-family: $fontstack-sans-serif;
+  font-weight: $font-weight-thin;
 }
 
-@mixin fontstack-helvetica-light {
-  font-family: helvetica45Light, Helvetica, Arial, sans-serif;
+@mixin fontstack-sans-serif-light {
+  font-family: $fontstack-sans-serif;
+  font-weight: $font-weight-light;
 }
 
-@mixin fontstack-helvetica-bold {
-  font-family: helvetica75Bold, Helvetica, Arial, sans-serif;
+@mixin fontstack-sans-serif-medium {
+  font-family: $fontstack-sans-serif;
+  font-weight: $font-weight-medium;
 }
 
-@mixin fontstack-helvetica-boldcondensed {
-  font-family: helvetica77BoldCondensed, Helvetica, Arial, sans-serif;
+@mixin fontstack-sans-serif-bold {
+  font-family: $fontstack-sans-serif;
+  font-weight: $font-weight-bold;
 }
 
-@mixin fontstack-georgia {
-  font-family: Georgia, Times, 'Times New Roman', serif;
+@mixin fontstack-serif-notes {
+  font-family: $fontstack-serif-notes;
+  font-style: italic;
 }
 
-@mixin fontstack-garamond {
-  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+@mixin fontstack-serif-contrast {
+  font-family: $fontstack-serif-contrast;
+  font-style: italic;
 }
 
-.text-helvetica-boldcondensed {
-  @include fontstack-helvetica-boldcondensed;
+.text-bold {
+  @include fontstack-sans-serif-bold;
 }
 
-.text-helvetica-bold {
-  @include fontstack-helvetica-bold;
+.text-medium {
+  @include fontstack-sans-serif-medium;
 }
 
-.text-helvetica-medium {
-  @include fontstack-helvetica-bold;
+.text-light {
+  @include fontstack-sans-serif-light;
 }
 
-.text-helvetica-light {
-  @include fontstack-helvetica-light;
+.text-thin {
+  @include fontstack-sans-serif-thin;
 }
 
-.text-helvetica-thin {
-  @include fontstack-helvetica-thin;
+.text-notes {
+  @include fontstack-serif-notes;
 }
 
-.text-georgia {
-  @include fontstack-georgia;
-}
-
-.text-garamond {
-  @include fontstack-garamond;
+.text-contrast {
+  @include fontstack-serif-contrast;
 }

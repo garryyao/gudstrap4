@@ -2,9 +2,8 @@
   border: none;
   padding: 18px 35px 17px 15px;
 
-  @include fontstack-georgia;
+  @include fontstack-serif-notes;
   font-size: 16px;
-  font-style: italic;
 
   .close {
     opacity: 1;
