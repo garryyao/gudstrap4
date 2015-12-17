@@ -14,13 +14,15 @@ section.ef-alert
       .p-y-3
         each colour in alert_colours
           - var color_name = colour.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
-          .alert.alert-dismissible.fade.in(class='alert-'+color_name, role="alert")
+          .alert.alert-dismissible.fade.in.alert-gotoclassroom(class='alert-'+color_name, role="alert")
             button.close(type="button",data-dismiss="alert",aria-label="Close")
               span(aria-hidden="true")
                 | &times;
             .container
-              img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
+              span.alert-avatar
+                img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
               span.alert-msg
-                | Francis Evans: Your private lesson “Describing Clothes” is about to start in 02:59
-              a.pull-lg-right(class='alert-'+color_name, href="#")
+                span.user-name Francis Evans:
+                |  Your private lesson “Describing Clothes  Clothes Describing Clothes” is about to start in 02:59
+              a.alert-link(class='alert-'+color_name, href="#")
                 | GO TO CLASSROOM

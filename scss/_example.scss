@@ -61,3 +61,82 @@
     margin-bottom: 2.5rem;
   }
 }
+.alert-gotoclassroom {
+  .alert-avatar, .alert-msg, .alert-link {
+    display: block;
+    float: left;
+  }
+
+  .alert-avatar {
+    padding-right: 20px;
+  }
+
+  .alert-msg {
+    margin-top: 3px;
+  }
+
+  .user-name {
+    font-weight: 700;
+  }
+
+  .alert-link {
+    padding: 0;
+    float:right;
+
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: none;
+
+    &:hover {
+      background: transparent;
+      text-decoration: none;
+      color: map_get($primary-colours, BLUE);
+    }
+  }
+}
+@include media-breakpoint-up(xs) {
+  .alert-gotoclassroom {
+    .alert-msg {
+      width: 77%;
+    }
+    .alert-link {
+      float: left;
+      margin-top: 12px;
+      margin-left: 50px;
+    }
+  }
+}
+@include media-breakpoint-up(sm) {
+  .alert-gotoclassroom {
+    .alert-msg {
+      width: 85%;
+    }
+    .alert-link {
+      float: left;
+      margin-top: 12px;
+      margin-left: 50px;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .alert-gotoclassroom {
+    .alert-msg {
+      width: 60%;
+    }
+    .alert-link {
+      margin-top: 4px;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .alert-gotoclassroom {
+    .alert-msg {
+      width: 72%;
+    }
+    .alert-link {
+      margin-top: 4px;
+    }
+  }
+}
