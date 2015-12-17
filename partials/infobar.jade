@@ -1,0 +1,28 @@
+section.section-alert
+    .bg-warm-grey.p-y-3
+      .container
+          h2 4.8 INFORMATION BARS & MESSAGES (EXPLORATION)
+
+          -
+            var alert_colours = [
+              'MATTE GOLD',
+              'RAIN',
+              'GRAY DARK',
+              'BLACK',
+              'WHITE'
+            ];
+      .p-y-3
+        each colour in alert_colours
+          - var color_name = colour.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
+          .alert.ef-alert.alert-dismissible.fade.in.ef-infobar(class='bg-'+color_name, role="alert")
+            button.close(type="button",data-dismiss="alert",aria-label="Close")
+              span(aria-hidden="true")
+                | &times;
+            .container
+              span.alert-avatar
+                img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
+              span.alert-msg
+                span.user-name Francis Evans:
+                |  Your private lesson “Describing Clothes  Clothes Describing Clothes” is about to start in 02:59
+              a.alert-link(href="javascript:;")
+                | GO TO CLASSROOM
