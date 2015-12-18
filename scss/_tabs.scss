@@ -1,7 +1,7 @@
-$nav-ef-link-padding: 1.3rem;
-$nav-ef-color: map_get($primary-colours, BLACK);
+$ef-nav-link-padding: 1.3rem;
+$ef-nav-color: map_get($primary-colours, BLACK);
 
-.nav-ef {
+.ef-nav {
   @include clearfix();
 
   .nav-item {
@@ -15,11 +15,11 @@ $nav-ef-color: map_get($primary-colours, BLACK);
   .nav-link {
     display: block;
     width: 128px;
-    padding: $nav-ef-link-padding 0;
+    padding: $ef-nav-link-padding 0;
     border-top: 3px solid transparent;
 
 
-    color: $nav-ef-color;
+    color: $ef-nav-color;
     opacity: 0.5;
     font-size: 12px;
     font-family: HelveticaNeue;
@@ -28,7 +28,7 @@ $nav-ef-color: map_get($primary-colours, BLACK);
 
 
     &:hover {
-      border-top: 3px solid $nav-ef-color;
+      border-top: 3px solid $ef-nav-color;
       opacity: 0.5;
     }
   }
@@ -36,7 +36,7 @@ $nav-ef-color: map_get($primary-colours, BLACK);
   .nav-link.active,
   .nav-item.open .nav-link {
     @include plain-hover-focus {
-      border-top: 3px solid $nav-ef-color;
+      border-top: 3px solid $ef-nav-color;
       opacity: 1;
       cursor: default;
     }
