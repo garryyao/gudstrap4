@@ -13,7 +13,9 @@ html(lang="en")
         // Bootstrap JavaScript modules
         script(src="bower_components/jquery/dist/jquery.min.js")
         script(src="bower_components/tether/dist/js/tether.min.js")
+        script(src="js/switch.js")
         script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+        script(src="index.js")
 
     body
         header.m-y-3
@@ -21,6 +23,7 @@ html(lang="en")
                 span.font-weight-normal D
                 | GUD DESIGN ASSETS
         main
-        include ./partials/colours.jade
-        include ./partials/typography.jade
-        include partials/infobar.jade
+        include ./partials/colours
+        include ./partials/typography
+        include ./partials/controls
+        include partials/infobar
