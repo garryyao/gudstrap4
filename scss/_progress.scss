@@ -1,0 +1,89 @@
+//
+// Progress bars
+// --------------------------------------------------
+
+// Bar animations
+// -------------------------
+
+// WebKit
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+// Spec and IE10+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+// Progress bars
+
+@mixin progress-bar-variant($color) {
+  background-color: $color;
+}
+
+// Bar itself
+// -------------------------
+$line-height-progressbar: 2.2rem;
+$progress-bar-spacing: .2rem;
+$progress-border-radius: $line-height-progressbar/2;
+$progress-border-color: $gray-light;
+
+// Outer container
+.ef-progress {
+  overflow: hidden;
+  margin-bottom: $line-height-progressbar;
+  background-color: $progress-bg;
+  border: 1px solid $progress-border-color;
+  border-radius: ($progress-border-radius + $progress-bar-spacing/2);
+}
+
+// Bar of progress
+.ef-progress-bar {
+  float: left;
+  min-width: $progress-border-radius*2;
+  margin: $progress-bar-spacing;
+  font-size: $font-size-sm;
+  line-height: ($line-height-progressbar - .15);
+  color: $progress-bar-color;
+  text-align: center;
+  border-radius: $progress-border-radius;
+  background-color: $progress-bar-bg;
+}
+
+// Call animation for the active one
+//
+// `.progress.active .progress-bar` is deprecated as of v3.2.0 in favor of the
+// `.progress-bar.active` approach.
+.ef-progress.active .progress-bar,
+.ef-progress-bar.active {
+  animation: progress-bar-stripes 2s linear infinite;
+}
+
+// Variations
+// -------------------------
+
+.ef-progress-bar.progress-bar-success {
+  @include progress-bar-variant($progress-bar-success-bg);
+}
+
+.ef-progress-bar.progress-bar-info {
+  @include progress-bar-variant($progress-bar-info-bg);
+}
+
+.ef-progress-bar.progress-bar-warning {
+  @include progress-bar-variant($progress-bar-warning-bg);
+}
+
+.ef-progress-bar.progress-bar-danger {
+  @include progress-bar-variant($progress-bar-danger-bg);
+}

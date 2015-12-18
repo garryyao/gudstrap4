@@ -43,6 +43,8 @@ module.exports = function(grunt) {
         src: [
           'icons/*',
           'fonts/**',
+          'index.js',
+          'js/*.js',
           'bower_components/*/dist/**/*.js',
         ],
         dest: 'dist/'

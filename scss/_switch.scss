@@ -1,0 +1,188 @@
+$line-height-switch: 2rem;
+$switch-spacing: .2rem;
+$switch-border-radius: $line-height-switch/2;
+
+.ef-switch {
+  display: inline-block;
+  direction: ltr;
+  cursor: pointer;
+  border-radius: ($switch-border-radius + $switch-spacing);
+  border: 1px solid;
+  border-color: $input-border-color;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  z-index: 0;
+  user-select: none;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+  .ef-switch-container {
+    background-color: white;
+    display: inline-block;
+    top: 0;
+    border-radius: $switch-border-radius;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .ef-switch-handle-on,
+  .ef-switch-handle-off,
+  .ef-switch-label {
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block !important;
+    font-size: $font-size-base;
+    line-height: $line-height-switch;
+  }
+
+  .ef-switch-handle-on,
+  .ef-switch-handle-off {
+    opacity: 0;
+    transition: opacity .5s;
+    margin: $switch-spacing $switch-spacing*3;
+    transform: translateY(2px);
+    text-align: center;
+    z-index: 1;
+
+    &.ef-switch-primary {
+      color: #fff;
+      background: $btn-primary-bg;
+    }
+
+    &.ef-switch-info {
+      color: #fff;
+      background: $btn-info-bg;
+    }
+
+    &.ef-switch-success {
+      color: $brand-success;
+      background: transparent;
+    }
+
+    &.ef-switch-warning {
+      background: $btn-warning-bg;
+      color: #fff;
+    }
+
+    &.ef-switch-danger {
+      color: #fff;
+      background: $btn-danger-bg;
+    }
+
+    &.ef-switch-default {
+      color: $gray;
+      background: transparent;
+    }
+  }
+
+  .ef-switch-label {
+    margin: $switch-spacing;
+    border-radius: $switch-border-radius;
+    text-align: center;
+    padding: 0 !important;
+    width: $line-height-switch;
+    z-index: 100;
+    color: $label-color;
+    background: $label-default-bg;
+    transition: background-color .5s;
+  }
+
+  .ef-switch-handle-on {
+    border-radius: 0;
+    margin-right: 0;
+  }
+
+  .ef-switch-handle-off {
+    border-radius: 0;
+    margin-left: 0;
+  }
+
+  input[type='radio'],
+  input[type='checkbox'] {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &.ef-switch-disabled,
+  &.ef-switch-readonly,
+  &.ef-switch-indeterminate {
+    cursor: default !important;
+
+    .ef-switch-handle-on,
+    .ef-switch-handle-off,
+    .ef-switch-label {
+      opacity:.5;
+      cursor: default !important;
+    }
+  }
+
+  &.ef-switch-animate {
+
+    .ef-switch-container {
+      transition: transform .5s;
+    }
+  }
+
+  &.ef-switch-focused {
+    $color-rgba: rgba(red($input-border-focus), green($input-border-focus), blue($input-border-focus), .6);
+    border-color: $input-border-focus;
+    outline: 0;
+    box-shadow: "inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #{$color-rgba}";
+  }
+
+  &.ef-switch-on {
+    border-color: $brand-success;
+    .ef-switch-label {
+      background-color: $btn-success-bg;
+    }
+
+    .ef-switch-handle-on {
+      opacity: 1;
+    }
+  }
+
+  &.ef-switch-off {
+    border-color: $gray-light;
+
+    .ef-switch-label {
+      background-color: $gray-light;
+    }
+
+    .ef-switch-handle-off {
+      opacity: 1;
+    }
+  }
+
+  &.ef-switch-inverse {
+
+    .ef-switch-handle-on, .ef-switch-handle-off {
+      color: white;
+    }
+
+    &.ef-switch-on {
+      .ef-switch-container {
+        background-color: $btn-success-bg;
+      }
+
+      .ef-switch-label {
+        background-color: white;
+      }
+    }
+
+    &.ef-switch-off {
+
+      .ef-switch-container {
+        background-color: $gray-light;
+      }
+
+      .ef-switch-label {
+        background-color: white;
+        color: white;
+      }
+    }
+
+  }
+}
