@@ -1,28 +1,28 @@
 @font-face {
-  font-family: HelveticaNeueLT;
+  font-family: HelveticaNeueLTPro;
   src: url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.eot?#iefix");
   src: url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.eot?#iefix") format("eot"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.woff") format("woff"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.ttf") format("truetype"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: HelveticaNeueLT;
-  src: url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.eot?#iefix");
-  src: url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.eot?#iefix") format("eot"), url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.woff") format("woff"), url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.ttf") format("truetype"), url("fonts/helvetica65-medium/HelveticaNeueLTStd-Md.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-family: HelveticaNeueLTPro;
+  src: url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.eot?#iefix");
+  src: url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.eot?#iefix") format("eot"), url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.woff") format("woff"), url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.ttf") format("truetype"), url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: HelveticaNeueLT;
+  font-family: HelveticaNeueLTPro;
   src: url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.eot?#iefix");
   src: url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.eot?#iefix") format("eot"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.woff") format("woff"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.ttf") format("truetype"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: HelveticaNeueLT;
-  src: url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.eot?#iefix");
-  src: url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.eot?#iefix") format("eot"), url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.woff") format("woff"), url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.ttf") format("truetype"), url("fonts/helvetica35-thin/HelveticaNeueLTStd-Th.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-family: HelveticaNeueLTPro;
+  src: url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.eot?#iefix");
+  src: url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.eot?#iefix") format("eot"), url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.woff") format("woff"), url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.ttf") format("truetype"), url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
   font-weight: 100;
 }
 
@@ -38,7 +38,7 @@ $font-weight-black:       900 !default;
 
 $fontstack-serif-notes: Georgia, Times, 'Times New Roman', serif;
 $fontstack-serif-contrast: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
-$fontstack-sans-serif: HelveticaNeueLT, "Helvetica Neue", Helvetica, Arial, "Source Han Sans", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", "SimHei", sans-serif;
+$fontstack-sans-serif: HelveticaNeueLTPro, "Helvetica Neue", Helvetica, Arial, "Source Han Sans", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", "SimHei", sans-serif;
 
 @mixin fontstack-sans-serif-thin {
   font-family: $fontstack-sans-serif;
