@@ -1,28 +1,55 @@
 @font-face {
-  font-family: HelveticaNeueLTPro;
-  src: url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.eot?#iefix");
-  src: url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.eot?#iefix") format("eot"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.woff") format("woff"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.ttf") format("truetype"), url("fonts/helvetica75-bold/HelveticaNeueLTPro-Bd.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-family: HelveticaNeueLT;
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.eot");
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.eot?#iefix") format('embedded-opentype'),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.woff2") format("woff2"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.woff") format("woff"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.ttf") format("truetype"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.svg#HelveticaNeueLTPro-Bd") format("svg");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: HelveticaNeueLTPro;
-  src: url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.eot?#iefix");
-  src: url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.eot?#iefix") format("eot"), url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.woff") format("woff"), url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.ttf") format("truetype"), url("fonts/helvetica65-medium/HelveticaNeueLTPro-Md.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-family: HelveticaNeueLT;
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.eot");
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.eot?#iefix") format('embedded-opentype'),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.woff2") format("woff2"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.woff") format("woff"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.ttf") format("truetype"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.svg#HelveticaNeueLTPro-Roman") format("svg");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: HelveticaNeueLT;
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.eot");
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.eot?#iefix") format('embedded-opentype'),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.woff2") format("woff2"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.woff") format("woff"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.ttf") format("truetype"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.svg#HelveticaNeueLTPro-Md") format("svg");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: HelveticaNeueLTPro;
-  src: url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.eot?#iefix");
-  src: url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.eot?#iefix") format("eot"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.woff") format("woff"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.ttf") format("truetype"), url("fonts/helvetica45-light/HelveticaNeueLTPro-Lt.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-family: HelveticaNeueLT;
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.eot");
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.eot?#iefix") format('embedded-opentype'),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.woff2") format("woff2"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.woff") format("woff"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.ttf") format("truetype"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.svg#HelveticaNeueLTPro-Lt") format("svg");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: HelveticaNeueLTPro;
-  src: url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.eot?#iefix");
-  src: url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.eot?#iefix") format("eot"), url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.woff") format("woff"), url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.ttf") format("truetype"), url("fonts/helvetica35-thin/HelveticaNeueLTPro-Th.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
+  font-family: HelveticaNeueLT;
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.eot");
+  src: url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.eot?#iefix") format('embedded-opentype'),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.woff2") format("woff2"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.woff") format("woff"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.ttf") format("truetype"),
+    url("fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.svg#HelveticaNeueLTPro-Th") format("svg");
   font-weight: 100;
 }
 
@@ -55,6 +82,11 @@ $fontstack-sans-serif: HelveticaNeueLTPro, "Helvetica Neue", Helvetica, Arial, "
   font-weight: $font-weight-medium;
 }
 
+@mixin fontstack-sans-serif-semi-bold {
+  font-family: $fontstack-sans-serif;
+  font-weight: $font-weight-semi-bold;
+}
+
 @mixin fontstack-sans-serif-bold {
   font-family: $fontstack-sans-serif;
   font-weight: $font-weight-bold;
@@ -72,6 +104,10 @@ $fontstack-sans-serif: HelveticaNeueLTPro, "Helvetica Neue", Helvetica, Arial, "
 
 .text-bold {
   @include fontstack-sans-serif-bold;
+}
+
+.text-semi-bold {
+  @include fontstack-sans-serif-semi-bold;
 }
 
 .text-medium {

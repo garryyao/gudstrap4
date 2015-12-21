@@ -11,3 +11,6 @@
 # Artifacts
 /dist
 /.grunt
+
+# Mac OSX
+.DS_Store
