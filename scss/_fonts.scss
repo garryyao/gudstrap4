@@ -65,7 +65,7 @@ $font-weight-black:       900 !default;
 
 $fontstack-serif-notes: Georgia, Times, 'Times New Roman', serif;
 $fontstack-serif-contrast: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
-$fontstack-sans-serif: HelveticaNeueLTPro, "Helvetica Neue", Helvetica, Arial, "Source Han Sans", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", "SimHei", sans-serif;
+$fontstack-sans-serif: "HelveticaNeueLT", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @mixin fontstack-sans-serif-thin {
   font-family: $fontstack-sans-serif;
