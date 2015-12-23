@@ -1,0 +1,45 @@
+.ef-banner {
+  background: #000;
+  color: white;
+  height: 172px;
+
+  .col-md-12 {
+    line-height: 172px;
+    height: 172px;
+    font-size: 0;
+    display: table-cell;
+  }
+
+  .banner-slogan, .banner-link {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .banner-link {
+    text-align: right;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .current-module {
+    opacity: .5;
+    font-family: Georgia;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .current-module-name {
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .level {
+    opacity: .5;
+    font-family: Georgia;
+    font-size: 13px;
+    font-style: italic;
+  }
+}
