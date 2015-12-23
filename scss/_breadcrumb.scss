@@ -1,0 +1,53 @@
+.ef-breadcrumb {
+  $BLACK: map-get($primary-colours, BLACK);
+  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+  margin-bottom: $spacer-y;
+  list-style: none;
+  @include border-radius($border-radius);
+  @include clearfix;
+
+  > li {
+    float: left;
+    padding: 0 30px;
+    height: 65px;
+    border-bottom: 4px solid $BLACK;
+
+    text-align: center;
+    color: $BLACK;
+
+    &:last-child {
+      border-bottom: 2px solid $BLACK;
+    }
+
+    a {
+      color: $BLACK;
+      display: block;
+      height: 65px;
+      position: relative;
+      @include hover-focus {
+        text-decoration: none;
+        &:after {
+          content: '▲';
+          position: absolute;
+          left: 48%;
+          top: 50px;
+        }
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 1.2;
+      }
+      .desc {
+        font-family: Georgia;
+        font-size: 14px;
+        font-style: italic;
+        margin: 0;
+        line-height: 1.2;
+      }
+    }
+  }
+}
