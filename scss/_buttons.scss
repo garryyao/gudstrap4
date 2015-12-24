@@ -1,0 +1,101 @@
+$btn-main-color: map-get($primary-colours, WHITE) !default;
+$btn-main-bg: map-get($primary-colours, BLUE) !default;
+$btn-main-border: map-get($primary-colours, BLUE) !default;
+$btn-black-color: map-get($primary-colours, WHITE) !default;
+$btn-black-bg: map-get($primary-colours, BLACK) !default;
+$btn-black-border: map-get($primary-colours, BLACK) !default;
+$btn-continue-color: map-get($primary-colours, BLACK) !default;
+$btn-continue-bg: map-get($primary-colours, WHITE) !default;
+$btn-continue-border: map-get($primary-colours, WHITE) !default;
+$enable-rounded: true;
+
+@mixin ef-button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+}
+
+@mixin ef-button-outline-variant($color) {
+  color: $color;
+  background-image: none;
+  background-color: transparent;
+  border-color: $color;
+}
+
+@mixin ef-button-other-variant($color) {
+  color: $color;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.ef-btn {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  //Helvetica Neue LT Pro will call a vertical-align middle bug.
+  //I thinks it's caused by the baseline of the font design.
+  font-family: "Helvetica Neue";
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: $input-btn-border-width solid transparent;
+  @include button-size(0.5rem, 2.5rem, 12px, 1.5, 0.25rem);
+  @include transition(all .2s ease-in-out);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus();
+    }
+  }
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+  &.focus {
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+    outline: 0;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &:disabled {
+    cursor: $cursor-disabled;
+    opacity: .65;
+    @include box-shadow(none);
+  }
+
+  &:after {
+    content: '->';
+    margin-left: 1rem;
+  }
+}
+.ef-btn-main {
+  @include ef-button-variant($btn-main-color, $btn-main-bg, $btn-main-border);
+}
+.ef-btn-black {
+  @include ef-button-variant($btn-black-color, $btn-black-bg, $btn-black-border);
+}
+.ef-btn-continue {
+  @include ef-button-variant($btn-continue-color, $btn-continue-bg, $btn-continue-border);
+}
+.ef-btn-main-outline {
+  @include ef-button-outline-variant($btn-main-bg);
+}
+.ef-btn-black-outline {
+  @include ef-button-outline-variant($btn-black-bg);
+}
+.ef-btn-continue-outline {
+  @include ef-button-outline-variant($btn-continue-bg);
+}
+.ef-btn-other {
+  @include ef-button-other-variant($btn-main-bg);
+}

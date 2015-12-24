@@ -1,0 +1,34 @@
+section.section-button
+    -
+      var btn_styles = {
+        'main': 'MAIN CTA',
+        'black': 'BLACK CTA',
+        'continue': 'CONTINUE'
+      };
+    .bg-warm-grey.p-y-3
+      .container
+        h2 4.3 buttons
+        .p-y-3
+          .row
+            .col-md-3
+              each content, style in btn_styles
+                p
+                  button.ef-btn(class='ef-btn-'+style) #{content}
+            .col-md-3
+              each content, style in btn_styles
+                p
+                  button.ef-btn(class='ef-btn-'+style+'-outline') #{content}
+            .col-md-3
+              button.ef-btn.ef-btn-other EveryThing Else
+        .p-y-3
+          .row.hover
+            .col-md-3
+              each content, style in btn_styles
+                p
+                  button.ef-btn(class='ef-btn-'+style) #{content}
+            .col-md-3
+              each content, style in btn_styles
+                p
+                  button.ef-btn(class='ef-btn-'+style+'-outline') #{content}
+            .col-md-3
+              button.ef-btn.ef-btn-other EveryThing Else
