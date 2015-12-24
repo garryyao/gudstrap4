@@ -54,6 +54,7 @@ $enable-rounded: true;
 
   @include hover-focus {
     text-decoration: none;
+    outline: none;
   }
   &.focus {
     text-decoration: none;
