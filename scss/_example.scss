@@ -1,3 +1,7 @@
+html, html a {
+  @include font-smooth;
+}
+
 .color-box {
   display: table;
   border-spacing: 1rem;
