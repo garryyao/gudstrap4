@@ -27,10 +27,17 @@
       @include hover-focus {
         text-decoration: none;
         &:after {
-          content: '▲';
+          display: block;
+          content: '';
           position: absolute;
-          left: 48%;
-          top: 50px;
+          left: calc(50% - #{16px/2});
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-color: transparent;
+          border-bottom-color: $BLACK;
+          border-width: 10px 16px;
+          border-style: solid;
         }
       }
 
