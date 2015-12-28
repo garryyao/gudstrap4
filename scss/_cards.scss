@@ -1,0 +1,55 @@
+.ef-card {
+  .card-img-top {
+    width: 100%;
+    height: 172px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &.card-inverse {
+    .card-text {
+      color: #fff;
+    }
+  }
+  .card-img-top:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 172px;
+    background: rgba(0,0,0,0.4);
+  }
+  h1,h2 {
+    font-family: "HelveticaNeue";
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 300;
+  }
+  .card-block {
+    font-family: "HelveticaNeue";
+    font-size: 13px;
+    font-weight: 400;
+    height: 172px;
+  }
+  .ef-card-link {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+
+    a {
+      text-transform: uppercase;
+      font-family: "HelveticaNeue";
+      font-size: 12px;
+      font-weight: 500;
+      @include hover-focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
