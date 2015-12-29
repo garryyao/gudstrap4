@@ -75,6 +75,17 @@ html, html a {
   }
 }
 
+.example-content-cards {
+  text-align: center;
+  color: #cdcdcd;
+  p {
+    font-family: "HelveticaNeue";
+    font-size: 29px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}
+
 .ef-btn {
   min-width: 200px;
 }
