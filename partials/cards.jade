@@ -78,7 +78,7 @@ section.section-cards
               };
             mixin course_card(selected, course)
               .col-md-4
-                .card.card-inverse.ef-card(class=course.name+' '+selected)
+                .card.card-inverse.ef-card-course(class=course.name+' '+selected)
                   img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
                   if course.checked
                     .card-course-status

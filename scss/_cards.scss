@@ -1,4 +1,4 @@
-.ef-card {
+.ef-card, .ef-card-course {
   @include hover-focus {
     cursor: pointer;
 
@@ -72,6 +72,16 @@
       }
     }
   }
+}
+.ef-card-course {
+  .ef-card-link a {
+    display: none;
+  }
+  @include hover-focus {
+    .ef-card-link a {
+      display: block;
+    }
+  }
   &.ef-completed-course,
   &.ef-current-course {
     .card-course-status {
@@ -102,6 +112,11 @@
     .card-block {
       background-color: map-get($primary-colours, BLUE);
       color: map-get($primary-colours, WHITE);
+    }
+    @include hover-focus {
+      .ef-card-link a {
+        color: map-get($primary-colours, WHITE);
+      }
     }
   }
 }
