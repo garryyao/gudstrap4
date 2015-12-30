@@ -62,32 +62,41 @@ section.section-cards
             .col-md-4
               p CURRENT course Normal/Hover
           .row
-            .col-md-4
-              .card.card-inverse.ef-card.ef-uncompleted-course
-                img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
-                .card-img-overlay
-                  h1.card-text.font-weight-medium 01
-                  h2.card-text.font-weight-lighter Beginner
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-            .col-md-4
-              .card.card-inverse.ef-card.ef-completed-course
-                img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
-                .card-course-status
-                  img(src="images/checked@2x.png", alt="")
-                .card-img-overlay
-                  h1.card-text.font-weight-medium 01
-                  h2.card-text.font-weight-lighter Beginner
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-            .col-md-4
-              .card.card-inverse.ef-card.ef-current-course
-                img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
-                .card-course-status Your currrent course
-                .card-img-overlay
-                  h1.card-text.font-weight-medium 01
-                  h2.card-text.font-weight-lighter Beginner
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-                .ef-card-link
-                  a(href="javascript:;") learn more
+            -
+              courses = {
+                0: {
+                  name: 'ef-uncompleted-course'
+                },
+                1: {
+                  name: 'ef-completed-course',
+                  checked: true
+                },
+                2: {
+                  name: 'ef-current-course',
+                  current: true
+                }
+              };
+            mixin course_card(selected, course)
+              .col-md-4
+                .card.card-inverse.ef-card(class=course.name+' '+selected)
+                  img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
+                  if course.checked
+                    .card-course-status
+                      img(src="images/checked.png", alt="")
+                  else if course.current
+                    .card-course-status Your currrent course
+                  .card-img-overlay
+                    h1.card-text.font-weight-medium 01
+                    h2.card-text.font-weight-lighter Beginner
+                  .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
+                  .ef-card-link
+                    a(href="javascript:;")
+                      if selected
+                        | close x
+                      else
+                        | learn more
+            each val, index in [0,1,2]
+              +course_card('', courses[val])
           .p-y-2
           .row.example-content-cards
             .col-md-4
@@ -97,29 +106,5 @@ section.section-cards
             .col-md-4
               p CURRENT course  Selected/Hover
           .row
-            .col-md-4
-              .card.card-inverse.ef-card.ef-uncompleted-course.card-selected
-                img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
-                .card-img-overlay
-                  h1.card-text.font-weight-medium 01
-                  h2.card-text.font-weight-lighter Beginner
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-            .col-md-4
-              .card.card-inverse.ef-card.ef-completed-course.card-selected
-                img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
-                .card-course-status
-                  img(src="images/checked.png", alt="")
-                .card-img-overlay
-                  h1.card-text.font-weight-medium 01
-                  h2.card-text.font-weight-lighter Beginner
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-            .col-md-4
-              .card.card-inverse.ef-card.ef-current-course.card-selected
-                img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
-                .card-course-status Your currrent course
-                .card-img-overlay
-                  h1.card-text.font-weight-medium 01
-                  h2.card-text.font-weight-lighter Beginner
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-                .ef-card-link
-                  a(href="javascript:;") learn more
+            each val, index in [0,1,2]
+              +course_card('card-selected', courses[val])
