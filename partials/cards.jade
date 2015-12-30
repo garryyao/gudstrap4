@@ -1,3 +1,30 @@
+-
+  var cards = {
+    0: {
+      image: 'images/06elementary.png',
+      h1: '06',
+      h2: 'Elementary'
+    },
+    1: {
+      image: 'images/negotiation.png',
+      h2: 'Negotiations'
+    },
+    2: {
+      image: 'images/mitarbeiterf-hrung-und.png',
+      h2: 'Mitarbeiterführung Und Managment asdasdasdasdasda',
+      link: 'learn more'
+    },
+    3: {
+      image: 'images/upper-advanced.png',
+      h1: '16',
+      h2: 'Upper Advanced'
+    },
+    4: {
+      image: 'images/toeic.png',
+      h2: 'TOEIC'
+    }
+  };
+  var block_text = 'This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.';
 section.section-cards
     .bg-warm-paper.p-y-3
       .container
@@ -10,42 +37,22 @@ section.section-cards
               p BUSINESS & STT
             .col-md-4
               p INDUSTRY
-          .row
-            .col-md-4
-              .card.card-inverse.ef-card
-                img.card-img-top(src="",style="background-image:url('images/06elementary.png')", alt="")
-                .card-img-overlay
-                  h1.card-text.font-weight-medium 06
-                  h2.card-text.font-weight-lighter Elementary
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-            .col-md-4
-              .card.card-inverse.ef-card
-                img.card-img-top(src="",style="background-image:url('images/negotiation.png')", alt="")
-                .card-img-overlay
-                  h2.card-text.font-weight-lighter Negotiations
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-            .col-md-4
-              .card.card-inverse.ef-card
-                img.card-img-top(src="",style="background-image:url('images/mitarbeiterf-hrung-und.png')", alt="")
-                .card-img-overlay
-                  h2.card-text.font-weight-lighter Mitarbeiterführung Und Managment asdasdasdasdasda
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-                .ef-card-link
-                  a(href="javascript:;") learn more
-          .row
-            .col-md-4
-              .card.card-inverse.ef-card
-                img.card-img-top(src="",style="background-image:url('images/upper-advanced.png')", alt="")
-                .card-img-overlay
-                  h1.card-text.font-weight-medium 16
-                  h2.card-text.font-weight-lighter Upper Advanced
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
-            .col-md-4
-              .card.card-inverse.ef-card
-                img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
-                .card-img-overlay
-                  h2.card-text.font-weight-lighter TOEIC
-                .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
+          - n = 0
+          while n < 2
+            .row(class=n++)
+              each val, index in [0 + 3*(n-1), 1 + 3*(n-1), 2 + 3*(n-1)]
+                if val < 5
+                  .col-md-4
+                    .card.card-inverse.ef-card
+                      img.card-img-top(src="",style="background-image:url(" + cards[val].image + ")", alt="")
+                      .card-img-overlay
+                        if cards[val].h1
+                          h1.card-text.font-weight-medium #{cards[val].h1}
+                        h2.card-text.font-weight-lighter #{cards[val].h2}
+                      .card-block #{block_text}
+                      if cards[val].link
+                        .ef-card-link
+                          a(href="javascript:;") #{cards[val].link}
           .p-y-2
           .row.example-content-cards
             .col-md-4
