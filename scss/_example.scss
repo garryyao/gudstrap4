@@ -2,6 +2,14 @@ html, html a {
   @include font-smooth;
 }
 
+.header {
+  text-align: center;
+
+  span {
+    font-size: 46px;
+  }
+}
+
 .color-box {
   display: table;
   border-spacing: 1rem;
