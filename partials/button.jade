@@ -5,18 +5,19 @@ section.section-button
         'black': 'BLACK CTA',
         'continue': 'CONTINUE'
       };
-    .bg-warm-grey.p-y-3
+    .bg-warm-paper.p-y-3
       .container
         h2 4.3 buttons
         .p-y-3
           .row
-            .col-md-3
+            .col.col-lg-3.col-md-6
               each content, style in btn_styles
-                p
+                p.p-a-2(class='btn-bg-'+style)
                   button.ef-btn(class='ef-btn-'+style) #{content}
-            .col-md-3
+            .col.col-lg-3.col-md-6
               each content, style in btn_styles
-                p
-                  button.ef-btn(class='ef-btn-'+style+'-outline') #{content}
-            .col-md-3
-              button.ef-btn.ef-btn-other EveryThing Else
+                p.p-a-2(class='btn-bg-' + style)
+                  button.ef-btn(class='ef-btn-'+style+'-outline') SECONDARY
+            .col.col-lg-3.col-md-6
+                p.p-a-2
+                  button.ef-btn.ef-btn-other EVERYTHING ELSE

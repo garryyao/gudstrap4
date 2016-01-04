@@ -72,10 +72,14 @@ html, html a {
   }
 }
 
-.section-button .bg-warm-grey{
-  background: #cdcdcd;
-}
-
 .ef-btn {
   min-width: 200px;
+}
+
+.btn-bg-continue {
+  background-color: #CDCDCD;
+}
+
+.section-button .col {
+  padding: 0;
 }
