@@ -62,7 +62,7 @@ $enable-rounded: true;
   }
 
   &:after {
-    content: '⟶';
+    content: '\27f6'; // LONG RIGHTWARDS ARROW
     margin-left: 1rem;
   }
 }
