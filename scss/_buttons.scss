@@ -9,19 +9,6 @@ $btn-continue-bg: map-get($primary-colours, WHITE) !default;
 $btn-continue-border: map-get($primary-colours, WHITE) !default;
 $enable-rounded: true;
 
-@mixin ef-button-variant($color, $background, $border) {
-  color: $color;
-  background-color: $background;
-  border-color: $border;
-}
-
-@mixin ef-button-outline-variant($color) {
-  color: $color;
-  background-image: none;
-  background-color: transparent;
-  border-color: $color;
-}
-
 @mixin ef-button-other-variant($color) {
   color: $color;
   background-color: transparent;
@@ -75,27 +62,30 @@ $enable-rounded: true;
   }
 
   &:after {
-    content: '->';
+    content: '⟶';
     margin-left: 1rem;
   }
 }
 .ef-btn-main {
-  @include ef-button-variant($btn-main-color, $btn-main-bg, $btn-main-border);
+  @include button-variant($btn-main-color, $btn-main-bg, $btn-main-border);
 }
 .ef-btn-black {
-  @include ef-button-variant($btn-black-color, $btn-black-bg, $btn-black-border);
+  @include button-variant($btn-black-color, $btn-black-bg, $btn-black-border);
 }
 .ef-btn-continue {
-  @include ef-button-variant($btn-continue-color, $btn-continue-bg, $btn-continue-border);
+  @include button-variant($btn-continue-color, $btn-continue-bg, $btn-continue-border);
 }
 .ef-btn-main-outline {
-  @include ef-button-outline-variant($btn-main-bg);
+  @include button-outline-variant($btn-main-bg);
 }
 .ef-btn-black-outline {
-  @include ef-button-outline-variant($btn-black-bg);
+  @include button-outline-variant($btn-black-bg);
 }
 .ef-btn-continue-outline {
-  @include ef-button-outline-variant($btn-continue-bg);
+  @include button-outline-variant($btn-continue-bg);
+  @include hover-focus {
+    color: $btn-black-bg;
+  }
 }
 .ef-btn-other {
   @include ef-button-other-variant($btn-main-bg);
