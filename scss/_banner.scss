@@ -1,13 +1,16 @@
 .ef-banner {
   background: url('images/banner-back.png') no-repeat #000;
+  background-size: cover;
   color: white;
   height: 172px;
+  font-size: 0;
+  display: table;
+  width: 100%;
 
-  .col-md-12 {
-    line-height: 172px;
-    height: 172px;
-    font-size: 0;
+  .ef-banner-body {
     display: table-cell;
+    padding: $spacer-y*1.5 0;
+    vertical-align: middle;
   }
 
   .banner-slogan, .banner-link {
@@ -15,9 +18,18 @@
     display: inline-block;
     vertical-align: middle;
     width: 50%;
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      display: block;
+      width: auto;
+    }
   }
+
   .banner-link {
     text-align: right;
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      margin-top: $spacer-y*2;
+      text-align: left;
+    }
   }
 
   p {
