@@ -17,17 +17,15 @@ $enable-rounded: true;
 
 .ef-btn {
   display: inline-block;
-  font-weight: $btn-font-weight;
+  font-weight: 600;
   text-align: center;
-  //Helvetica Neue LT Pro will call a vertical-align middle bug.
-  //I thinks it's caused by the baseline of the font design.
-  font-family: "Helvetica Neue";
   white-space: nowrap;
-  vertical-align: middle;
+  text-transform: uppercase;
   cursor: pointer;
   user-select: none;
   border: $input-btn-border-width solid transparent;
-  @include button-size(0.5rem, 2.5rem, 12px, 1.5, 0.25rem);
+  @include button-size(8px, 2.5rem, 12px, 1.5, 0.25rem);
+  padding-bottom: 5px;
   @include transition(all .2s ease-in-out);
 
   &,
