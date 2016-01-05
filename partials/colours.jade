@@ -63,7 +63,7 @@
         - var color_name = name.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
         - var display_name = name.toUpperCase().replace(/(?=\/)/, '\n');
         .col-md-2.col-sm-4.col-xs-6
-            .color-box(class='bg-' + color_name)
+            .color-box.text-color-contrast(class='bg-' + color_name)
                 .color-label
                     span.font-weight-bold #{display_name}
                     br

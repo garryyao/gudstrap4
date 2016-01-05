@@ -14,7 +14,7 @@ section.section-alert
       .p-y-3
         each colour in alert_colours
           - var color_name = colour.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
-          .alert.ef-alert.alert-dismissible.fade.in.ef-infobar(class='bg-'+color_name, role="alert")
+          .alert.ef-alert.alert-dismissible.fade.in.ef-infobar.text-color-contrast(class='bg-'+color_name, role="alert")
             button.close(type="button",data-dismiss="alert",aria-label="Close")
               span(aria-hidden="true")
                 | &times;
