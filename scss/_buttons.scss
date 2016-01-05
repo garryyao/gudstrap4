@@ -17,7 +17,7 @@ $enable-rounded: true;
 
 .ef-btn {
   display: inline-block;
-  font-weight: 600;
+  font-weight: $btn-font-weight;
   text-align: center;
   white-space: nowrap;
   text-transform: uppercase;

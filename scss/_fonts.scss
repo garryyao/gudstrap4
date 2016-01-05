@@ -1,62 +1,52 @@
 @font-face {
   font-family: 'HelveticaNeueLT';
-  src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.eot');
   src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.eot?#iefix') format('embedded-opentype'),
     url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.woff2') format('woff2'),
     url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.woff') format('woff'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.ttf') format('truetype'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.svg#HelveticaNeueLTPro-Bd') format('svg');
+    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.ttf') format('truetype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLT';
-  src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.eot');
-  src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.eot?#iefix') format('embedded-opentype'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.woff2') format('woff2'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.woff') format('woff'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.ttf') format('truetype'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.svg#HelveticaNeueLTPro-Roman') format('svg');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'HelveticaNeueLT';
-  src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.eot');
   src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.eot?#iefix') format('embedded-opentype'),
     url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.woff2') format('woff2'),
     url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.woff') format('woff'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.ttf') format('truetype'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.svg#HelveticaNeueLTPro-Md') format('svg');
+    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Md.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLT';
-  src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.eot');
+  src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.eot?#iefix') format('embedded-opentype'),
+    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.woff2') format('woff2'),
+    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.woff') format('woff'),
+    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLT';
   src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.eot?#iefix') format('embedded-opentype'),
     url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.woff2') format('woff2'),
     url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.woff') format('woff'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.ttf') format('truetype'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.svg#HelveticaNeueLTPro-Lt') format('svg');
+    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Lt.ttf') format('truetype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'HelveticaNeueLT-TH';
-  src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.eot');
   src: url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.eot?#iefix') format('embedded-opentype'),
     url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.woff2') format('woff2'),
     url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.woff') format('woff'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.ttf') format('truetype'),
-    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.svg#HelveticaNeueLTPro-Th') format('svg');
-  font-weight: 100;
+    url('fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Th.ttf') format('truetype');
+  font-weight: 200;
 }
 
-$font-weight-thin:        100 !default;
-$font-weight-extra-light: 200 !default;
+$font-weight-ultra-light: 100 !default;
+$font-weight-thin:        200 !default;
 $font-weight-light:       300 !default;
-$font-weight-default:     400 !default;
+$font-weight-roman:       400 !default;
 $font-weight-medium:      500 !default;
 $font-weight-semi-bold:   600 !default;
 $font-weight-bold:        700 !default;
@@ -88,14 +78,14 @@ $fontstack-sans-serif-thin: 'HelveticaNeueLT-TH', 'Helvetica Neue', Helvetica, A
   font-weight: $font-weight-light;
 }
 
+@mixin fontstack-sans-serif-roman {
+  font-family: $fontstack-sans-serif;
+  font-weight: $font-weight-roman;
+}
+
 @mixin fontstack-sans-serif-medium {
   font-family: $fontstack-sans-serif;
   font-weight: $font-weight-medium;
-}
-
-@mixin fontstack-sans-serif-semi-bold {
-  font-family: $fontstack-sans-serif;
-  font-weight: $font-weight-semi-bold;
 }
 
 @mixin fontstack-sans-serif-bold {
@@ -117,12 +107,12 @@ $fontstack-sans-serif-thin: 'HelveticaNeueLT-TH', 'Helvetica Neue', Helvetica, A
   @include fontstack-sans-serif-bold;
 }
 
-.text-semi-bold {
-  @include fontstack-sans-serif-semi-bold;
-}
-
 .text-medium {
   @include fontstack-sans-serif-medium;
+}
+
+.text-roman {
+  @include fontstack-sans-serif-roman;
 }
 
 .text-light {
