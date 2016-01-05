@@ -34,6 +34,10 @@ html, html a {
   background-color: #edebe8;
 }
 
+.bg-contrast-grey {
+  background-color: #CDCDCD;
+}
+
 .bg-warm-eggshell {
   background-color: #f9f6f2;
 }
@@ -109,4 +113,8 @@ html, html a {
   &.bottom {
     top: -40px;
   }
+}
+
+.ef-combo .dropdown-toggle {
+  min-width: 200px;
 }

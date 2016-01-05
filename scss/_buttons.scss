@@ -15,6 +15,56 @@ $enable-rounded: true;
   border-color: transparent;
 }
 
+@mixin ef-button-contrast-variant($color) {
+  color: $color;
+  background-image: none;
+  background-color: white;
+  border-color: transparent;
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: white;
+    background-color: $color;
+  }
+  @include hover {
+    color: white;
+    background-color: $color;
+  }
+
+  &.disabled,
+  &:disabled {
+    &:focus,
+    &.focus {
+      color: lighten($color, 20%);
+    }
+    @include hover {
+      color: lighten($color, 20%);
+    }
+  }
+}
+@mixin ef-button-contrast-outline-variant($color_contrast) {
+  color: white;
+  background-image: none;
+  background-color: transparent;
+  border-color: white;
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color_contrast;
+    border-color: $color_contrast;
+  }
+  @include hover {
+    color: $color_contrast;
+    border-color: $color_contrast;
+  }
+}
+
 .ef-btn {
   display: inline-block;
   font-weight: $btn-font-weight;
@@ -71,7 +121,7 @@ $enable-rounded: true;
   @include button-variant($btn-black-color, $btn-black-bg, $btn-black-border);
 }
 .ef-btn-continue {
-  @include button-variant($btn-continue-color, $btn-continue-bg, $btn-continue-border);
+  @include ef-button-contrast-variant($btn-continue-color);
 }
 .ef-btn-main-outline {
   @include button-outline-variant($btn-main-bg);
@@ -80,10 +130,7 @@ $enable-rounded: true;
   @include button-outline-variant($btn-black-bg);
 }
 .ef-btn-continue-outline {
-  @include button-outline-variant($btn-continue-bg);
-  @include hover-focus {
-    color: $btn-black-bg;
-  }
+  @include ef-button-contrast-outline-variant($btn-continue-color);
 }
 .ef-btn-other {
   @include ef-button-other-variant($btn-main-bg);
