@@ -50,7 +50,53 @@ section.controls
                                 trigger: 'manual'
                                 }).tooltip('show');
 
-            .m-t-3
+            .m-y-3
+                h4.text-gray-light Combo boxes
+                mixin combo_dropdown
+                    .dropdown-menu(style="max-height: 300px")
+                        h3.dropdown-group-title Travel English
+                        .dropdown-group
+                            a.dropdown-item(href="javascript:;") TRAVEL ENGLISH
+                            a.dropdown-item(href="javascript:;") BUSINESS WRITING
+                            a.dropdown-item(href="javascript:;") NEGOTIATIONS
+                            a.dropdown-item(href="javascript:;") MEETINGS
+
+                        h3.dropdown-group-title Business English
+                        .dropdown-group
+                            a.dropdown-item(href="javascript:;") APPOINTMENTS
+                            a.dropdown-item(href="javascript:;") PRESENTATIONS
+                            a.dropdown-item(href="javascript:;") NEGOTIATIONS
+                            a.dropdown-item(href="javascript:;") MEETINGS
+
+                .row
+                    .col-sm-3
+                        .dropdown.ef-combo.m-y-1
+                            button.btn.ef-btn-black.dropdown-toggle.text-xs-left(data-toggle="dropdown")
+                                span.text-uppercase COMBO BOX
+                            +combo_dropdown
+
+                    .col-sm-3
+                        .dropdown.ef-combo.m-y-1
+                            button.btn.ef-btn-black-outline.dropdown-toggle.text-xs-left(data-toggle="dropdown")
+                                span.text-uppercase COMBO BOX ALT
+                            +combo_dropdown
+
+                .row
+                    .col-md-6.col-sm-8
+                        .row.bg-contrast-grey
+                            .col-sm-6
+                                .dropdown.ef-combo.m-y-1
+                                    button.btn.ef-btn-continue.dropdown-toggle.text-xs-left(data-toggle="dropdown")
+                                        span.text-uppercase COMBO BOX
+                                    +combo_dropdown
+
+                            .col-sm-6
+                                .dropdown.ef-combo.m-y-1
+                                    button.btn.ef-btn-continue-outline.dropdown-toggle.text-xs-left(data-toggle="dropdown")
+                                        span.text-uppercase COMBO BOX ALT
+                                    +combo_dropdown
+
+            .m-y-3
                 h4.text-gray-light Dropdown
                 .row
                     .col-sm-6
