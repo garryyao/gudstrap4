@@ -2,7 +2,7 @@ section.controls
     .p-y-3
         .container
             h2 4.5 common UI controls
-            .m-y-3
+            .m-t-3
                 .row
                     .col-sm-4
                         h4.text-gray-light Progress Bars
@@ -30,7 +30,27 @@ section.controls
 
                     .col-sm-8
 
-            .m-y-3
+                .row
+                    .col-xs-12
+                        h4.text-gray-light Tool Tips
+                        .m-y-2.tooltips
+                            span.top.m-l-2.m-r-3(data-toggle='tooltip', data-placement='top', data-title='Top Tooltip')
+                            span.right.m-l-3(data-toggle='tooltip', data-placement='right', data-title='Left Tooltip')
+                            .m-y-2
+                            span.left.m-l-2.m-r-3(data-toggle='tooltip', data-placement='left', data-title='Right Tooltip')
+                            span.bottom.m-l-3(data-toggle='tooltip', data-placement='bottom', data-title='Bottom Tooltip')
+
+                            script.
+                                $('[data-toggle="tooltip"]').tooltip({
+                                template:
+                                '<div class="tooltip ef-tooltip" role="tooltip">' +
+                                    '<div class="tooltip-arrow"></div>' +
+                                    '<div class="tooltip-inner"></div>' +
+                                '</div>',
+                                trigger: 'manual'
+                                }).tooltip('show');
+
+            .m-t-3
                 h4.text-gray-light Dropdown
                 .row
                     .col-sm-6
