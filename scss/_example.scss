@@ -83,3 +83,30 @@ html, html a {
 .section-button .col {
   padding: 0;
 }
+
+.tooltip-inner {
+  width: 120px !important;
+}
+
+.tooltips > span {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 30px;
+
+  &.top {
+    top: 40px;
+  }
+
+  &.left {
+    left: 105px;
+  }
+
+  &.right {
+    left: -105px;
+  }
+
+  &.bottom {
+    top: -40px;
+  }
+}
