@@ -3,26 +3,6 @@ section.controls
         .container
             h2 4.5 common UI controls
             .m-y-3
-                h4.text-gray-light Dropdown
-                .row
-                    .col-sm-6
-                        .dropdown.ef-dropdown
-                            button.btn.btn-secondary.dropdown-toggle.text-xs-left(data-toggle="dropdown")
-                                span.text-uppercase Age
-                            .dropdown-menu
-                                - var i = 18;
-                                    while i < 100
-                                        a.dropdown-item(href="javascript:;") #{i++}
-
-                    .col-sm-6(style="min-height:380px")
-                        .dropdown.ef-dropdown.open(data-toggle="dropdown")
-                            button.btn.btn-secondary.dropdown-toggle.text-xs-left(data-toggle="dropdown")
-                                span.text-uppercase Age
-                            .dropdown-menu(style="max-height: 280px")
-                                - var i = 18;
-                                    while i < 100
-                                        a.dropdown-item(href="javascript:;") #{i++}
-
                 .row
                     .col-sm-4
                         h4.text-gray-light Progress Bars
@@ -48,6 +28,16 @@ section.controls
                         .m-y-2
                             input(type='checkbox', checked='', data-inverse="true" data-handle-width="30")
 
-
                     .col-sm-8
 
+            .m-y-3
+                h4.text-gray-light Dropdown
+                .row
+                    .col-sm-6
+                        .dropdown.ef-dropdown
+                            button.btn.btn-secondary.dropdown-toggle.text-xs-left(data-toggle="dropdown")
+                                span.text-uppercase Age
+                            .dropdown-menu(style="max-height: 300px")
+                                - var i = 18;
+                                    while i < 100
+                                        a.dropdown-item(href="javascript:;") #{i++}
