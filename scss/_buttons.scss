@@ -74,8 +74,8 @@ $enable-rounded: true;
   cursor: pointer;
   user-select: none;
   border: $input-btn-border-width solid transparent;
-  @include button-size(8px, 2.5rem, 12px, 1.5, 0.25rem);
-  padding-bottom: 5px;
+  @include button-size(12px, 2.5rem, 12px, 1.5, 0.25rem);
+  padding-bottom: 9px;
   @include transition(all .2s ease-in-out);
 
   &,
