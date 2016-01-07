@@ -1,0 +1,78 @@
+@mixin ef-pagination-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  .page-dot {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+
+  .page-nav .page-link {
+    padding: $padding-vertical;
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+}
+
+.ef-pagination {
+  .page-link {
+    @include hover-focus {
+      text-decoration: none;
+    }
+  }
+
+  .page-nav, .page-dot {
+    display: inline; // Remove list-style and block-level defaults
+  }
+
+  .page-nav {
+    .page-link {
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: $btn-primary-color;
+      background-color: $btn-primary-bg;
+      padding: $pagination-padding-y;
+
+      @include hover-focus {
+        background-color: black;
+      }
+    }
+
+    &:first-child {
+      .page-link {
+        margin-right: 1em;
+      }
+    }
+    &:last-child {
+      .page-link {
+        margin-left: 1em;
+      }
+    }
+
+    &.disabled .page-link {
+      @include plain-hover-focus {
+        color: $pagination-disabled-color;
+        cursor: $cursor-disabled;
+        background-color: $pagination-disabled-bg;
+        border-color: $pagination-disabled-border;
+      }
+    }
+  }
+
+  .page-dot {
+    position: relative;
+    border: 1px solid transparent;
+    color: map-get($grayscale-colours, GRAY);
+    float: left; // Collapse white-space
+    padding: $pagination-padding-y $pagination-padding-x;
+    margin-left: -1px;
+    line-height: $line-height;
+    text-decoration: none;
+  }
+
+  &.pagination-lg {
+    @include ef-pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+  }
+
+  &.pagination-sm {
+    @include ef-pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+  }
+}
