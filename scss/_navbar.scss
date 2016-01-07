@@ -67,7 +67,7 @@ $navbar-font-size: 12px;
     }
     .dropdown-menu {
       padding: 0 2rem;
-      font-size: 13px;
+      font-size: 12px;
       border: none;
       top: 61px;
       border-top: 2px solid rgba(0, 0, 0, 0.2);
@@ -83,8 +83,10 @@ $navbar-font-size: 12px;
         line-height: 50px;
 
         &:after {
-          content: '->';
+          content: '\27f6';
           margin-left: 1.25rem;
+          height: 50px;
+          line-height: 50px;
           visibility: hidden;
         }
 
@@ -104,8 +106,27 @@ $navbar-font-size: 12px;
         left: auto;
         right: 0;
 
-        a:hover:after{
-          visibility: hidden;
+        .dropdown-item {
+          line-height: auto;
+
+          &:after {
+            content: '';
+            display: none;
+          }
+        }
+
+        .text{
+          display: inline-block;
+          height: 50px;
+          vertical-align: middle;
+        }
+
+        .icon {
+          margin-right: 15px;
+          font-size: 22.5px;
+          width: 20px;
+          text-align: center;
+          vertical-align: middle;
         }
       }
     }
