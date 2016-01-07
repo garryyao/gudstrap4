@@ -1,5 +1,8 @@
+
 .ef-breadcrumb {
   $BLACK: map-get($primary-colours, BLACK);
+
+  display: table;
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
   margin-bottom: $spacer-y;
   list-style: none;
@@ -18,26 +21,19 @@
       height: 0;
       border-color: transparent;
       border-bottom-color: $BLACK;
-      border-width: 10px 16px;
+      border-width: .3em .5em;
       border-style: solid;
     }
   }
 
   > li {
-    float: left;
-    padding: 0 $spacer-y*2;
-
-    height: 65px;
-    border-bottom: 4px solid $BLACK;
+    display: table-cell;
+    vertical-align: baseline;
+    border-bottom: 5px solid $BLACK;
+    @include font-size-responsive;
 
     text-align: center;
     color: $BLACK;
-
-    @media (max-width: map-get($grid-breakpoints, sm)) {
-      height: 45px;
-      padding: 0 $spacer-y;
-    }
-
     &:last-child {
       border-bottom: 2px solid $BLACK;
     }
@@ -45,33 +41,32 @@
     a {
       color: $BLACK;
       display: block;
-      height: 65px;
       position: relative;
+      padding: $spacer-y*1.5 $spacer-x*2;
+
       @include hover-focus {
         @include arrow_link;
       }
 
-      .title {
-        font-size: 20px;
-        text-transform: uppercase;
-        margin: 0;
-        line-height: 1.2;
-
-        @media (max-width: map-get($grid-breakpoints, sm)) {
-          font-size: 15px;
-        }
+      @media (max-width: map-get($grid-breakpoints, md)) {
+        padding: $spacer-y*.75 $spacer-x;
       }
-      .desc {
-        font-family: Georgia;
-        font-size: 14px;
-        font-style: italic;
-        margin: 0;
-        line-height: 1.2;
+    }
 
-        @media (max-width: map-get($grid-breakpoints, sm)) {
-          font-size: 12px;
-        }
-      }
+    .title {
+      font-size: 150%;
+      font-weight: $font-weight-semi-bold;
+      text-transform: uppercase;
+      margin: 0;
+      padding-bottom: .2em;
+      line-height: 1.2;
+    }
+
+    .desc {
+      font-size: 100%;
+      @include fontstack-serif-notes;
+      margin: 0;
+      line-height: 1.2;
     }
 
     &.active a {
