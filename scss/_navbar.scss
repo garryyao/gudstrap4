@@ -102,6 +102,10 @@ $navbar-font-size: 12px;
     }
     .dropdown-right {
 
+      & > .nav-link {
+        line-height: 57px;
+      }
+
       .dropdown-menu {
         left: auto;
         right: 0;
