@@ -4,6 +4,7 @@ $navbar-font-size: 12px;
 .ef-navbar {
   padding: 0;
   border: 0;
+  font-family: HelveticaNeue;
 
   .container {
     text-align: center;
@@ -14,7 +15,7 @@ $navbar-font-size: 12px;
     color: $navbar-ef-color;
     text-transform: uppercase;
     height: 65px;
-    line-height: 65px;
+    line-height: 57px;
 
     @include hover-focus {
       color: $navbar-ef-color;
@@ -24,7 +25,6 @@ $navbar-font-size: 12px;
   .navbar-nav {
     display: inline-block;
     height: 65px;
-    font-family: HelveticaNeue;
 
     .nav-item {
       position: relative;
@@ -50,7 +50,7 @@ $navbar-font-size: 12px;
       font-size: $navbar-font-size;
       padding: 0 8px;
       height: 65px;
-      line-height: 65px;
+      line-height: 61px;
 
       @include hover-focus {
         color: $navbar-ef-color;
