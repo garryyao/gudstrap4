@@ -1,0 +1,11 @@
+@mixin font-size-responsive(){
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    font-size: $font-size-base;
+  }
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    font-size: $font-size-sm;
+  }
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    font-size: $font-size-xs;
+  }
+}
