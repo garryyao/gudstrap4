@@ -1,0 +1,27 @@
+.ef-pager {
+  > li > a {
+    padding: 0;
+    line-height: 2em;
+
+    &:before, &:after {
+      display: inline-block;
+      vertical-align: bottom;
+      font-size: 150%;
+      font-family: 'glyph-dgud' !important;
+    }
+  }
+
+  > .pager-prev > a {
+    &:before {
+      padding-right: .4em;
+      content: $icon-arrow-thin-left;
+    }
+  }
+
+  > .pager-next > a {
+    &:after {
+      padding-left: .4em;
+      content: $icon-arrow-thin-right;
+    }
+  }
+}

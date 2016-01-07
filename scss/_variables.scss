@@ -47,3 +47,29 @@ $grayscale-colours: (
         GRAY-LIGHTER: #eceeef,
         GRAY-LIGHTEST: #f7f7f9,
 );
+
+$brand-primary: map-get($primary-colours, BLUE) !default;
+$brand-success: map-get($primary-colours, GREEN-PEA) !default;
+$brand-info: map-get($extended-colours, MATTE-GOLD) !default;
+$brand-warning: map-get($extended-colours, TANGERINE) !default;
+$brand-danger: map-get($primary-colours, TOMATITO) !default;
+
+$pagination-color: black !default;
+$pagination-bg: transparent !default;
+$pagination-border-color: map-get($grayscale-colours, GRAY) !default;
+$pagination-active-color: white !default;
+$pagination-active-bg: black !default;
+$pagination-active-border: black !default;
+$pagination-hover-color: white !default;
+$pagination-hover-bg: black !default;
+$pagination-hover-border: black !default;
+$pagination-disabled-color: map-get($grayscale-colours, GRAYLIGHT) !default;
+
+$pager-bg: $pagination-bg !default;
+$pager-border-width: 0 !default;
+$pager-border-color: transparent !default;
+$pager-border-radius: 0 !default;
+$pager-hover-bg: $pager-bg !default;
+$pager-active-bg: $pagination-active-bg !default;
+$pager-active-color: $pagination-active-color !default;
+$pager-disabled-color: $pagination-disabled-color !default;
