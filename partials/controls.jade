@@ -57,48 +57,44 @@ section.controls
 
                     .col-md-6
                         h4.text-gray-light Pagination & Navigation
-                        mixin page-dot
-                            li.page-dot
+                        mixin page-dot(cls)
+                            li.page-dot(class=cls)
                                 | &#x00B7;&#x00B7;&#x00B7;
                         .m-y-1
                             nav
                               ul.ef-pagination.pagination
                                 li.page-nav.disabled
                                   a.page-link(href='javascript:;')
-                                    span &#x27F5;
-                                    span.sr-only Previous
+                                    span.icon.icon-arrow-long-left
                                 li.page-item.active
                                   a.page-link(href='javascript:;') 1
                                 +page-dot
                                 li.page-item.hidden-sm-down
                                   a.page-link(href='javascript:;') 5
-                                +page-dot
+                                +page-dot('hidden-sm-down')
                                 li.page-item
                                   a.page-link(href='javascript:;') 99
                                 li.page-nav
                                   a.page-link(href='javascript:;')
-                                    span &#x27F6;
-                                    span.sr-only Next
+                                    span.icon.icon-arrow-long-right
 
                         .m-y-1
                             nav
                               ul.ef-pagination.pagination
                                 li.page-nav
                                   a.page-link(href='javascript:;')
-                                    span &#x27F5;
-                                    span.sr-only Previous
+                                      span.icon.icon-arrow-long-left
                                 li.page-item
                                   a.page-link(href='javascript:;') 1
                                 +page-dot
                                 li.page-item.hidden-sm-down
                                   a.page-link(href='javascript:;') 5
-                                +page-dot
+                                +page-dot('hidden-sm-down')
                                 li.page-item.active
                                   a.page-link(href='javascript:;') 99
                                 li.page-nav.disabled
                                   a.page-link(href='javascript:;')
-                                    span &#x27F6;
-                                    span.sr-only Next
+                                    span.icon.icon-arrow-long-right
 
                         .m-y-1
                             nav(style='max-width: 250px;')
