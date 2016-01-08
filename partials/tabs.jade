@@ -9,7 +9,11 @@ section.section-tabs
           img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
 
       nav.navbar.ef-navbar.bg-white
-        .container.collapse.navbar-toggleable-xs
+        button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse", data-target="#exCollapsingNavbar1")
+          &#9776;
+        button.navbar-toggler.pull-xs-right.hidden-sm-up.navbar-toggler-avatar.dropdown
+          +avatar
+        #exCollapsingNavbar1.container.collapse.navbar-toggleable-xs
           a.navbar-brand(href="javascript:;") EF
           ul.nav.navbar-nav
             li.nav-item.dropdown.open
@@ -30,7 +34,7 @@ section.section-tabs
               a.nav-link(href="javascript:;") ADMIN
             li.nav-item
               a.nav-link(href="javascript:;") help
-          ul.nav.navbar-nav.pull-lg-right
+          ul.nav.navbar-nav.pull-lg-right.pull-md-right.pull-sm-right
             li.nav-item.dropdown.open.dropdown-right
               +avatar
     .p-y-3
@@ -38,7 +42,23 @@ section.section-tabs
     .p-y-3
     .p-y-3
       nav.navbar.ef-navbar.bg-white
-        .container.collapse.navbar-toggleable-xs
+        button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse", data-target="#exCollapsingNavbar2")
+          &#9776;
+        button.navbar-toggler.pull-xs-right.hidden-sm-up.navbar-toggler-avatar.dropdown.open
+          +avatar
+          .dropdown-menu
+            a.dropdown-item(href="javascript:;")
+              i.font-weight-normal.icon.icon-person
+              | YOUR PROFILE
+            .dropdown-divider
+            a.dropdown-item(href="javascript:;")
+              i.font-weight-normal.icon.icon-settings
+              | ACCOUNT SETTINGS
+            .dropdown-divider
+            a.dropdown-item(href="javascript:;")
+              i.font-weight-normal.icon.icon-logout
+              | LOGOUT
+        #exCollapsingNavbar2.container.collapse.navbar-toggleable-xs
           a.navbar-brand(href="javascript:;") EF
           ul.nav.navbar-nav
             li.nav-item
@@ -49,7 +69,7 @@ section.section-tabs
               a.nav-link(href="javascript:;") ADMIN
             li.nav-item
               a.nav-link(href="javascript:;") help
-          ul.nav.navbar-nav.pull-lg-right
+          ul.nav.navbar-nav.pull-lg-right.pull-md-right.pull-sm-right
             li.nav-item.dropdown.open.dropdown-right
               +avatar
               .dropdown-menu
