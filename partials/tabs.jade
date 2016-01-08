@@ -3,10 +3,13 @@ section.section-tabs
     .container
       h2 4.8 HEADER & MENUS/TABS
     .p-y-3
+      mixin avatar
+        a.nav-link(href="javascript:;")
+          span.icon.icon-arrow-sm-down
+          img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
+
       nav.navbar.ef-navbar.bg-white
-        button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse" data-target="#exCollapsingNavbar1")
-          &#9776;
-        .container.collapse.navbar-toggleable-xs#exCollapsingNavbar1
+        .container.collapse.navbar-toggleable-xs
           a.navbar-brand(href="javascript:;") EF
           ul.nav.navbar-nav
             li.nav-item.dropdown.open
@@ -29,15 +32,13 @@ section.section-tabs
               a.nav-link(href="javascript:;") help
           ul.nav.navbar-nav.pull-lg-right
             li.nav-item.dropdown.open.dropdown-right
-              a.nav-link(href="javascript:;")
-                img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
+              +avatar
+    .p-y-3
     .p-y-3
     .p-y-3
     .p-y-3
       nav.navbar.ef-navbar.bg-white
-        button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse" data-target="#exCollapsingNavbar2")
-          &#9776;
-        .container.collapse.navbar-toggleable-xs#exCollapsingNavbar2
+        .container.collapse.navbar-toggleable-xs
           a.navbar-brand(href="javascript:;") EF
           ul.nav.navbar-nav
             li.nav-item
@@ -50,8 +51,7 @@ section.section-tabs
               a.nav-link(href="javascript:;") help
           ul.nav.navbar-nav.pull-lg-right
             li.nav-item.dropdown.open.dropdown-right
-              a.nav-link(href="javascript:;")
-                img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
+              +avatar
               .dropdown-menu
                 a.dropdown-item(href="javascript:;")
                   i.font-weight-normal.icon.icon-person

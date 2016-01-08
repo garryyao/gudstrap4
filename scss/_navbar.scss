@@ -55,6 +55,12 @@ $navbar-font-size: 12px;
       @include hover-focus {
         color: $navbar-ef-color;
       }
+
+      > .icon {
+        vertical-align: middle;
+        margin: 0 5px;
+        font-size: 1.5em;
+      }
     }
 
     .open > .nav-link,
