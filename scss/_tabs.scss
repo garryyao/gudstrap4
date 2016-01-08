@@ -3,19 +3,21 @@ $ef-nav-color: map_get($primary-colours, BLACK);
 
 .ef-nav {
   @include clearfix();
+  overflow: hidden;
+  max-height: 65px;
 
   .nav-item {
     float: left;
 
     + .nav-item {
-      margin-left: 4rem;
+      margin-left: 3rem;
     }
   }
 
   .nav-link {
     display: block;
-    width: 128px;
-    padding: $ef-nav-link-padding 0;
+    min-width: 128px;
+    padding: $ef-nav-link-padding 1rem;
     border-top: 3px solid transparent;
 
 
@@ -27,7 +29,7 @@ $ef-nav-color: map_get($primary-colours, BLACK);
     text-align: center;
 
 
-    &:hover {
+    @include hover {
       border-top: 3px solid $ef-nav-color;
       opacity: 0.5;
     }
@@ -39,6 +41,40 @@ $ef-nav-color: map_get($primary-colours, BLACK);
       border-top: 3px solid $ef-nav-color;
       opacity: 1;
       cursor: default;
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .ef-nav {
+
+    .nav-item {
+
+      + .nav-item {
+        margin-left: 0.5rem;
+      }
+    }
+    .nav-link {
+      min-width: auto;
+      padding: $ef-nav-link-padding 0.2rem;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .ef-nav {
+    .nav-item {
+
+      + .nav-item {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .ef-nav {
+    .nav-link {
+      min-width: 128px;
+      padding: $ef-nav-link-padding 1rem;
     }
   }
 }
