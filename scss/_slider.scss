@@ -1,0 +1,65 @@
+$baseLineHeight: 15px;
+$trackSize: $baseLineHeight/3;
+
+.slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  &.slider-horizontal {
+    width: 210px;
+    height: $baseLineHeight;
+    .slider-track {
+      height: $baseLineHeight/4;
+      width: 100%;
+      top: calc(50% - #{$trackSize/2});
+      left: 0;
+    }
+    .slider-selection, .slider-track-low, .slider-track-high {
+      height: 100%;
+      top: 0;
+      bottom: 0;
+    }
+
+    .slider-tick,
+    .slider-handle {
+      top: -($baseLineHeight - $trackSize)/2;
+    }
+  }
+  &.slider-disabled {
+    .slider-handle {
+      border-color: $gray-light;
+    }
+  }
+  input {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+.slider-track {
+  position: absolute;
+  cursor: pointer;
+  background-color: $gray-light;
+  border-radius: $baseLineHeight/2;
+}
+
+.slider-selection {
+  position: absolute;
+}
+
+.slider-track-low, .slider-track-high {
+  position: absolute;
+  background: transparent;
+}
+
+.slider-handle {
+  position: absolute;
+  width: $baseLineHeight;
+  height: $baseLineHeight;
+  border-radius: 50%;
+  border: 1px solid $brand-primary;
+  background-color: white;
+}
