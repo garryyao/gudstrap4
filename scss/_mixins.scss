@@ -9,3 +9,9 @@
     font-size: $font-size-xs;
   }
 }
+
+@mixin glyphicon($icon_name) {
+  font-family: 'glyph-dgud';
+  content: $icon_name;
+  @content;
+}

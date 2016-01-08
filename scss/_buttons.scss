@@ -110,8 +110,11 @@ $enable-rounded: true;
   }
 
   &:after {
-    content: '\27f6'; // LONG RIGHTWARDS ARROW
     margin-left: 1rem;
+    @include glyphicon($icon-arrow-long-right) {
+      vertical-align: middle;
+      font-weight: 600;
+    }
   }
 }
 .ef-btn-main {
