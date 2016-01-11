@@ -1,0 +1,76 @@
+.ef-modal {
+
+  .modal-dialog {
+    width: auto;
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .close {
+    display: block;
+    box-sizing: content-box;
+    opacity: 1;
+    font-size: 16px;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    border: 1px solid #CDCDCD;
+    color: #CDCDCD;
+    border-radius: 100%;
+
+    &:after {
+      @include glyphicon($icon-cross);
+    }
+
+    @include hover-focus {
+      outline: none;
+    }
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: 0;
+
+    > .close {
+      position: absolute;
+      z-index: 1;
+      right: 20px;
+      top: 20px;
+    }
+  }
+
+  .modal-body {
+    padding: 30px 60px 20px 30px;
+  }
+
+  .modal-header + .modal-body {
+    padding: 20px 30px;
+  }
+
+  .modal-header {
+    padding: 20px 20px 0 20px;
+    border-bottom: 0;
+  }
+
+  .modal-title {
+    text-transform: none;
+    padding-top: 15px;
+    @include fontstack-serif-notes;
+  }
+
+}
+
+.modal-primary {
+  .modal-content {
+    background-color: black;
+    color: white;
+  }
+}
+
+.modal-error {
+  .modal-content {
+    border-bottom: 2px solid map_get($primary-colours, TOMATITO);
+  }
+}

@@ -118,3 +118,26 @@ html, html a {
 .ef-combo .dropdown-toggle {
   min-width: 200px;
 }
+
+.ef-modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
+
+  .ef-btn-other.pull-left {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+}
+
+table.weekly-schedule {
+  th:first-child {
+    color: map_get($primary-colours, RAIN);
+    width: 100px;
+  }
+}
