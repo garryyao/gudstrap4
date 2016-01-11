@@ -249,6 +249,10 @@ $navbar-font-size: 12px;
           margin-left: 1rem;
         }
 
+        &:hover .nav-link {
+          border-top: 4px solid rgba(0,0,0,0.2);
+        }
+
         &.active .nav-link {
           border-top: 4px solid #000;
         }

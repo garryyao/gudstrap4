@@ -4,7 +4,7 @@ section.section-tabs
       h2 4.8 HEADER & MENUS/TABS
     .p-y-3
       mixin avatar
-        a.nav-link(href="javascript:;")
+        a.nav-link(href="javascript:;", data-toggle="dropdown", data-target="exDropdownMenu2")
           span.icon.icon-arrow-sm-down
           img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
 
@@ -70,7 +70,7 @@ section.section-tabs
             li.nav-item
               a.nav-link(href="javascript:;") help
           ul.nav.navbar-nav.pull-lg-right.pull-md-right.pull-sm-right
-            li.nav-item.dropdown.open.dropdown-right
+            li#exDropdownMenu2.nav-item.dropdown.open.dropdown-right
               +avatar
               .dropdown-menu
                 a.dropdown-item(href="javascript:;")
