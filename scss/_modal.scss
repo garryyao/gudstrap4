@@ -2,10 +2,6 @@
 
   .modal-dialog {
     width: auto;
-    @media (max-width: map-get($grid-breakpoints, sm)) {
-      margin-left: 0;
-      margin-right: 0;
-    }
   }
 
   .close {
@@ -32,6 +28,7 @@
   .modal-content {
     border-radius: 0;
     border: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 
     > .close {
       position: absolute;
@@ -60,6 +57,37 @@
     @include fontstack-serif-notes;
   }
 
+  // Scale down the modal to xs
+  @include media-breakpoint-down(sm) {
+    .close {
+      font-size: 12px;
+    }
+
+    .modal-dialog {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .modal-content {
+      box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+      > .close {
+        right: 15px;
+        top: 15px;
+      }
+    }
+
+    .modal-header {
+      padding: 15px 15px 0 15px;
+    }
+
+    .modal-body {
+      padding: 25px 40px 10px 15px;
+    }
+
+    .modal-header + .modal-body {
+      padding: 15px;
+    }
+  }
 }
 
 .modal-primary {
