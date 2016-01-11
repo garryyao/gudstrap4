@@ -1,4 +1,5 @@
 .ef-card, .ef-card-course {
+
   @include hover-focus {
     cursor: pointer;
 
@@ -75,6 +76,10 @@
       @include hover-focus {
         text-decoration: none;
       }
+      &.selected:after {
+        content: 'x';
+        margin-left: 1rem;
+      }
     }
   }
 }
@@ -122,6 +127,40 @@
       .ef-card-link a {
         color: map-get($primary-colours, WHITE);
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .ef-card, .ef-card-course {
+    margin: 1rem auto;
+    max-width: 308px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .ef-card, .ef-card-course {
+    margin: 1rem auto;
+    max-width:inherit;
+
+    h1 {
+      font-size: 26px;
+    }
+    h2 {
+      font-size: 21px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .ef-card, .ef-card-course {
+    max-width: 308px;
+
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 30px;
     }
   }
 }

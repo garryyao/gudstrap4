@@ -24,25 +24,25 @@
       h2: 'TOEIC'
     }
   };
+  var card_types = [
+    'GE REGULAR',
+    'BUSINESS & STT',
+    'INDUSTRY'
+  ];
   var block_text = 'This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.';
 section.section-cards
     .bg-warm-paper.p-y-3
       .container
           h2 4.4 CONTENT CARDS VARIATIONS & teacher cards
           .p-y-2
-          .row.example-content-cards
-            .col-md-4
-              p GE REGULAR
-            .col-md-4
-              p BUSINESS & STT
-            .col-md-4
-              p INDUSTRY
           - n = 0
           while n < 2
             .row(class=n++)
               each val, index in [0 + 3*(n-1), 1 + 3*(n-1), 2 + 3*(n-1)]
                 if val < 5
                   .col-md-4
+                    .example-content-cards
+                      p #{card_types[(val%2)]}
                     .card.card-inverse.ef-card
                       img.card-img-top(src="",style="background-image:url(" + cards[val].image + ")", alt="")
                       .card-img-overlay
@@ -54,13 +54,6 @@ section.section-cards
                         .ef-card-link
                           a(href="javascript:;") #{cards[val].link}
           .p-y-2
-          .row.example-content-cards
-            .col-md-4
-              p unCompleted course Normal/Hover
-            .col-md-4
-              p Completed course Normal/Hover
-            .col-md-4
-              p CURRENT course Normal/Hover
           .row
             -
               courses = {
@@ -76,8 +69,20 @@ section.section-cards
                   current: true
                 }
               };
-            mixin course_card(selected, course)
+              card_normal_types = [
+                'unCompleted course Normal/Hover',
+                'Completed course Normal/Hover',
+                'CURRENT course Normal/Hover'
+              ];
+              card_selected_types = [
+                'unCompleted course Selected/Hover',
+                'Completed course Selected/Hover',
+                'CURRENT course Selected/Hover'
+              ];
+            mixin course_card(card_type, selected, course)
               .col-md-4
+                .example-content-cards
+                  p #{card_type}
                 .card.card-inverse.ef-card-course(class=course.name+' '+selected)
                   img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
                   if course.checked
@@ -90,21 +95,13 @@ section.section-cards
                     h2.card-text.font-weight-lighter Beginner
                   .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
                   .ef-card-link
-                    a(href="javascript:;")
-                      if selected
-                        | close x
-                      else
-                        | learn more
+                    if selected
+                      a.selected(href="javascript:;") close
+                    else
+                      a(href="javascript:;") learn more
             each val, index in [0,1,2]
-              +course_card('', courses[val])
+              +course_card(card_normal_types[index], '', courses[val])
           .p-y-2
-          .row.example-content-cards
-            .col-md-4
-              p unCompleted course  Selected/Hover
-            .col-md-4
-              p Completed course  Selected/Hover
-            .col-md-4
-              p CURRENT course  Selected/Hover
           .row
             each val, index in [0,1,2]
-              +course_card('card-selected', courses[val])
+              +course_card(card_selected_types[index], 'card-selected', courses[val])
