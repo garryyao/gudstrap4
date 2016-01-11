@@ -1,3 +1,11 @@
 .font-weight-lighter {
   font-weight: 200;
 }
+
+$font-scales: (30, 50, 90, 100, 120, 150, 200, 300);
+@each $size in $font-scales {
+
+  .font-size-#{$size} {
+    font-size: #{$size}%;
+  }
+}
