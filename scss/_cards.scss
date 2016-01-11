@@ -6,7 +6,7 @@
     .card-img-overlay {
       background: rgba(0,0,0,0.6);
       h2::after {
-        content:'\27F6';
+        @include glyphicon($icon-arrow-long-right);
         margin-left: 1rem;
       }
     }
