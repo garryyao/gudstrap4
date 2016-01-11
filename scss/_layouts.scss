@@ -1,0 +1,9 @@
+.ef-layout-blocks {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 1em;
+
+  .media {
+    display: table-row;
+  }
+}

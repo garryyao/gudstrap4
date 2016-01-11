@@ -84,6 +84,12 @@ html, html a {
   background-color: #CDCDCD;
 }
 
+.ef-btn-other.pull-left {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+
 .section-button .col {
   padding: 0;
 }
@@ -127,12 +133,6 @@ html, html a {
   left: auto;
   z-index: 1;
   display: block;
-
-  .ef-btn-other.pull-left {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: left;
-  }
 }
 
 table.weekly-schedule {
