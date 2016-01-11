@@ -5,7 +5,7 @@
     .card-img-overlay {
       background: rgba(0,0,0,0.6);
       h2::after {
-        content:'->';
+        content:'\27F6';
         margin-left: 1rem;
       }
     }
@@ -44,12 +44,17 @@
     font-family: "HelveticaNeue";
   }
   h1 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
   }
   h2 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    text-transform: none;
   }
   .card-block {
     font-family: "HelveticaNeue";
