@@ -1,0 +1,9 @@
+.ef-table {
+  border-collapse: separate;
+  border-spacing: 1em;
+
+  & > tbody > tr > th {
+    @include fontstack-serif-notes;
+    font-weight: 400;
+  }
+}
