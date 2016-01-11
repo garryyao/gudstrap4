@@ -34,14 +34,15 @@ $navbar-font-size: 12px;
         border-bottom: 4px solid transparent;
       }
 
-      &:hover .nav-link {
-        border-top: 4px solid rgba(0,0,0,0.2);
+      @include hover {
+        .nav-link {
+          border-top: 4px solid rgba(0,0,0,0.2);
+        }
       }
     }
     .nav-item.active {
       .nav-link {
         border-top: 4px solid $navbar-ef-color;
-        cursor: default;
       }
     }
     .nav-link {
@@ -89,6 +90,7 @@ $navbar-font-size: 12px;
         opacity: 0.8;
         height: 50px;
         line-height: 50px;
+        background: #fff;
 
         &:after {
           content: '\27f6';
@@ -100,7 +102,6 @@ $navbar-font-size: 12px;
 
         @include hover {
           opacity: 1;
-          background: transparent;
 
           &:after {
             visibility: visible;
@@ -154,14 +155,55 @@ $navbar-font-size: 12px;
   }
 }
 
+
 @include media-breakpoint-up(xs) {
   .ef-navbar {
     .navbar-brand {
       display: none;
     }
+
+    // set center menu and dropdown menu for xs-menu
+    .navbar-nav {
+      display: block;
+      height: auto;
+
+      .nav-item {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        border-bottom: 2px solid #000;
+
+        &.active .nav-link,
+        &:hover .nav-link {
+          border-top: 4px solid transparent;
+        }
+
+        .nav-link {
+          line-height: 40px;
+          height: auto;
+        }
+
+        .dropdown-menu {
+          position: static;
+          padding: 0;
+          width: 100%;
+          border-top-width: 1px;
+
+          .dropdown-item {
+            padding: 0 8px;
+          }
+        }
+      }
+    }
+
+    // hidden userinfo dropdown menu on right
     .navbar-nav:last-child {
       display: none;
     }
+
+    // set userinfo dropdown menu style for xs-menu
     .navbar-toggler {
       padding: 0 0.75rem;
       height: 40px;
@@ -190,5 +232,50 @@ $navbar-font-size: 12px;
       display: block;
     }
 
+    // set center menu and dropdown menu for sm-menu
+    .navbar-nav {
+      display: inline-block;
+      height: 65px;
+
+      .nav-item {
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+
+        & + .nav-item {
+          margin-left: 1rem;
+        }
+
+        &.active .nav-link {
+          border-top: 4px solid #000;
+        }
+
+        .nav-link {
+          line-height: 65px;
+          height: 65px;
+        }
+
+        .dropdown-menu {
+          position: absolute;
+          padding: 0 2rem;
+          width: auto;
+          border-top-width: 2px;
+
+          .dropdown-item {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .pull-lg-right {
+      .nav-item {
+        .nav-link {
+          line-height: 57px;
+        }
+      }
+    }
   }
 }
