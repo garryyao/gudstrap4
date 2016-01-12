@@ -37,65 +37,70 @@ section.section-tabs
           ul.nav.navbar-nav.pull-lg-right.pull-md-right.pull-sm-right
             li.nav-item.dropdown.open.dropdown-right
               +avatar
-    .p-y-3
-    .p-y-3
-    .p-y-3
-    .p-y-3
-      nav.navbar.ef-navbar.bg-white
-        button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse", data-target="#exCollapsingNavbar2")
-          &#9776;
-        button.navbar-toggler.pull-xs-right.hidden-sm-up.navbar-toggler-avatar.dropdown.open
-          +avatar
-          .dropdown-menu
-            a.dropdown-item(href="javascript:;")
-              i.font-weight-normal.icon.icon-person
-              | YOUR PROFILE
-            .dropdown-divider
-            a.dropdown-item(href="javascript:;")
-              i.font-weight-normal.icon.icon-settings
-              | ACCOUNT SETTINGS
-            .dropdown-divider
-            a.dropdown-item(href="javascript:;")
-              i.font-weight-normal.icon.icon-logout
-              | LOGOUT
-        #exCollapsingNavbar2.container.collapse.navbar-toggleable-xs
-          a.navbar-brand(href="javascript:;") EF
-          ul.nav.navbar-nav
-            li.nav-item
-              a.nav-link(href="javascript:;") course
-            li.nav-item.active
-              a.nav-link(href="javascript:;") CLASSES
-            li.nav-item
-              a.nav-link(href="javascript:;") ADMIN
-            li.nav-item
-              a.nav-link(href="javascript:;") help
-          ul.nav.navbar-nav.pull-lg-right.pull-md-right.pull-sm-right
-            li#exDropdownMenu2.nav-item.dropdown.open.dropdown-right
+.p-y-3
+.p-y-3
+.p-y-3
+.p-y-3
+  nav.navbar.ef-navbar.bg-white
+    button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse", data-target="#exCollapsingNavbar2")
+    &#9776;
+  button.navbar-toggler.pull-xs-right.hidden-sm-up.navbar-toggler-avatar.dropdown.open
+    +avatar
+    .dropdown-menu
+      a.dropdown-item(href="javascript:;")
+        i.font-weight-normal.icon.icon-person
+        | YOUR PROFILE
+      .dropdown-divider
+      a.dropdown-item(href="javascript:;")
+        i.font-weight-normal.icon.icon-settings
+        | ACCOUNT SETTINGS
+      .dropdown-divider
+      a.dropdown-item(href="javascript:;")
+        i.font-weight-normal.icon.icon-logout
+        | LOGOUT
+  #exCollapsingNavbar2.container.collapse.navbar-toggleable-xs
+    a.navbar-brand(href="javascript:;") EF
+    ul.nav.navbar-nav
+      li.nav-item
+        a.nav-link(href="javascript:;") course
+      li.nav-item.active
+        a.nav-link(href="javascript:;") CLASSES
+      li.nav-item
+        a.nav-link(href="javascript:;") ADMIN
+      li.nav-item
+        a.nav-link(href="javascript:;") help
+    ul.nav.navbar-nav.pull-lg-right.pull-md-right.pull-sm-right
+      li#exDropdownMenu2.nav-item.dropdown.open.dropdown-right
               +avatar
-              .dropdown-menu
-                a.dropdown-item(href="javascript:;")
-                  i.font-weight-normal.icon.icon-person
-                  | YOUR PROFILE
-                .dropdown-divider
-                a.dropdown-item(href="javascript:;")
-                  i.font-weight-normal.icon.icon-settings
-                  | ACCOUNT SETTINGS
-                .dropdown-divider
-                a.dropdown-item(href="javascript:;")
-                  i.font-weight-normal.icon.icon-logout
-                  | LOGOUT
+        .dropdown-menu
+          a.dropdown-item(href="javascript:;")
+            i.font-weight-normal.icon.icon-person
+            | YOUR PROFILE
+          .dropdown-divider
+          a.dropdown-item(href="javascript:;")
+            i.font-weight-normal.icon.icon-settings
+            | ACCOUNT SETTINGS
+          .dropdown-divider
+          a.dropdown-item(href="javascript:;")
+            i.font-weight-normal.icon.icon-logout
+            | LOGOUT
     .p-y-3
     .p-y-3
     .p-y-3
       .container.text-md-center
         ul.nav.ef-nav
           li.nav-item
-            a.nav-link.active(href="javascript:;") GENERAL ENGLISH
+            a.nav-link.active(href="javascript:;", data-toggle="tab") GENERAL ENGLISH
           li.nav-item
-            a.nav-link(href="javascript:;") BUSINESS
+            a.nav-link(href="javascript:;", data-toggle="tab") BUSINESS
           li.nav-item
-            a.nav-link(href="javascript:;") INDUSTRY
-          li.nav-item
-            a.nav-link(href="javascript:;") TRAVEL
-          li.nav-item
-            a.nav-link(href="javascript:;") TOEFL/TOEIC PREPARATION
+            a.nav-link(href="javascript:;", data-toggle="tab") INDUSTRY
+          li.nav-item.hidden-xs-down
+            a.nav-link(href="javascript:;", data-toggle="tab") TRAVEL
+          li.nav-item.hidden-sm-down
+            a.nav-link(href="javascript:;", data-toggle="tab") TOEFL/TOEIC PREPARATION
+
+      script.
+        $(function() {
+          $(".ef-nav a").tab();
+        });
