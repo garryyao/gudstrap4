@@ -1,0 +1,78 @@
+section.section-tabs
+    .bg-warm-eggshell.p-y-3
+        .container
+            h2 4.8 HEADER & MENUS/TABS
+        .p-y-3
+            mixin avatar
+                a.nav-link(href="javascript:;", data-toggle="dropdown")
+                    span.icon.icon-arrow-sm-down
+                    img.user-picture.user-picture-small.img-circle(src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg")
+
+            mixin user_dropdown
+                .dropdown-menu
+                    a.dropdown-item(href="javascript:;")
+                        i.font-weight-normal.icon.icon-person
+                        | YOUR PROFILE
+                    .dropdown-divider
+                    a.dropdown-item(href="javascript:;")
+                        i.font-weight-normal.icon.icon-settings
+                        | ACCOUNT SETTINGS
+                    .dropdown-divider
+                    a.dropdown-item(href="javascript:;")
+                        i.font-weight-normal.icon.icon-logout
+                        | LOGOUT
+
+            nav.navbar.ef-navbar.bg-white
+                button.navbar-toggler.hidden-sm-up(type="button", data-toggle="collapse", data-target="#main-nav")
+                    | &#9776;
+
+                button.navbar-toggler.pull-xs-right.hidden-sm-up.navbar-toggler-avatar.dropdown
+                    +avatar
+                    +user_dropdown
+
+                #main-nav.container.collapse.navbar-toggleable-xs
+                    a.navbar-brand(href="javascript:;") EF
+                    ul.nav.navbar-nav
+                        li#exDropdownMenu.nav-item.dropdown.open
+                            a.nav-link(href="javascript:;", data-toggle="dropdown", data-target="#exDropdownMenu") course
+                            .dropdown-menu
+                                a.dropdown-item(href="javascript:;") CURRENT COURSE
+                                .dropdown-divider
+                                a.dropdown-item(href="javascript:;") PROGRESS
+                                .dropdown-divider
+                                a.dropdown-item(href="javascript:;") ASSESSMENT TEST
+                                .dropdown-divider
+                                a.dropdown-item(href="javascript:;") CHANGE COURSE
+                                .dropdown-divider
+                                a.dropdown-item(href="javascript:;") APPS & TOOLS
+                        li.nav-item.active
+                            a.nav-link(href="javascript:;") CLASSES
+                        li.nav-item
+                            a.nav-link(href="javascript:;") ADMIN
+                        li.nav-item
+                            a.nav-link(href="javascript:;") help
+                    ul.nav.navbar-nav.pull-lg-right.pull-md-right.pull-sm-right.hidden-xs-down
+                        li.nav-item.dropdown.open.dropdown-right
+                            +avatar
+                            +user_dropdown
+        .p-y-3
+        .p-y-3.hidden-xs-down
+        .p-y-3.hidden-xs-down
+
+    .container.text-md-center
+        ul.nav.ef-nav
+            li.nav-item
+                a.nav-link.active(href="javascript:;", data-toggle="tab") GENERAL ENGLISH
+            li.nav-item
+                a.nav-link(href="javascript:;", data-toggle="tab") BUSINESS
+            li.nav-item
+                a.nav-link(href="javascript:;", data-toggle="tab") INDUSTRY
+            li.nav-item.hidden-xs-down
+                a.nav-link(href="javascript:;", data-toggle="tab") TRAVEL
+            li.nav-item.hidden-sm-down
+                a.nav-link(href="javascript:;", data-toggle="tab") TOEFL/TOEIC PREPARATION
+
+    script.
+        $(function() {
+            $(".ef-nav a").tab();
+        });

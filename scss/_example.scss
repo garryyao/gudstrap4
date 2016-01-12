@@ -69,7 +69,6 @@ html, html a {
   }
 }
 
-
 .section-alert {
   .alert {
     margin-bottom: 2.5rem;
@@ -139,5 +138,14 @@ table.weekly-schedule {
   th:first-child {
     color: map_get($primary-colours, RAIN);
     width: 100px;
+  }
+}
+
+.ef-nav {
+  max-width: 700px;
+  margin: auto;
+
+  .nav-link {
+    max-width: 130px;
   }
 }

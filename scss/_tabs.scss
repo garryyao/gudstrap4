@@ -1,0 +1,80 @@
+$ef-nav-link-padding: 1.3rem;
+$ef-nav-color: map_get($primary-colours, BLACK);
+
+.ef-nav {
+  @include clearfix();
+  overflow: hidden;
+  max-height: 65px;
+  display: flex;
+  flex-direction: row;
+
+  .nav-item {
+    // to equally spreads each tab across container
+    flex-grow: 1;
+    float: left;
+  }
+
+  .nav-link {
+    display: block;
+    min-width: 128px;
+    padding: $ef-nav-link-padding 1rem;
+    border-top: 3px solid transparent;
+
+
+    color: $ef-nav-color;
+    opacity: 0.5;
+    font-size: 12px;
+    font-family: HelveticaNeue;
+    text-transform: uppercase;
+    text-align: center;
+
+
+    @include hover {
+      border-top: 3px solid $ef-nav-color;
+      opacity: 0.5;
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.open .nav-link {
+    @include plain-hover-focus {
+      border-top: 3px solid $ef-nav-color;
+      opacity: 1;
+      cursor: default;
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .ef-nav {
+
+    .nav-item {
+
+      + .nav-item {
+        margin-left: 0.5rem;
+      }
+    }
+    .nav-link {
+      min-width: auto;
+      padding: $ef-nav-link-padding 0.2rem;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .ef-nav {
+    .nav-item {
+
+      + .nav-item {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .ef-nav {
+    .nav-link {
+      min-width: 128px;
+      padding: $ef-nav-link-padding 1rem;
+    }
+  }
+}
