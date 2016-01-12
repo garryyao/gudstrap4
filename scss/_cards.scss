@@ -7,7 +7,9 @@
       .card-img-overlay {
         background: rgba(0,0,0,0.6);
         h2::after {
-          @include glyphicon($icon-arrow-long-right);
+          font-family: 'glyph-dgud';
+          // use preceding zero width space for line-break
+          content: '\200b\2192';
           position: absolute;
           margin-top: -4px;
           margin-left: 1rem;
@@ -18,19 +20,6 @@
   &.card-selected {
     .card-img-overlay {
       background: rgba(0,0,0,0.6);
-    }
-    @include hover {
-
-      .card-img-overlay {
-        background: rgba(0, 0, 0, 0.6);
-        h2::after {
-          font-family: 'glyph-dgud';
-          // use preceding zero width space for line-break
-          content: '\200b\2192';
-          margin-left: 1rem;
-          vertical-align: middle;
-        }
-      }
     }
   }
 
