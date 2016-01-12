@@ -5,6 +5,23 @@
       cursor: pointer;
 
       .card-img-overlay {
+        background: rgba(0,0,0,0.6);
+        h2::after {
+          @include glyphicon($icon-arrow-long-right);
+          position: absolute;
+          margin-top: -4px;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  &.card-selected {
+    .card-img-overlay {
+      background: rgba(0,0,0,0.6);
+    }
+    @include hover {
+
+      .card-img-overlay {
         background: rgba(0, 0, 0, 0.6);
         h2::after {
           font-family: 'glyph-dgud';
@@ -34,9 +51,6 @@
       color: #fff;
     }
   }
-  h1,h2 {
-    font-family: "HelveticaNeue";
-  }
   h1 {
     font-size: 35px;
     font-weight: 400;
@@ -46,12 +60,10 @@
   h2 {
     font-size: 30px;
     font-weight: 300;
-    line-height: 1.2;
     margin: 0;
     text-transform: none;
   }
   .card-block {
-    font-family: "HelveticaNeue";
     font-size: 13px;
     font-weight: 400;
     height: 172px;
@@ -63,7 +75,6 @@
 
     a {
       text-transform: uppercase;
-      font-family: "HelveticaNeue";
       font-size: 12px;
       font-weight: 500;
       @include hover-focus {
