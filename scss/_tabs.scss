@@ -5,13 +5,13 @@ $ef-nav-color: map_get($primary-colours, BLACK);
   @include clearfix();
   overflow: hidden;
   max-height: 65px;
+  display: flex;
+  flex-direction: row;
 
   .nav-item {
+    // to equally spreads each tab across container
+    flex-grow: 1;
     float: left;
-
-    + .nav-item {
-      margin-left: 3rem;
-    }
   }
 
   .nav-link {
