@@ -19,6 +19,12 @@ $navbar-font-size: 12px;
     @include hover-focus {
       color: $navbar-ef-color;
     }
+
+    .icon {
+      font-size: 48px;
+      line-height: inherit;
+      margin-top: 5px;
+    }
   }
 
   .navbar-nav {

@@ -4,9 +4,13 @@ html, html a {
 
 .header {
   text-align: center;
+  font-size: $font-size-h1;
 
-  span {
-    font-size: 46px;
+  .icon {
+    font-size: 130%;
+    vertical-align: middle;
+    margin-top: -8px;
+    margin-right: .2em;
   }
 }
 
