@@ -44,11 +44,11 @@ section.section-cards
                     .example-content-cards
                       p #{card_types[(val%2)]}
                     .card.card-inverse.ef-card
-                      img.card-img-top(src="",style="background-image:url(" + cards[val].image + ")", alt="")
-                      .card-img-overlay
-                        if cards[val].h1
-                          h1.card-text.font-weight-medium #{cards[val].h1}
-                        h2.card-text.font-weight-lighter #{cards[val].h2}
+                      .card-img-top(style="background-image:url('" + cards[val].image + "')")
+                        .card-img-overlay
+                          if cards[val].h1
+                            h1.card-text.font-weight-medium #{cards[val].h1}
+                          h2.card-text.font-weight-lighter #{cards[val].h2}
                       .card-block #{block_text}
                       if cards[val].link
                         .ef-card-link
@@ -84,15 +84,15 @@ section.section-cards
                 .example-content-cards
                   p #{card_type}
                 .card.card-inverse.ef-card-course(class=course.name+' '+selected)
-                  img.card-img-top(src="",style="background-image:url('images/toeic.png')", alt="")
-                  if course.checked
-                    .card-course-status
-                      img(src="images/checked.png", alt="")
-                  else if course.current
-                    .card-course-status Your currrent course
-                  .card-img-overlay
-                    h1.card-text.font-weight-medium 01
-                    h2.card-text.font-weight-lighter Beginner
+                  .card-img-top(style="background-image:url('images/toeic.png')")
+                    if course.checked
+                      .card-course-status
+                        img(src="images/checked.png", alt="")
+                    else if course.current
+                      .card-course-status Your currrent course
+                    .card-img-overlay
+                      h1.card-text.font-weight-medium 01
+                      h2.card-text.font-weight-lighter Beginner
                   .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
                   .ef-card-link
                     if selected
