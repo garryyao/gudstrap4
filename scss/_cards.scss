@@ -1,0 +1,162 @@
+.ef-card, .ef-card-course {
+
+  &:not(.card-selected) {
+    @include hover-focus {
+      cursor: pointer;
+
+      .card-img-overlay {
+        background: rgba(0,0,0,0.6);
+        h2::after {
+          font-family: 'glyph-dgud';
+          // use preceding zero width space for line-break
+          content: '\200b\2192';
+          vertical-align: middle;
+          font-size: .8em;
+          margin-top: -4px;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  &.card-selected {
+    .card-img-overlay {
+      background: rgba(0,0,0,0.6);
+    }
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 172px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card-img-overlay {
+    width: 100%;
+    height: 100%;
+    position: static;
+    background: rgba(0,0,0,0.4);
+  }
+  &.card-inverse {
+    .card-text {
+      color: #fff;
+    }
+  }
+  h1 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+    text-transform: none;
+  }
+  .card-block {
+    font-size: 13px;
+    font-weight: 400;
+    height: 172px;
+  }
+  .ef-card-link {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+
+    a {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 500;
+      @include hover-focus {
+        text-decoration: none;
+      }
+      &.selected:after {
+        content: 'x';
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+.ef-card-course {
+  .ef-card-link a {
+    display: none;
+  }
+  @include hover-focus {
+    .ef-card-link a {
+      display: block;
+    }
+  }
+  &.ef-completed-course,
+  &.ef-current-course {
+    .card-course-status {
+      position: absolute;
+      right: 1.5rem;
+      top: 1rem;
+      z-index: 2;
+    }
+  }
+  &.ef-completed-course {
+    .card-course-status {
+      right: 2rem;
+      top: 1.5rem;
+
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  &.ef-current-course {
+    .card-course-status{
+      color: map-get($primary-colours, WHITE);
+      font-family: Georgia;
+      font-size: 14px;
+      font-style: italic;
+    }
+    .card-block {
+      background-color: map-get($primary-colours, BLUE);
+      color: map-get($primary-colours, WHITE);
+    }
+    @include hover-focus {
+      .ef-card-link a {
+        color: map-get($primary-colours, WHITE);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .ef-card, .ef-card-course {
+    margin: 1rem auto;
+    max-width: 308px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .ef-card, .ef-card-course {
+    margin: 1rem auto;
+    max-width:inherit;
+
+    h1 {
+      font-size: 26px;
+    }
+    h2 {
+      font-size: 21px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .ef-card, .ef-card-course {
+    max-width: 308px;
+
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+-
+  var cards = {
+    0: {
+      image: 'images/06elementary.png',
+      h1: '06',
+      h2: 'Elementary'
+    },
+    1: {
+      image: 'images/negotiation.png',
+      h2: 'Negotiations'
+    },
+    2: {
+      image: 'images/mitarbeiterf-hrung-und.png',
+      h2: 'Mitarbeiterführung Und Managment asdasdasdasdasda',
+      link: 'learn more'
+    },
+    3: {
+      image: 'images/upper-advanced.png',
+      h1: '16',
+      h2: 'Upper Advanced'
+    },
+    4: {
+      image: 'images/toeic.png',
+      h2: 'TOEIC'
+    }
+  };
+  var card_types = [
+    'GE REGULAR',
+    'BUSINESS & STT',
+    'INDUSTRY'
+  ];
+  var block_text = 'This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.';
+section.section-cards
+    .bg-warm-paper.p-y-3
+      .container
+          h2 4.4 CONTENT CARDS VARIATIONS & teacher cards
+          .p-y-2
+          - n = 0
+          while n < 2
+            .row(class=n++)
+              each val, index in [0 + 3*(n-1), 1 + 3*(n-1), 2 + 3*(n-1)]
+                if val < 5
+                  .col-md-4
+                    .example-content-cards
+                      p #{card_types[(val%2)]}
+                    .card.card-inverse.ef-card
+                      .card-img-top(style="background-image:url('" + cards[val].image + "')")
+                        .card-img-overlay
+                          if cards[val].h1
+                            h1.card-text.font-weight-medium #{cards[val].h1}
+                          h2.card-text.font-weight-lighter #{cards[val].h2}
+                      .card-block #{block_text}
+                      if cards[val].link
+                        .ef-card-link
+                          a(href="javascript:;") #{cards[val].link}
+          .p-y-2
+          .row
+            -
+              courses = {
+                0: {
+                  name: 'ef-uncompleted-course'
+                },
+                1: {
+                  name: 'ef-completed-course',
+                  checked: true
+                },
+                2: {
+                  name: 'ef-current-course',
+                  current: true
+                }
+              };
+              card_normal_types = [
+                'unCompleted course Normal/Hover',
+                'Completed course Normal/Hover',
+                'CURRENT course Normal/Hover'
+              ];
+              card_selected_types = [
+                'unCompleted course Selected/Hover',
+                'Completed course Selected/Hover',
+                'CURRENT course Selected/Hover'
+              ];
+            mixin course_card(card_type, selected, course)
+              .col-md-4
+                .example-content-cards
+                  p #{card_type}
+                .card.card-inverse.ef-card-course(class=course.name+' '+selected)
+                  .card-img-top(style="background-image:url('images/toeic.png')")
+                    if course.checked
+                      .card-course-status
+                        img(src="images/checked.png", alt="")
+                    else if course.current
+                      .card-course-status Your currrent course
+                    .card-img-overlay
+                      h1.card-text.font-weight-medium 01
+                      h2.card-text.font-weight-lighter Beginner
+                  .card-block This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.
+                  .ef-card-link
+                    if selected
+                      a.selected(href="javascript:;") close
+                    else
+                      a(href="javascript:;") learn more
+            each val, index in [0,1,2]
+              +course_card(card_normal_types[index], '', courses[val])
+          .p-y-2
+          .row
+            each val, index in [0,1,2]
+              +course_card(card_selected_types[index], 'card-selected', courses[val])
