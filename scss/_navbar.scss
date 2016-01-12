@@ -8,7 +8,6 @@ $navbar-font-size: 12px;
 
   .container {
     text-align: center;
-    height: 65px;
   }
 
   .navbar-brand {
@@ -196,11 +195,6 @@ $navbar-font-size: 12px;
           }
         }
       }
-    }
-
-    // hidden userinfo dropdown menu on right
-    .navbar-nav:last-child {
-      display: none;
     }
 
     // set userinfo dropdown menu style for xs-menu
