@@ -1,29 +1,22 @@
 .ef-card, .ef-card-course {
 
-  @include hover-focus {
-    cursor: pointer;
-
-    .card-img-overlay {
-      background: rgba(0,0,0,0.6);
-      h2::after {
-        @include glyphicon($icon-arrow-long-right);
-        margin-left: 1rem;
-      }
-    }
-  }
-  &.card-selected {
-    .card-img-overlay {
-      background: rgba(0,0,0,0.6);
-    }
-    @include hover {
+  &:not(.card-selected) {
+    @include hover-focus {
+      cursor: pointer;
 
       .card-img-overlay {
+        background: rgba(0, 0, 0, 0.6);
         h2::after {
-          content: "";
+          font-family: 'glyph-dgud';
+          // use preceding zero width space for line-break
+          content: '\200b\2192';
+          margin-left: 1rem;
+          vertical-align: middle;
         }
       }
     }
   }
+
   .card-img-top {
     width: 100%;
     height: 172px;
