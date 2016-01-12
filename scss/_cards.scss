@@ -10,7 +10,8 @@
           font-family: 'glyph-dgud';
           // use preceding zero width space for line-break
           content: '\200b\2192';
-          position: absolute;
+          vertical-align: middle;
+          font-size: .8em;
           margin-top: -4px;
           margin-left: 1rem;
         }
