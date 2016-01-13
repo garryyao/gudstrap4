@@ -2,7 +2,7 @@
   font-weight: 200;
 }
 
-$font-scales: (30, 50, 90, 100, 120, 150, 200, 300);
+$font-scales: (30, 50, 80, 90, 100, 120, 150, 180, 200, 300, 400);
 @each $size in $font-scales {
 
   .font-size-#{$size} {

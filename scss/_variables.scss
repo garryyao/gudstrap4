@@ -46,15 +46,22 @@ $grayscale-colours: (
         GRAY-DARK: #666666,
         GRAY: #55595c,
         GRAY-LIGHT: #818a91,
-        GRAY-LIGHTER: #eceeef,
-        GRAY-LIGHTEST: #f7f7f9,
+        GRAY-LIGHTER: #cccccc,
+        GRAY-LIGHTEST: #dddddd,
 );
 
+$body-bg: #fff !default;
+$body-color: #000 !default;
 $brand-primary: map-get($primary-colours, BLUE) !default;
 $brand-success: map-get($primary-colours, GREEN-PEA) !default;
 $brand-info: map-get($extended-colours, MATTE-GOLD) !default;
 $brand-warning: map-get($extended-colours, TANGERINE) !default;
 $brand-danger: map-get($primary-colours, TOMATITO) !default;
+$gray-dark: map-get($grayscale-colours, GRAY-DARK) !default;
+$gray: map-get($grayscale-colours, GRAY) !default;
+$gray-light: map-get($grayscale-colours, GRAY-LIGHT) !default;
+$gray-lighter: map-get($grayscale-colours, GRAY-LIGHTER) !default;
+$gray-lightest: map-get($grayscale-colours, GRAY-LIGHTEST) !default;
 
 $pagination-color: black !default;
 $pagination-bg: transparent !default;
