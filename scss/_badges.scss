@@ -1,0 +1,18 @@
+.ef-badge-completed {
+  display: inline-block;
+  text-align: center;
+  background-color: $brand-success;
+  border-radius: 51%;
+  color: white;
+  width: 1.6em;
+  height: 1.6em;
+  padding: 0;
+  line-height: 1.6em;
+  font-size: 14px;
+
+  &:after {
+    display: block;
+    margin-top: 1px;
+    @include glyphicon($icon-check);
+  }
+}
