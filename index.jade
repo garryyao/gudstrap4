@@ -20,7 +20,7 @@ html(lang="en")
         script(src="index.js")
         script.
           $(document).on('mq4hsChange', function (e) {
-            $(document.documentElement).toggleClass('mq4-hover-shim', e.trueHover);
+              $(document.documentElement).toggleClass('hover', e.trueHover);
           });
         script(src="js/mq4-hover-shim.js")
 

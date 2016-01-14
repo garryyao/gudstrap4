@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         processors: [
             require('pixrem')(),
             require('./node_modules/mq4-hover-shim/src/nodejs/postprocessor')({
-              "hoverSelectorPrefix": ".mq4-hover-shim "
+              "hoverSelectorPrefix": "html.hover "
             }),
             require('autoprefixer')({
               browsers: ['last 1 version'],
