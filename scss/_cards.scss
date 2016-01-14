@@ -80,6 +80,10 @@
   }
 }
 .ef-card-course {
+  @include hover {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  }
+
   .ef-card-link a {
     display: none;
   }
