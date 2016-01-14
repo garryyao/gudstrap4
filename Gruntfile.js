@@ -19,6 +19,9 @@ module.exports = function(grunt) {
         map: true,
         processors: [
             require('pixrem')(),
+            require('./node_modules/mq4-hover-shim/src/nodejs/postprocessor')({
+              "hoverSelectorPrefix": "html.hover "
+            }),
             require('autoprefixer')({
               browsers: ['last 1 version'],
             }),
