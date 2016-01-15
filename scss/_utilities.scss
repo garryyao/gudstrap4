@@ -8,3 +8,13 @@
     font-size: percentage($size / (no-units($font-size-root)));
   }
 }
+
+/* This is to establish space between wrapped columns in a grid row */
+.col-spacer {
+  display: table;
+  clear: both;
+  width: 100%;
+  height: auto !important;
+  min-height: inherit !important;
+  line-height: normal !important;
+}
