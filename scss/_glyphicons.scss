@@ -9,17 +9,19 @@
   font-style: normal;
 }
 
-$icon-ef-logo: "\e900";
-$icon-cross: "\78";
-$icon-check: "\2714";
-$icon-arrow-thin-right: "\232a";
-$icon-arrow-thin-left: "\2329";
-$icon-arrow-sm-up: "\2303";
-$icon-arrow-sm-down: "\25be";
-$icon-arrow-long-up: "\2191";
-$icon-arrow-long-right: "\2192";
-$icon-arrow-long-left: "\2190";
 $icon-arrow-long-down: "\2193";
+$icon-arrow-long-left: "\2190";
+$icon-arrow-long-right: "\2192";
+$icon-arrow-long-up: "\2191";
+$icon-arrow-sm-down: "\25be";
+$icon-arrow-sm-up: "\2303";
+$icon-arrow-thin-left: "\2329";
+$icon-arrow-thin-right: "\232a";
+$icon-check: "\2714";
+$icon-cross: "\78";
+$icon-ef-logo: "\e900";
+$icon-star_fill: "\e902";
+$icon-star_outline: "\e901";
 $icon-agile-indicator: "\e908";
 $icon-airplane: "\e907";
 $icon-alert: "\e97f";
@@ -163,57 +165,9 @@ $icon-zoo: "\e983";
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-ef-logo {
+.icon-arrow-long-down {
   &:before {
-    content: $icon-ef-logo;
-  }
-}
-
-.icon-cross {
-  &:before {
-    content: $icon-cross;
-  }
-}
-
-.icon-check {
-  &:before {
-    content: $icon-check;
-  }
-}
-
-.icon-arrow-thin-right {
-  &:before {
-    content: $icon-arrow-thin-right;
-  }
-}
-
-.icon-arrow-thin-left {
-  &:before {
-    content: $icon-arrow-thin-left;
-  }
-}
-
-.icon-arrow-sm-up {
-  &:before {
-    content: $icon-arrow-sm-up;
-  }
-}
-
-.icon-arrow-sm-down {
-  &:before {
-    content: $icon-arrow-sm-down;
-  }
-}
-
-.icon-arrow-long-up {
-  &:before {
-    content: $icon-arrow-long-up;
-  }
-}
-
-.icon-arrow-long-right {
-  &:before {
-    content: $icon-arrow-long-right;
+    content: $icon-arrow-long-down;
   }
 }
 
@@ -223,9 +177,69 @@ $icon-zoo: "\e983";
   }
 }
 
-.icon-arrow-long-down {
+.icon-arrow-long-right {
   &:before {
-    content: $icon-arrow-long-down;
+    content: $icon-arrow-long-right;
+  }
+}
+
+.icon-arrow-long-up {
+  &:before {
+    content: $icon-arrow-long-up;
+  }
+}
+
+.icon-arrow-sm-down {
+  &:before {
+    content: $icon-arrow-sm-down;
+  }
+}
+
+.icon-arrow-sm-up {
+  &:before {
+    content: $icon-arrow-sm-up;
+  }
+}
+
+.icon-arrow-thin-left {
+  &:before {
+    content: $icon-arrow-thin-left;
+  }
+}
+
+.icon-arrow-thin-right {
+  &:before {
+    content: $icon-arrow-thin-right;
+  }
+}
+
+.icon-check {
+  &:before {
+    content: $icon-check;
+  }
+}
+
+.icon-cross {
+  &:before {
+    content: $icon-cross;
+  }
+}
+
+.icon-ef-logo {
+  &:before {
+    content: $icon-ef-logo;
+  }
+}
+
+.icon-star_fill {
+  &:before {
+    content: $icon-star_fill;
+  }
+}
+
+.icon-star_outline {
+  &:before {
+    content: $icon-star_outline;
   }
 }
 
