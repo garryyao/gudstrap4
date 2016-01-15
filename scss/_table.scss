@@ -7,3 +7,29 @@
     font-weight: 400;
   }
 }
+
+.ef-table-2-col {
+  @include media-breakpoint-up(sm) {
+    border-spacing: 1.5em .5em;
+  }
+
+  > caption {
+    caption-side: top;
+    text-align: center;
+    font-size: $font-size-h3;
+    color: inherit;
+  }
+
+  > tbody > tr {
+    > th {
+      font-weight: 600;
+      text-align: right;
+      width: 50%;
+    }
+
+    > td {
+      color: $gray;
+      text-align: left;
+    }
+  }
+}

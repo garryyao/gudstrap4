@@ -43,7 +43,7 @@ section.section-cards
                   .col-md-4
                     .example-content-cards
                       p #{card_types[(val%2)]}
-                    .card.card-inverse.ef-card
+                    .card.ef-card.ef-card-course.card-inverse
                       .card-img-top(style="background-image:url('" + cards[val].image + "')")
                         .card-img-overlay
                           if cards[val].h1
@@ -83,7 +83,7 @@ section.section-cards
               .col-md-4
                 .example-content-cards
                   p #{card_type}
-                .card.card-inverse.ef-card-course(class=course.name+' '+selected)
+                .card.ef-card.ef-card-course.card-inverse.stateful(class=course.name + ' ' + selected)
                   .card-img-top(style="background-image:url('images/toeic.png')")
                     if course.checked
                       .card-course-status
@@ -105,3 +105,151 @@ section.section-cards
           .row
             each val, index in [0,1,2]
               +course_card(card_selected_types[index], 'card-selected', courses[val])
+
+          .p-y-2
+          h2 4.4.1 TEACHER CARDS CONTENT & MICRO CARDS
+          .p-y-3
+              mixin rate
+                  div.font-size-24
+                      span.icon.icon-star_fill.text-matte-gold
+                      span.icon.icon-star_fill.text-matte-gold
+                      span.icon.icon-star_fill.text-matte-gold
+                      span.icon.icon-star_fill.text-matte-gold
+                      span.icon.icon-star_fill.text-gray-light
+
+              .card.ef-card.ef-card-teacher.ef-card-teacher-lg
+                  .card-content
+                      .card-img-top(style="background-image:url('images/teacher.png')")
+                      .card-block
+                          h4.text-notes.text-capitalize
+                              span.icon.icon-teacher
+                              | &nbsp;
+                              | Teacher
+                          h3.text-capitalize William Fergusson
+                          .m-y-1
+                          .blockquote I love teaching English more than I love my own mother. I have so much fun teaching with EF here in London!
+
+                      .card-block.card-block-details.text-uppercase.font-size-11
+                          ul.row.list
+                              li.col-md-3.col-xs-6
+                                  div.text-bold.text-center speaks
+                                  span.text-gray-light british<br />english
+                                  img(src='images/british.png')
+                              li.col-md-3.col-xs-6
+                                  div.text-bold.text-center student rating
+                                  + rate
+                              .col-spacer.hidden-md-up.p-t-1
+                              li.col-md-3.col-xs-6
+                                  div.text-bold.text-center bilingual in
+                                  span.text-gray-light spanish
+                                  | &nbsp;
+                                  img(src='images/lingual.png')
+                              li.col-md-3.col-xs-6
+                                  div.text-bold.text-center availability
+                                  .text-gray-light.text-xs-center good
+
+
+                      .m-y-2.btn.ef-btn.ef-btn-main BOOK A PRIVATE CLASS
+
+              .p-y-1
+              .card.ef-card
+                  .card-block.p-x-0.text-xs-center.center-block(style='max-width: 400px')
+                      table.ef-table.ef-table-2-col.m-y-2
+                          caption Details
+                          tr
+                              th Lives in:
+                              td London, UK
+                          tr
+                              th Gender:
+                              td Male
+                          tr
+                              th Birthday:
+                              td 1st Februrary
+                          tr
+                              th Speaks:
+                              td
+                                  | English (Native)
+                                  | Spanish (Advanced)
+                                  | French (Beginner)
+                          tr
+                              th Industry experience:
+                              td
+                                  | Insurance
+                                  | Finance
+                          tr
+                              th Teaching specialisms:
+                              td
+                                  | Business English
+                                  | Insurance English
+
+              .p-y-1
+              .card.ef-card
+                  .card-block.p-y-2.center-block(style='max-width: 600px')
+                      h3.text-capitalize About
+                      p
+                          | It makes me happy when people are kind and accepting toward each other, looking out for each other, living the truth that we are all connected to and responsible for each other. It makes me mad when people suffer. I am good at painting, writing, sewing, singing, dancing, running, cooking, researching, performing, planning, teaching, learning, and lots of other things. I have never knowingly eaten a dog, though there is always the chance that once just slipped in, perhaps when I was asleep.
+                      br
+                      h3.text-capitalize Interests
+                      p
+                          | What makes me happy: Cooking, learning languages, nature, friends and family, my dog, improving & challenging myself My favorite foods: Italian & Mexican... and noodles! If I could be doing anything right now, I would: travel to some spanish speaking country to make my spanish better!
+
+
+              .p-y-2
+              .row
+                  .col-md-4
+                      .card.ef-card.ef-card-teacher.ef-card-teacher-sm
+                          .card-content
+                              .card-img-top(style="background-image:url('images/teacher1.png')")
+                              .card-block
+                                  h5.text-notes.text-capitalize
+                                      span.icon.icon-teacher
+                                      | &nbsp;
+                                      | Teacher
+                                  h4.text-capitalize William Fergusson
+
+                              .card-block.card-block-details.text-uppercase.font-size-11
+                                  ul.row.list
+                                      li.col-xs-6
+                                          span.text-gray-light british<br />english
+                                          img(src='images/british.png')
+                                      li.col-xs-6
+                                          span.text-gray-light bilingual<br/>danish
+                                          img(src='images/lingual.png')
+
+                  .col-spacer.hidden-md-up.p-t-1
+                  .col-md-4
+                      .card.ef-card.ef-card-teacher.ef-card-teacher-sm
+                          .card-content
+                              .card-img-top(style="background-image:url('images/teacher2.png')")
+                              .card-block
+                                  h5.text-notes.text-capitalize
+                                      span.icon.icon-teacher
+                                      | &nbsp;
+                                      | Teacher
+                                  h4.text-capitalize Johan Sanders
+
+                              .card-block.card-block-details.text-uppercase.font-size-11
+                                  ul.row.list
+                                      li.col-xs-6
+                                          span.text-gray-light british <br /> english
+                                          img(src='images/british.png')
+                                      li.col-xs-6
+                                          span.text-gray-light bilingual <br /> russian
+                                          img(src='images/lingual.png')
+                  .col-spacer.hidden-md-up.p-t-1
+                  .col-md-4
+                      .card.ef-card.ef-card-teacher.ef-card-teacher-sm
+                          .card-content
+                              .card-img-top(style="background-image:url('images/teacher3.png')")
+                              .card-block
+                                  h5.text-notes.text-capitalize
+                                      span.icon.icon-teacher
+                                      | &nbsp;
+                                      | Teacher
+                                  h4.text-capitalize Claire Johnson
+
+                              .card-block.card-block-details.text-uppercase.font-size-11
+                                  ul.row.list
+                                      li.col-xs-12
+                                          span.text-gray-light british<br />english
+                                          img(src='images/british.png')
