@@ -1,4 +1,8 @@
-.ef-card, .ef-card-course {
+.ef-card {
+  border: 0;
+}
+
+.ef-card-course {
 
   &:not(.card-selected) {
     @include hover-focus {
@@ -79,9 +83,9 @@
     }
   }
 }
-.ef-card-course {
+.ef-card-course.stateful {
   @include hover {
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
   }
 
   .ef-card-link a {
@@ -131,15 +135,107 @@
   }
 }
 
+@mixin card-person($avatar_size, $width) {
+  text-align: center;
+  margin-top: $avatar_size/2;
+  border-bottom: 5px solid map_get($extended-colours, SUMRF);
+
+  .card-block {
+    margin: 1em auto;
+    padding: 0;
+  }
+
+  .card-content {
+    position: relative;
+    top: -$avatar_size/2;
+    margin-bottom: -$avatar_size/2;
+  }
+
+  .card-img-top {
+    background: no-repeat center/cover;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 50%;
+    width: $avatar_size;
+    height: $avatar_size;
+  }
+
+  .list {
+    list-style: none;
+    display: block;
+    padding-left: 0;
+
+    > li > *:not(div) {
+      vertical-align: middle;
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+
+  .card-img-top + .card-block {
+    margin-top: 0;
+    max-width: ($avatar_size*2);
+    & + .card-block {
+      max-width: $width;
+    }
+  }
+
+  @content;
+}
+
+.ef-card-teacher-lg {
+
+  @include card-person(200px, 80%) {
+    .list {
+      > li {
+        min-height: 50px;
+      }
+
+      @include media-breakpoint-up(md) {
+        > li.col-md-3:not(:last-of-type) {
+          border-right: 1px solid $gray-lighter;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        > li {
+          &.col-xs-6:nth-of-type(2n+1) {
+            border-right: 1px solid $gray-lighter;
+          }
+        }
+      }
+    }
+  }
+
+  .blockquote {
+    font-size: 1em;
+    font-style: italic;
+    color: $gray-light;
+    border-left: 0;
+    &:before, &:after {
+      content: '"';
+    }
+  }
+}
+
+.ef-card-teacher-sm {
+  @include card-person(100px, 300px) {
+    .list > li {
+      &.col-xs-6:first-of-type {
+        border-right: 1px solid $gray-lighter;
+      }
+    }
+  }
+}
+
 @include media-breakpoint-up(xs) {
-  .ef-card, .ef-card-course {
+  .ef-card-course {
     margin: 1rem auto;
     max-width: 308px;
   }
 }
 
 @include media-breakpoint-up(md) {
-  .ef-card, .ef-card-course {
+  .ef-card-course {
     margin: 1rem auto;
     max-width:inherit;
 
@@ -153,7 +249,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .ef-card, .ef-card-course {
+  .ef-card-course {
     max-width: 308px;
 
     h1 {
