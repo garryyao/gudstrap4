@@ -2,6 +2,51 @@ html, html a {
   @include font-smooth;
 }
 
+ol.toc {
+
+  &, ol {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  li {
+    padding-left: 0;
+
+  }
+
+  // section level
+  > li {
+    font-weight: 600;
+    font-size: $font-size-lg;
+    counter-increment: level1;
+    min-height: 200px;
+
+    > a:before {
+      content: counter(level1) '. ';
+    }
+
+    // sub-level
+    > ol {
+      padding-top: 1.5em;
+      font-weight: normal;
+      font-size: $font-size-base;
+      color: $gray;
+
+      > li {
+        counter-increment: level2;
+
+        > a:before {
+          content: counter(level1) '.' counter(level2) ' ';
+        }
+      }
+    }
+  }
+}
+
 .header {
   text-align: center;
   font-size: $font-size-h1;

@@ -1,56 +1,58 @@
 doctype html
 html(lang="en")
-    head
-        title EF/ GUDStrap4 - Assets
-        meta(charset="utf-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no")
-        // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
-        meta(name="description", content="EF dGUD guideline")
-        link(rel="icon", href="icons/favicon.ico")
-        link(href="main.css", rel="stylesheet")
+  head
+    title EF/ GUDStrap4 - Assets
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no")
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name="description", content="EF dGUD guideline")
+    link(rel="icon", href="icons/favicon.ico")
+    link(href="main.css", rel="stylesheet")
 
-        // Bootstrap JavaScript modules
-        script(src="bower_components/fastclick/lib/fastclick.js")
-        script(src="bower_components/jquery/dist/jquery.min.js")
-        script(src="bower_components/tether/dist/js/tether.min.js")
-        script(src="js/switch.js")
-        script(src="js/slider.js")
-        script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
-        script(src="index.js")
-        script.
-          $(document).on('mq4hsChange', function (e) {
-              $(document.documentElement).toggleClass('hover', e.trueHover);
-          });
-        script(src="js/mq4-hover-shim.js")
+    // Bootstrap JavaScript modules
+    script(src="bower_components/fastclick/lib/fastclick.js")
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="bower_components/tether/dist/js/tether.min.js")
+    script(src="js/switch.js")
+    script(src="js/slider.js")
+    script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="index.js")
+    script.
+      $(document).on('mq4hsChange', function(e) {
+        $(document.documentElement).toggleClass('hover', e.trueHover);
+      });
+    script(src="js/mq4-hover-shim.js")
 
-    body
-        .header.m-y-3
-            span.icon.display-4 EF
-            span.text-bold D
-            span.text-thin GUD DESIGN ASSETS
-        main
-        // 2.1
-        include ./partials/colours
-        // 2.2
-        include ./partials/typography
-        // 2.4
-        include ./partials/icons
-        // 3.1
-        include ./partials/layout
-        // 4.1
-        include ./partials/banner
-        // 4.2
-        include ./partials/breadcrumbs
-        // 4.3
-        include ./partials/button
-        // 4.4
-        include ./partials/cards
-        // 4.5
-        include ./partials/controls
-        // 4.6
-        include ./partials/modals
-        // 4.8
-        include ./partials/tabs
-        // 4.9
-        include ./partials/infobar
+  body
+    .header.m-y-3
+      span.icon.display-4 EF
+      span.text-bold D
+      span.text-thin GUD DESIGN ASSETS
+    main
+      // 0
+      include ./partials/toc
+      // 2.1
+      include ./partials/colours
+      // 2.2
+      include ./partials/typography
+      // 2.4
+      include ./partials/icons
+      // 3.1
+      include ./partials/layout
+      // 4.1
+      include ./partials/banner
+      // 4.2
+      include ./partials/breadcrumbs
+      // 4.3
+      include ./partials/button
+      // 4.4
+      include ./partials/cards
+      // 4.5
+      include ./partials/controls
+      // 4.6
+      include ./partials/modals
+      // 4.8
+      include ./partials/tabs
+      // 4.9
+      include ./partials/infobar
