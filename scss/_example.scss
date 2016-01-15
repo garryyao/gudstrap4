@@ -13,11 +13,6 @@ ol.toc {
     color: inherit;
   }
 
-  li {
-    padding-left: 0;
-
-  }
-
   // section level
   > li {
     font-weight: 600;
@@ -119,6 +114,18 @@ ol.toc {
   }
 }
 
+.section-statements {
+
+  h5 {
+    @include fontstack-sans-serif-bold;
+    text-transform: none;
+    font-weight: 600;
+    counter-increment: level1;
+    &:before {
+      content: '1.' counter(level1) ' ';
+    }
+  }
+}
 .section-alert {
   .alert {
     margin-bottom: 2.5rem;
