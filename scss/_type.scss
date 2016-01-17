@@ -19,10 +19,6 @@ p {
   font-size: $font-size-content;
 }
 
-.lead {
-  @include fontstack-serif-contrast;
-}
-
 dfn {
   font-family: Garamond Italic;
 }
@@ -38,16 +34,16 @@ dfn {
     content: '';
     display: inline-block;
     height: 1px;
-    width: 2em;
+    width: 1em;
     background-color: $gray-dark;
   }
 
   &:before {
-    margin-right: 1.5em;
+    margin-right: .5em;
   }
 
   &:after {
-    margin-left: 1.5em;
+    margin-left: .5em;
   }
 
   &:after, &:before, & > * {

@@ -2,6 +2,8 @@
   font-weight: 200;
 }
 
+.text-notrans     { text-transform: none !important; }
+
 /* regular font-size translated to responsive percentage size. */
 @for $size from 10 through 40 {
   .font-size-#{$size} {
