@@ -1,11 +1,12 @@
-section#sec-colours.container
+section#sec-colours
+  .container
     h2 2.1 COLOURS
-    .row.m-b-3
+    .row.m-y-2
         .col-md-push-6.col-md-6
             dfn.text-gray-light
                 | The primary application colours are neutralised to allow the minimal use of primary blue to draw focus where required.
     .row
-    -
+      -
         var i = 0;
         var primary_colours = {
         'BLACK': '#000000',
@@ -21,30 +22,30 @@ section#sec-colours.container
         'DARK GRAY/GNDS': '#666666'
         };
 
-    each colour, name in primary_colours
+      each colour, name in primary_colours
         - var color_name = name.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
         - var display_name = name.toUpperCase().replace(/(?=\/)/, '\n');
         if ++i === 6
-            .clearfix
-        .col-md-2.col-sm-4.col-xs-6
-            .color-box.text-color-contrast(class='bg-' + color_name)
-                .color-label
-                    span.font-weight-bold #{display_name}
-                    br
-                    case color_name
-                        when 'white'
-                        when 'eggshell'
-                        when 'warm-paper'
-                            span.text-gray-dark #{colour}
-                        default
-                            span #{colour}
-    .row.m-b-3
+          .clearfix
+        .col-lg-2.col-xs-4
+          .color-box.text-color-contrast(class='bg-' + color_name)
+            .color-label
+              span.font-weight-bold #{display_name}
+              br
+              case color_name
+                when 'white'
+                when 'eggshell'
+                when 'warm-paper'
+                  span.text-gray-dark #{colour}
+                default
+                  span #{colour}
+    .row.m-y-2
         .col-md-push-6.col-md-6
             dfn.text-gray-light
                 | The following colours have been used and developed for learning materials and classroom materials.
 
     .row
-    -
+      -
         var i = 0;
         var extended_colours = {
         'AQUA': '#09B79D',
@@ -59,12 +60,12 @@ section#sec-colours.container
         'ORANGINE': '#FF6100',
         };
 
-    each colour, name in extended_colours
+      each colour, name in extended_colours
         - var color_name = name.replace(/\s/, '-').replace(/\/.+/, '').toLowerCase();
         - var display_name = name.toUpperCase().replace(/(?=\/)/, '\n');
-        .col-md-2.col-sm-4.col-xs-6
-            .color-box.text-color-contrast(class='bg-' + color_name)
-                .color-label
-                    span.font-weight-bold #{display_name}
-                    br
-                    span #{colour}
+        .col-lg-2.col-xs-4
+          .color-box.text-color-contrast(class='bg-' + color_name)
+            .color-label
+              span.font-weight-bold #{display_name}
+              br
+              span #{colour}

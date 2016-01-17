@@ -1,23 +1,23 @@
-section#buttons.section-button
-    -
-      var btn_styles = {
-        'main': 'MAIN CTA',
-        'black': 'BLACK CTA',
-        'continue': 'CONTINUE'
-      };
-    .bg-warm-paper.p-t-3
-      .container
-        h2 4.3 buttons
-        .p-t-3
-          .row
-            .col.col-lg-3.col-md-6
-              each content, style in btn_styles
-                p.p-a-2(class='btn-bg-'+style)
-                  button.ef-btn(class='ef-btn-'+style) #{content}
-            .col.col-lg-3.col-md-6
-              each content, style in btn_styles
-                p.p-a-2(class='btn-bg-' + style)
-                  button.ef-btn(class='ef-btn-'+style+'-outline') SECONDARY
-            .col.col-lg-3.col-md-6
-                p.p-a-2
-                  button.ef-btn.ef-btn-other EVERYTHING ELSE
+section#buttons.section-button.bg-warm-paper
+  -
+    var btn_styles = {
+      'main': 'MAIN CTA',
+      'black': 'BLACK CTA',
+      'continue': 'CONTINUE'
+    };
+
+  .container
+    h2 4.3 buttons
+    .p-t-1
+      .row
+        .col.col-lg-3.col-md-6
+          each content, style in btn_styles
+            p.p-a-2(class='btn-bg-' + style)
+              button.ef-btn(class='ef-btn-' + style) #{content}
+        .col.col-lg-3.col-md-6
+          each content, style in btn_styles
+            p.p-a-2(class='btn-bg-' + style)
+              button.ef-btn(class='ef-btn-' + style + '-outline') SECONDARY
+        .col.col-lg-3.col-md-6
+          p.p-a-2
+            button.ef-btn.ef-btn-other EVERYTHING ELSE

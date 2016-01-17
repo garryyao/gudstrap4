@@ -2,6 +2,10 @@ html, html a {
   @include font-smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ol.toc {
 
   &, ol {
@@ -9,16 +13,11 @@ ol.toc {
     list-style: none;
   }
 
-  a {
-    color: inherit;
-  }
-
   // section level
-  > li {
+  > li:not(.col-spacer) {
     font-weight: 600;
     font-size: $font-size-lg;
     counter-increment: level1;
-    min-height: 200px;
 
     > a:before {
       content: counter(level1) '. ';
@@ -42,9 +41,8 @@ ol.toc {
   }
 }
 
-.header {
+header {
   text-align: center;
-  font-size: $font-size-h1;
 
   .icon {
     font-size: 130%;
@@ -54,12 +52,23 @@ ol.toc {
   }
 }
 
+main > section {
+  padding: $spacer-y*3 0;
+}
+
 .color-box {
   display: table;
-  border-spacing: 1rem;
+  border-spacing: .5em;
   width: 100%;
-  height: 250px;
-  margin-bottom: 100px;
+  height: 120px;
+  margin-bottom: 1em;
+
+  @include media-breakpoint-up(lg) {
+    border-spacing: 1em;
+    height: 250px;
+    margin-bottom: 3em;
+    border-spacing: .2em;
+  }
 
   &.bg-white {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -69,14 +78,18 @@ ol.toc {
 .color-label {
   display: table-cell;
   font-weight: 300;
-  font-size: 14px;
   vertical-align: bottom;
   text-align: left;
+  @include font-size-responsive();
 }
 
 
 .bg-warm-grey {
-  background-color: #edebe8;
+  background-color: #EDEBE8;
+}
+
+.bg-warm-paper {
+  background-color: #F9F6F2;
 }
 
 .bg-contrast-grey {
@@ -84,7 +97,7 @@ ol.toc {
 }
 
 .bg-warm-eggshell {
-  background-color: #f9f6f2;
+  background-color: #F9F6F2;
 }
 
 
