@@ -4,7 +4,7 @@ $navbar-font-size: 12px;
 .ef-navbar {
   padding: 0;
   border: 0;
-  font-family: HelveticaNeue;
+  font-family: $fontstack-sans-serif;
 
   .container {
     text-align: center;
@@ -23,7 +23,6 @@ $navbar-font-size: 12px;
     .icon {
       font-size: 48px;
       line-height: inherit;
-      margin-top: 5px;
     }
   }
 
@@ -225,6 +224,8 @@ $navbar-font-size: 12px;
 }
 @include media-breakpoint-up(sm) {
   .ef-navbar {
+    height: 65px;
+
     .navbar-brand {
       display: block;
     }
