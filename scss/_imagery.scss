@@ -1,0 +1,50 @@
+.imagery {
+  $cell-height: 300px;
+  $gutter-space: 2px;
+
+  .row {
+    margin: -$gutter-space/2;
+
+    > * {
+      padding: $gutter-space/2;
+    }
+  }
+
+  .image {
+    display: table;
+    width: 100%;
+    color: white;
+    background: transparent no-repeat 50% 100%/cover;
+
+    &-y-2 > .image-overlay:not(:empty) {
+      height: $cell-height*2 + $gutter-space;
+    }
+  }
+
+  .image-overlay:not(:empty) {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: $cell-height;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .image-overlay:empty {
+    height: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+
+  .lockup {
+    margin-top: -.5em;
+    font-size: 120%;
+
+    &:after, &:before {
+      background-color: white;
+    }
+  }
+
+}

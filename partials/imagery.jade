@@ -1,0 +1,145 @@
+section#imagery.bg-black.text-color-contrast
+  mixin student-1
+    .image(style="background-image:url('images/student-1.png');")
+      .image-overlay(style="padding-bottom:69.2622951%;")
+
+  mixin student-2
+    .image(style="background-image:url('images/student-2.png')")
+      .image-overlay(style="padding-bottom:58.1113801%")
+
+  mixin student-3
+    .image(style="background-image:url('images/student-3.png')")
+      .image-overlay(style="padding-bottom:100%")
+
+  mixin student-4
+    .image(style="background-image:url('images/student-4.png')")
+      .image-overlay(style="padding-bottom:168.0693069%")
+
+  mixin new-york
+    .image(style="background-image:url('images/newyork.png')")
+      .image-overlay
+        h1 CITY NAME 36PX
+        .lockup USA
+
+  mixin cape-town
+    .image(style="background-image:url('images/cape-town.png')")
+      .image-overlay
+        h1 CAPE TOWN
+        .lockup South Africa
+
+  mixin st-julian
+    .image(style="background-image:url('images/st-julian.png')")
+      .image-overlay
+        h1 ST JULIAN'S
+        .lockup Malta
+
+  mixin sydney
+    .image(style="background-image:url('images/sydney.png')")
+      .image-overlay
+        h1 SYDNEY
+        .lockup Australia
+
+  mixin rome
+    .image(style="background-image:url('images/rome.png')")
+      .image-overlay
+        h1 ROME
+        .lockup Italy
+
+  mixin paris
+    .image.image-y-2(style="background-image:url('images/paris.png')")
+      .image-overlay
+        h1 PARIS
+        .lockup France
+
+  mixin beijing
+    .image(style="background-image:url('images/beijing.png')")
+      .image-overlay
+        h1 BEIJING
+        .lockup China
+
+  .container-fluid
+    .container
+      h2 2.3 IMAGERY
+      .row.m-b-3
+        .col-lg-push-6.col-lg-4.col-md-push-5.col-md-6
+          dfn
+            | This helps to set the tone of an application. Different apps will employ different types of imagery including photography and illustration. The underlying EF principles of giving our students ‘confidence’ and ‘freedom’ through our product use should be the starting point to making image choices.
+
+      .imagery-frame
+        .row.m-t-3
+          .col-lg-push-6.col-lg-4.col-md-push-5.col-md-6
+            dfn
+              | Consider the story the image is trying to tell. Model actions should feel believable and styling should be authentic to our audience. Lightning should set an inspiring mood. Pretentious smiles and actions should be avoided.
+        .imagery
+          .row.row-md-bottom
+            .col-md-4
+              +student-1
+            .col-md-8
+              +student-2
+          .row.row-md-top
+            .col-md-3.col-md-push-2
+              +student-3
+            .col-md-4.col-md-push-2
+              +student-4
+
+
+      .p-y-2.hidden-sm-up
+      .p-y-3.hidden-xs-down
+      .p-y-3.hidden-xs-down
+
+  .bg-white(style="padding-bottom: 3em; margin-bottom: -3em;").text-black
+    .ef-banner(style="background-image:url('images/hero.png');")
+
+    .container
+      .row
+        .col-lg-push-1.col-lg-6.col-md-9.col-xs-12
+          .card.ef-card
+            h3.text-notrans Neue Light. Short.
+            p  Att plugga engelska i Boston med EF lockar språkintresserade från hela världen som vill uppleva USAs universitetsstad på nära håll som student.
+            p Plugga engelska i Boston och utveckla språket i hjärtat av den amerikanska universitetsvärlden. Utöver traditionella språkkurser, kan du förbereda dig för en framtid inom näringslivet eller den akademiska världen genom EFs examensförberedande språkkurser samt våra språkkurser som integreras med ekonomi eller andra ämnen.
+
+
+    .container
+      .banner
+      .imagery.p-t-2
+        // lg
+        .row.hidden-md-down
+          .col-lg-6
+            +new-york
+          .col-lg-6
+            +cape-town
+          .col-lg-9
+            .row
+              .col-lg-8
+                +st-julian
+              .col-lg-4
+                +sydney
+              .col-lg-4
+                +rome
+              .col-lg-8
+                +beijing
+          .col-lg-3
+            +paris
+
+
+        // md, sm, xs
+        .row.hidden-lg-up
+          .col-xs-12
+            +new-york
+
+          .col-xs-12
+            +cape-town
+
+          .col-xs-12
+            +st-julian
+
+          .col-sm-6.col-xs-12
+            .row
+              .col-sm-12.col-xs-12
+                +sydney
+              .col-sm-12.col-xs-12
+                +rome
+          .col-sm-6.col-xs-12
+            +paris
+          .col-xs-12
+            +beijing

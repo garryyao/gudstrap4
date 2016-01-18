@@ -67,7 +67,7 @@ main > section {
     border-spacing: 1em;
     height: 250px;
     margin-bottom: 3em;
-    border-spacing: .2em;
+    border-spacing: 2em;
   }
 
   &.bg-white {
@@ -100,6 +100,20 @@ main > section {
   background-color: #F9F6F2;
 }
 
+.imagery-frame {
+  border: 2px solid map_get($primary-colours, MATTE-GOLD);
+  height: 0;
+  padding-bottom: 110%;
+
+  dfn {
+    position: relative;
+    z-index: 999;
+  }
+
+  .imagery {
+    transform: scale(1.1);
+  }
+}
 
 .font-card {
   margin-bottom: 30px;
@@ -131,6 +145,28 @@ main > section {
     }
   }
 }
+
+section#imagery {
+  .ef-banner {
+    max-width: 1240px;
+    margin: auto;
+    background: center center /cover;
+    padding-bottom: 37.465374%;
+  }
+
+  .ef-card {
+    padding: 2em 1em;
+    @include font-size-responsive;
+    top: 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 2em;
+      top: -100px;
+      margin-bottom: -50px;
+    }
+  }
+}
+
 .section-alert {
   .alert {
     margin-bottom: 2.5rem;
