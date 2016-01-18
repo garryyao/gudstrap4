@@ -3,7 +3,7 @@ section#controls.controls
             h2 4.5 common UI controls
             .m-t-3
                 .row
-                    .col-sm-4
+                  .col-sm-4.col-xs-12
                         h4.text-gray-light Progress Bars
                             .m-y-2
                                 .ef-progress
@@ -13,7 +13,7 @@ section#controls.controls
                                     .ef-progress-bar.progress-bar-success(role='progressbar', style='width: 60%;')
                                         | 60%
 
-                    .col-sm-8
+                  .col-sm-8.col-xs-12
                         h4.text-gray-light Sliders
                         .m-y-2
                             input(type='text', data-toggle="slider" data-slider-min='10', data-slider-max='1000', data-slider-step='5', data-slider-value='250')
@@ -23,7 +23,7 @@ section#controls.controls
                             input(type='text', data-toggle="slider" data-slider-min='10', data-slider-max='1000', data-slider-step='5', data-slider-value='[250,450]')
 
                 .row
-                    .col-sm-4
+                  .col-sm-4.col-xs-12
                         h4.text-gray-light Switches Outline
 
                         .m-y-2
@@ -32,10 +32,9 @@ section#controls.controls
                         .m-y-2
                             input(type='checkbox', checked='', data-inverse="true" data-handle-width="30")
 
-                    .col-sm-8
 
                 .row
-                    .col-md-6
+                  .col-md-6.col-xs-12
                         h4.text-gray-light Tool Tips
                         .m-y-2.tooltips
                             span.top.m-l-2.m-r-3(data-toggle='tooltip', data-placement='top', data-title='Top Tooltip')
@@ -54,7 +53,7 @@ section#controls.controls
                                 trigger: 'manual'
                                 }).tooltip('show');
 
-                    .col-md-6
+                  .col-md-6.col-xs-12
                         h4.text-gray-light Pagination & Navigation
                         mixin page-dot(cls)
                             li.page-dot(class=cls)
@@ -123,28 +122,28 @@ section#controls.controls
                             a.dropdown-item(href="javascript:;") MEETINGS
 
                 .row
-                    .col-lg-4.col-md-5.col-sm-6
+                  .col-lg-4.col-md-5.col-sm-6.col-xs-12
                         .dropdown.ef-combo.m-y-1
                             button.btn.ef-btn-black.dropdown-toggle.text-xs-left(data-toggle="dropdown")
                                 span.text-uppercase COMBO BOX
                             +combo_dropdown
 
-                    .col-lg-4.col-md-5.col-sm-6
+                  .col-lg-4.col-md-5.col-sm-6.col-xs-12
                         .dropdown.ef-combo.m-y-1
                             button.btn.ef-btn-black-outline.dropdown-toggle.text-xs-left(data-toggle="dropdown")
                                 span.text-uppercase COMBO BOX ALT
                             +combo_dropdown
 
                 .row
-                    .col-lg-8.col-md-10.col-sm-12
+                  .col-lg-8.col-md-10.col-sm-12.col-xs-12
                         .row.bg-contrast-grey.p-y-2
-                            .col-sm-6
+                            .col-sm-6.col-xs-12
                                 .dropdown.ef-combo.m-y-1
                                     button.btn.ef-btn-continue.dropdown-toggle.text-xs-left(data-toggle="dropdown")
                                         span.text-uppercase COMBO BOX
                                     +combo_dropdown
 
-                            .col-sm-6
+                            .col-sm-6.col-xs-12
                                 .dropdown.ef-combo.m-y-1
                                     button.btn.ef-btn-continue-outline.dropdown-toggle.text-xs-left(data-toggle="dropdown")
                                         span.text-uppercase COMBO BOX ALT
@@ -153,7 +152,7 @@ section#controls.controls
             .m-y-3
                 h4.text-gray-light Dropdown
                 .row
-                    .col-lg-3.col-md-5.col-sm-6
+                  .col-lg-3.col-md-5.col-sm-6.col-xs-12
                         .dropdown.ef-dropdown
                             button.btn.btn-secondary.dropdown-toggle.text-xs-left(data-toggle="dropdown")
                                 span.text-uppercase Age

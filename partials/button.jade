@@ -10,14 +10,14 @@ section#buttons.section-button.bg-warm-paper
     h2 4.3 buttons
     .p-t-1
       .row
-        .col.col-lg-3.col-md-6
+        .col.col-lg-3.col-md-6.col-xs-12
           each content, style in btn_styles
             p.p-a-2(class='btn-bg-' + style)
               button.ef-btn(class='ef-btn-' + style) #{content}
-        .col.col-lg-3.col-md-6
+        .col.col-lg-3.col-md-6.col-xs-12
           each content, style in btn_styles
             p.p-a-2(class='btn-bg-' + style)
               button.ef-btn(class='ef-btn-' + style + '-outline') SECONDARY
-        .col.col-lg-3.col-md-6
+        .col.col-lg-3.col-md-6.col-xs-12
           p.p-a-2
             button.ef-btn.ef-btn-other EVERYTHING ELSE
