@@ -207,6 +207,9 @@ $navbar-font-size: 12px;
       padding: 0 0.75rem;
       height: 40px;
       position: relative;
+      @include hover-focus {
+        outline: none;
+      }
     }
     .navbar-toggler-avatar {
       .icon {
@@ -219,6 +222,17 @@ $navbar-font-size: 12px;
         margin: 0;
         top: 38px;
       }
+      @include hover-focus {
+        outline: none;
+      }
+    }
+
+    & > .navbar-toggleable-xs {
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      z-index: 2;
+
     }
   }
 }
