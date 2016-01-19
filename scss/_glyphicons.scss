@@ -1,10 +1,9 @@
 @font-face {
   font-family: 'glyph-dgud';
-  src: url('fonts/glyph-dgud/glyph-dgud.eot?hyeoki');
-  src: url('fonts/glyph-dgud/glyph-dgud.eot?hyeoki#iefix') format('embedded-opentype'),
-  url('fonts/glyph-dgud/glyph-dgud.ttf?hyeoki') format('truetype'),
-  url('fonts/glyph-dgud/glyph-dgud.woff?hyeoki') format('woff'),
-  url('fonts/glyph-dgud/glyph-dgud.svg?hyeoki#glyph-dgud') format('svg');
+  src: url('fonts/glyph-dgud/glyph-dgud.eot?#iefix') format('eot'),
+  url('fonts/glyph-dgud/glyph-dgud.woff2') format('woff2'),
+  url('fonts/glyph-dgud/glyph-dgud.woff') format('woff'),
+  url('fonts/glyph-dgud/glyph-dgud.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
