@@ -10,14 +10,17 @@ $ef-nav-color: map_get($primary-colours, BLACK);
 
   .nav-item {
     // to equally spreads each tab across container
-    flex-grow: 1;
+    flex: 1;
     float: left;
+
+    + .nav-item {
+      margin-left: 0.5rem;
+    }
   }
 
   .nav-link {
     display: block;
-    min-width: 128px;
-    padding: $ef-nav-link-padding 1rem;
+    padding: $ef-nav-link-padding .2rem;
     border-top: 3px solid transparent;
 
 
@@ -45,21 +48,6 @@ $ef-nav-color: map_get($primary-colours, BLACK);
   }
 }
 
-@include media-breakpoint-up(xs) {
-  .ef-nav {
-
-    .nav-item {
-
-      + .nav-item {
-        margin-left: 0.5rem;
-      }
-    }
-    .nav-link {
-      min-width: auto;
-      padding: $ef-nav-link-padding 0.2rem;
-    }
-  }
-}
 @include media-breakpoint-up(md) {
   .ef-nav {
     .nav-item {

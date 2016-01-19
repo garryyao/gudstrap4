@@ -14,6 +14,12 @@ html(lang="en")
     script(src="bower_components/fastclick/lib/fastclick.js")
     script(src="bower_components/jquery/dist/jquery.min.js")
     script(src="bower_components/tether/dist/js/tether.min.js")
+
+    // for site nav
+    script(src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js")
+    script(src="bower_components/jquery.localScroll/jquery.localScroll.min.js")
+    script(src="bower_components/Stickyfill/dist/stickyfill.min.js")
+
     script(src="js/switch.js")
     script(src="js/slider.js")
     script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
@@ -33,6 +39,9 @@ html(lang="en")
     main
       // 0
       include ./partials/toc
+
+      include ./partials/sitenav
+
       // 1
       include ./partials/statements
       // 2.1

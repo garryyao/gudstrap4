@@ -255,11 +255,67 @@ table.weekly-schedule {
   }
 }
 
-.ef-nav {
-  max-width: 700px;
-  margin: auto;
+section#menu-tabs {
+  .ef-nav {
+    max-width: 700px;
+    margin: auto;
 
-  .nav-link {
-    max-width: 130px;
+    .nav-link {
+      max-width: 130px;
+    }
+  }
+}
+
+#site-nav {
+  border-top: 3px solid $gray-lighter;
+  background-color: white;
+  z-index: 1;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+
+  @include media-breakpoint-down(xs) {
+    > .container {
+      padding: 0;
+    }
+  }
+
+  .ef-nav {
+    @include font-size-responsive;
+    transform: translateY(-3px);
+    white-space: nowrap;
+
+    .nav-item + .nav-item {
+      margin-left: 0;
+    }
+
+    > li {
+      counter-increment: tab;
+
+      > a {
+        padding: 1em 0;
+        text-transform: capitalize;
+        color: $gray-light;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .ef-nav > li {
+      counter-increment: tab;
+      > a {
+        &:before {
+          content: '0' counter(tab) '. '
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .ef-nav > li > a {
+      padding: 2em 0;
+    }
   }
 }

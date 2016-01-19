@@ -5,6 +5,8 @@ $(function() {
   $('input[data-toggle="slider"]').slider();
   $('.navbar-toggler.dropdown').on('show.bs.dropdown', hide_nav);
   $('.navbar-nav a:not([data-toggle="dropdown"])').on('click', hide_nav);
+  $('#site-nav').Stickyfill();
+  $.localScroll({duration: 500});
 
   function hide_nav() {
     $('.navbar-toggleable-xs.collapse').removeClass('in');

@@ -49,8 +49,8 @@ module.exports = function(grunt) {
           'index.js',
           'js/*.js',
           'images/*',
-          'bower_components/*/dist/**/*.js',
-          'bower_components/*/lib/**/*.js'
+          'bower_components/*/{dist,lib}/**/*.js',
+          'bower_components/jquery.*/**/*.js'
         ],
         dest: 'dist/'
       },
