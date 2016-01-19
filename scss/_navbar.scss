@@ -210,6 +210,24 @@ $navbar-font-size: 12px;
       @include hover-focus {
         outline: none;
       }
+
+      .icon-ef {
+        padding-left: 1.4rem;
+        font-size: 22px;
+
+        &:after {
+          content: "";
+          display: block;
+          height: 0;
+          position: absolute;
+          top: 50%;
+          margin-top: -0.44444rem;
+          left: 0.8rem;
+          box-shadow: 0 0 0 1px #000, 0 7px 0 1px #000, 0 14px 0 1px #000;
+          -webkit-box-shadow: 0 0 0 1px #000, 0 7px 0 1px #000, 0 14px 0 1px #000;
+          width: 1rem;
+        }
+      }
     }
     .navbar-toggler-avatar {
       .icon {
