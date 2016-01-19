@@ -296,5 +296,13 @@ $navbar-font-size: 12px;
         }
       }
     }
+
+    & > .navbar-toggleable-xs {
+      position: static;
+      background: transparent;
+      width: auto;
+      z-index: 1;
+
+    }
   }
 }
