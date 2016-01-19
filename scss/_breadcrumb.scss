@@ -43,6 +43,7 @@
       display: block;
       position: relative;
       padding: $spacer-y*1.5 $spacer-x*2;
+      margin-bottom: -1px;
 
       @include hover-focus {
         @include arrow_link;
