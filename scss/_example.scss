@@ -182,57 +182,21 @@ section#imagery {
 
   .example-content-cards {
     text-align: center;
-    color: #898989;
+    color: $gray-lighter;
     margin-bottom: 0;
+    margin-top: 1em;
 
-    p {
-      font-size: 29px;
-      font-weight: 100;
-      text-transform: uppercase;
+    .example-card-type-normal &,
+    .example-card-type-selected & {
+      color: $gray-light;
     }
-  }
 
-  .example-card-type-normal,
-  .example-card-type-selected {
-    position: absolute;
-    top: 190px;
-    margin-left: -60px;
-
-    p {
-      font-size: 24px;
-      font-weight: 100;
-      color: #898989;
-      text-transform: uppercase;
-    }
-  }
-  .example-card-type-selected {
-    top: 140px;
-    margin-left: -80px;
-  }
-  @include media-breakpoint-up(xs) {
-    .example-card-type-normal,
-    .example-card-type-selected {
-      display: none;
-    }
-  }
-  @include media-breakpoint-up(md) {
-    .example-content-cards.under-sm {
-      display: none;
-    }
-    .example-card-type-normal,
-    .example-card-type-selected {
-      display: block;
-      p {
-        font-size: 16px;
-      }
-    }
-  }
-  @include media-breakpoint-up(lg) {
-    .example-card-type-normal,
-    .example-card-type-selected {
-      p {
-        font-size: 20px;
-      }
+    &.pull-out {
+      position: absolute;
+      text-align: right;
+      width: 120px;
+      top: (419px - 60px)/2;
+      left: calc(-120px + 1em);
     }
   }
 }
