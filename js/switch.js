@@ -586,36 +586,17 @@
         return this.$label.on({
           "mousedown.bootstrapSwitch touchstart.bootstrapSwitch": (function(_this) {
             return function(e) {
-              if (_this._dragStart || _this.options.disabled ||
-                  _this.options.readonly) {
+              if (_this.options.disabled || _this.options.readonly) {
                 return;
               }
               e.preventDefault();
               e.stopPropagation();
-              _this._dragStart = (e.pageX || e.originalEvent.touches[0].pageX) -
-                  parseInt(_this.$container.css("margin-left"), 10);
+              _this._dragStart = true;
               if (_this.options.animate) {
                 _this.$wrapper.removeClass(
                     "" + _this.options.baseClass + "-animate");
               }
               return _this.$element.trigger("focus.bootstrapSwitch");
-            };
-          })(this),
-          "mousemove.bootstrapSwitch touchmove.bootstrapSwitch": (function(_this) {
-            return function(e) {
-              var difference;
-              if (_this._dragStart == null) {
-                return;
-              }
-              e.preventDefault();
-              difference = (e.pageX || e.originalEvent.touches[0].pageX) -
-                  _this._dragStart;
-              if (difference < -_this._handleWidth || difference > 0) {
-                return;
-              }
-              _this._dragEnd = difference;
-              return _this.$container.css("margin-left",
-                  "" + _this._dragEnd + "px");
             };
           })(this),
           "mouseup.bootstrapSwitch touchend.bootstrapSwitch": (function(_this) {
@@ -629,17 +610,11 @@
                 _this.$wrapper.addClass(
                     "" + _this.options.baseClass + "-animate");
               }
-              if (_this._dragEnd) {
-                state = _this._dragEnd > -(_this._handleWidth / 2);
-                _this._dragEnd = false;
-                _this.state(false ? !state : state);
-              } else {
-                _this.state(!_this.options.state);
-              }
+              _this.state(!_this.options.state);
               return _this._dragStart = false;
             };
           })(this),
-          "mouseleave.bootstrapSwitch": (function(_this) {
+          "mouseleave.bootstrapSwitch touchmove.bootstrapSwitch": (function(_this) {
             return function(e) {
               return _this.$label.trigger("mouseup.bootstrapSwitch");
             };
