@@ -1,4 +1,3 @@
-
 .ef-breadcrumb {
   $BLACK: map-get($primary-colours, BLACK);
 
@@ -42,21 +41,22 @@
       color: $BLACK;
       display: block;
       position: relative;
-      padding: $spacer-y*1.5 $spacer-x*2;
+      padding: 1.5em 2em;
       margin-bottom: -1px;
+
 
       @include hover-focus {
         @include arrow_link;
       }
 
       @media (max-width: map-get($grid-breakpoints, md)) {
-        padding: $spacer-y*.75 $spacer-x;
+        padding: .75em 1em;
       }
     }
 
     .title {
       font-size: 150%;
-      font-weight: $font-weight-semi-bold;
+      font-weight: $font-weight-bold;
       text-transform: uppercase;
       margin: 0;
       padding-bottom: .2em;
