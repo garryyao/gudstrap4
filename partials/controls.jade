@@ -23,26 +23,35 @@ section#controls.controls
                             input(type='text', data-toggle="slider" data-slider-min='10', data-slider-max='1000', data-slider-step='5', data-slider-value='[250,450]')
 
                 .row
-                  .col-sm-3.col-xs-6
-                        h4.text-gray-light Switches Outline
+                  .col-sm-3.col-xs-4
+                    h4.text-gray-light Switches Outline
 
-                        .m-y-2
-                            input(type='checkbox', checked='', data-handle-width="30")
+                    .m-y-2(style='font-size: 15px')
+                      input(type='checkbox', checked='')
 
-                        .m-y-2
-                            input(type='checkbox', checked='', data-inverse="true" data-handle-width="30")
+                    .m-y-2(style='font-size: 15px')
+                      input(type='checkbox', checked='', data-inverse="true")
 
                   .col-sm-3.col-xs-6
                     h4.text-gray-light Switches Disabled
 
-                    .m-y-2
-                      input(type='checkbox', disabled, checked='', data-handle-width="30")
+                    .m-y-2(style='font-size: 15px')
+                      input(type='checkbox', disabled, checked='')
 
-                    .m-y-2
-                      input(type='checkbox', disabled, checked='', data-inverse="true" data-handle-width="30")
+                    .m-y-2(style='font-size: 15px')
+                      input(type='checkbox', disabled, checked='', data-inverse="true")
+
+                  .col-sm-3.col-xs-6
+                    h4.text-gray-light Switches Small
+
+                    .m-y-2(style='font-size: 10px')
+                      input(type='checkbox', checked)
+
+                    .m-y-2(style='font-size: 10px')
+                      input(type='checkbox', checked='', data-inverse="true")
 
 
-                .row
+              .row
                   .col-md-6.col-xs-12
                         h4.text-gray-light Tool Tips
                         .m-y-2.tooltips

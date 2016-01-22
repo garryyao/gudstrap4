@@ -1,14 +1,12 @@
-$line-height-switch: 2rem;
-$switch-spacing: .2rem;
-$switch-border-radius: $line-height-switch/2;
+$line-height-switch: 2em;
+$switch-spacing: .2em;
+$switch-border-radius: $line-height-switch/2 + $switch-spacing*2;
 
 .ef-switch {
-  display: inline-block;
   direction: ltr;
   cursor: pointer;
-  border-radius: ($switch-border-radius + $switch-spacing);
-  border: 1px solid;
-  border-color: $input-border-color;
+  border: 1px solid $input-border-color;
+  border-radius: $switch-border-radius;
   position: relative;
   text-align: left;
   overflow: hidden;
@@ -17,20 +15,17 @@ $switch-border-radius: $line-height-switch/2;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
   .ef-switch-container {
-    background-color: white;
-    display: inline-block;
+    display: flex;
+    align-items: baseline;
     top: 0;
-    border-radius: $switch-border-radius;
     transform: translate3d(0, 0, 0);
   }
 
   .ef-switch-handle-on,
   .ef-switch-handle-off,
   .ef-switch-label {
-    vertical-align: middle;
     cursor: pointer;
     display: inline-block !important;
-    font-size: $font-size-base;
     line-height: $line-height-switch;
   }
 
@@ -76,7 +71,7 @@ $switch-border-radius: $line-height-switch/2;
 
   .ef-switch-label {
     margin: $switch-spacing;
-    border-radius: $switch-border-radius;
+    border-radius: $line-height-switch/2;
     text-align: center;
     padding: 0 !important;
     width: $line-height-switch;
