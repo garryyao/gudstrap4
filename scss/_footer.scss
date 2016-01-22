@@ -1,0 +1,67 @@
+$footer-divider-color: darken($gray, 12%);
+
+footer {
+  margin-top: 80px;
+  background-color: #000;
+  color: white;
+
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    > .nav-item > a {
+      color: white;
+      font-size: 12px;
+      padding: 10px 5px;
+      font-weight: bold;
+    }
+
+    > .nav-item.divider {
+      width: 1px;
+      height: 1em;
+      background-color: $footer-divider-color;
+    }
+
+    > .nav-item > a:hover,
+    > .nav-item > a:focus {
+      color: white;
+      background-color: inherit;
+    }
+  }
+
+  .copyright {
+    color: $gray-lighter;
+    font-size: 12px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  footer {
+    padding: 2em 0;
+
+    .nav > li:first-child {
+      padding-left: 0;
+    }
+
+    .copyright {
+      padding-top: .5em;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  footer {
+    text-align: center;
+    .nav {
+      padding: 0.3em 0;
+      justify-content: center;
+    }
+    .copyright {
+      border-top: 1px solid $footer-divider-color;
+      padding-top: 1em;
+    }
+  }
+}
+
+
