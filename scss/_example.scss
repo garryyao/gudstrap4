@@ -288,7 +288,7 @@ section#menu-tabs {
 #site-nav {
   border-top: 3px solid $gray-lighter;
   background-color: white;
-  z-index: 1;
+  z-index: 99;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
