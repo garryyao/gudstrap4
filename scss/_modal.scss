@@ -1,9 +1,5 @@
 .ef-modal {
 
-  .modal-dialog {
-    width: auto;
-  }
-
   .close {
     display: block;
     box-sizing: content-box;
@@ -29,6 +25,7 @@
     border-radius: 0;
     border: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin: 0 auto;
 
     > .close {
       position: absolute;

@@ -3,8 +3,9 @@ section#dialogues.modals.bg-warm-grey
             h2 4.6 dialogues
             .m-t-3
                 .row
-                    .col-lg-5
-                        .modal.ef-modal.modal-primary.text-xs-center
+                    .col-lg-3.col-xs-12.p-y-1
+                        .ef-btn.ef-btn-main(data-toggle="modal", data-target="#t1", aria-hidden="true") Modal Primary 1
+                        #t1.modal.ef-modal.modal-primary.text-xs-center.col-xs-12
                             .modal-dialog(role='document')
                                 .modal-content(style='max-width: 450px;')
                                     .modal-header
@@ -36,8 +37,9 @@ section#dialogues.modals.bg-warm-grey
                                             span.icon.icon-world &nbsp;
                                             | All times follow Eastern Standard Time
 
-                    .col-lg-5
-                        .modal.ef-modal.modal-primary.text-xs-center
+                    .col-lg-3.col-xs-12.p-y-1
+                        .ef-btn.ef-btn-main(data-toggle="modal", data-target="#t2", aria-hidden="true") Modal Primary 2
+                        #t2.modal.ef-modal.modal-primary.text-xs-center.col-xs-12
                             .modal-dialog(role='document')
                                 .modal-content(style='max-width: 400px;')
                                     .modal-header
@@ -51,9 +53,9 @@ section#dialogues.modals.bg-warm-grey
                                             button.ef-btn.ef-btn-main MAIN CTA
                                         p
                                             button.ef-btn.ef-btn-other EVERYTHING ELSE
-                .row
-                    .col-lg-5
-                        .modal.ef-modal
+                    .col-lg-3.col-xs-12.p-y-1
+                        .ef-btn.ef-btn-main(data-toggle="modal", data-target="#t3", aria-hidden="true") Modal Inverse
+                        #t3.modal.ef-modal.col-xs-12
                             .modal-dialog(role='document')
                                 .modal-content(style='max-width: 450px;')
                                     button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -62,10 +64,9 @@ section#dialogues.modals.bg-warm-grey
                                             | This I have produced as a scantling of Jack's great eloquence and force of his reasoning upon such abstruse matters
                                         p
                                             button.ef-btn.ef-btn-other.pull-left EVERYTHING ELSE
-
-                .row
-                    .col-lg-5
-                        .modal.ef-modal.modal-error
+                    .col-lg-3.col-xs-12.p-y-1
+                        .ef-btn.ef-btn-main(data-toggle="modal", data-target="#t4", aria-hidden="true") Modal Error
+                        #t4.modal.ef-modal.ef-modal.modal-error.col-xs-12
                             .modal-dialog(role='document')
                                 .modal-content(style='max-width: 450px;')
                                     button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -76,5 +77,3 @@ section#dialogues.modals.bg-warm-grey
                                             | This I have produced as a scantling of Jack's great eloquence and force of his reasoning upon such abstruse matters
                                         p
                                             button.ef-btn.ef-btn-other.pull-left EVERYTHING ELSE
-
-
