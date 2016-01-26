@@ -7,6 +7,12 @@ $(function() {
   $('.navbar-nav a:not([data-toggle="dropdown"])').on('click', hide_nav);
   $('#site-nav').Stickyfill();
   $.localScroll({duration: 500});
+  $(document).on('touchmove', function(evt) {
+    if ($('body').hasClass('modal-open')) {
+      evt.preventDefault();
+    }
+  });
+
 
   function hide_nav() {
     $('.navbar-toggleable-xs.collapse').removeClass('in');
