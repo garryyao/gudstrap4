@@ -1,5 +1,12 @@
 .ef-modal {
 
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+  }
+
   .close {
     display: block;
     box-sizing: content-box;
@@ -60,11 +67,6 @@
       font-size: 12px;
     }
 
-    .modal-dialog {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
     .modal-content {
       box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
       > .close {
@@ -83,6 +85,13 @@
 
     .modal-header + .modal-body {
       padding: 15px;
+    }
+  }
+
+  // Modal width on XS screen
+  @include media-breakpoint-down(sm) {
+    .modal-dialog {
+      width: 96vw;
     }
   }
 }
