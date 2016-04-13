@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EF/ GUDStrap4 - Assets</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+    <meta name="description" content="EF dGUD guideline">
+    <link rel="icon" href="icons/favicon.ico">
+    <link href="main.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript modules-->
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <!-- for site nav-->
+    <script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="bower_components/jquery.localScroll/jquery.localScroll.min.js"></script>
+    <script src="bower_components/Stickyfill/dist/stickyfill.min.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+      $(document).on('mq4hsChange', function(e) {
+        $(document.documentElement).toggleClass('hover', e.trueHover);
+      });
+    </script>
+    <script src="js/mq4-hover-shim.js"></script>
+  </head>
+  <body><a href="https://github.com/englishtown/gudstrap4"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" class="ribbon"></a>
+    <header class="container m-t-3">
+      <h1><span class="icon">EF</span><span class="text-bold">D</span><span class="text-thin">GUD DESIGN</span></h1>
+    </header>
+    <main>
+      <!-- 0-->
+      <section class="section-toc">
+        <div class="container">
+          <h2>Table of contents</h2>
+          <div class="row">
+            <div class="col-lg-push-5 col-lg-7">
+              <ol class="row toc">
+                <li class="col-sm-6">General statement
+                  <ol>
+                    <li><a href="#sec-what">What is dGUD style guide?</a></li>
+                    <li><a href="#sec-why">Why do we need a dGUD style guide?</a></li>
+                    <li><a href="#sec-how">How to use the guide?</a></li>
+                  </ol>
+                </li>
+                <li class="col-spacer p-t-1 hidden-sm-up"></li>
+                <li class="col-sm-6">Style
+                  <ol>
+                    <li><a href="#sec-colours">Colours</a></li>
+                    <li><a href="#sec-type">Typography</a></li>
+                    <li><a href="#imagery">Imagery</a></li>
+                    <li><a href="#sec-icons">Icons</a></li>
+                  </ol>
+                </li>
+                <li class="col-spacer p-t-1 hidden-sm-up"></li>
+                <li class="col-spacer p-t-1 hidden-xs-down"></li>
+                <li class="col-sm-6">Layout Structure
+                  <ol>
+                    <li><a href="#layout-blocks">Layout Blocks</a></li>
+                    <li><a href="#micro-layouts">Micro Layouts</a></li>
+                    <li><a href="#sec-grid-unit">Grid Unit Proportions</a></li>
+                    <li><a href="#sec-spacing">Spacing</a></li>
+                    <li><a href="#sec-grid-dashboard">Shattered Grid Dashboard</a></li>
+                  </ol>
+                </li>
+                <li class="col-spacer p-t-1 hidden-sm-up"></li>
+                <li class="col-sm-6">Components
+                  <ol>
+                    <li><a href="#banners">Banners</a></li>
+                    <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#cards">Cards of Content</a></li>
+                    <li><a href="#controls">Common UI Controls</a></li>
+                    <li><a href="#dialogues">Dialogues</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#menu-tabs">Header Menu/TABS</a></li>
+                    <li><a href="#menu-headings">Headings</a></li>
+                    <li><a href="#info-bars">Information Bar</a></li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="site-nav" class="text-xs-center">
+        <div class="container">
+          <ul class="nav ef-nav">
+            <li class="nav-item"><a href="#sec-statement" data-toggle="tab" class="nav-link active"><span class="hidden-xs-down">General statement</span><span class="hidden-sm-up">General</span></a></li>
+            <li class="nav-item"><a href="#sec-colours" data-toggle="tab" class="nav-link">Style</a></li>
+            <li class="nav-item"><a href="#sec-layout" data-toggle="tab" class="nav-link"><span class="hidden-xs-down">Layout Structure</span><span class="hidden-sm-up">Layout</span></a></li>
+            <li class="nav-item"><a href="#banners" data-toggle="tab" class="nav-link">Components</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 1-->
+      <section id="sec-statement" style="background-color: #F7F7F7;" class="section-statements">
+        <div class="container">
+          <h2>General Statement</h2>
+          <div class="row">
+            <div class="p-y-1 hidden-lg-up"></div>
+            <div class="col-lg-push-5 col-lg-7">
+              <h5 id="sec-what">What is dGUD style guide?</h5>
+              <p class="m-y-2">dGUD (digital Grand Unified Design) style guide is a complete design guideline, consisting of a set of design principles and assets that demonstrates the good practice of EF web and mobile app design. dGUD is an extension of the original GUD 3.0 Brand guidelines, available here.</p>
+              <h5 id="sec-why">Why do we need a dGUD style guide?</h5>
+              <p class="m-y-2">The dGUD style guide provides guidance for the design work inside EF. It will help designers to build web pages and mobile apps with great visual quality, clean graphic style, and more importantly, brand consistency.</p>
+              <h5 id="sec-how">How to use the guide?</h5>
+              <p class="m-y-2">The dGUD style guide is meant to help designers build great interfaces reducing the time spent on exploration or conceptualization of a visual identity. While we understand certain areas of the school deserve more prominence and visual/functional identity, we believe it's in good effort to offer other designers across the company a set of assets and components that have been carefully crafted, with rigorous emphasis on simplicity, hierarchy, typography, spacing and color. Said principles should help to narrow down the liberate nature of creative work, thus reducing the broad assortment of design styles across BUs.</p>
+              <p class="m-y-1">Please note that the style guide is meant to provide you a graphical guidance. These are rules, or constrains. These are tools for great design.</p>
+              <p class="m-y-1">This documentation is not your answer for underlying UX problems. For those, please refer to your UX lead.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2.1-->
+      <section id="sec-colours">
+        <div class="container">
+          <h2>2.1 COLOURS</h2>
+          <div class="row m-y-2">
+            <div class="col-md-push-6 col-md-6">
+              <dfn class="text-gray-light">The primary application colours are neutralised to allow the minimal use of primary blue to draw focus where required.</dfn>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-black">
+                <div class="color-label"><span class="font-weight-bold">BLACK</span><br><span>#000000</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-blue">
+                <div class="color-label"><span class="font-weight-bold">BLUE
+/CTA</span><br><span>#0078FF</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-warm-paper">
+                <div class="color-label"><span class="font-weight-bold">WARM PAPER</span><br><span class="text-gray-dark">#F1EAE1</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-white">
+                <div class="color-label"><span class="font-weight-bold">WHITE</span><br><span class="text-gray-dark">#FFFFFF</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-ef-pink">
+                <div class="color-label"><span class="font-weight-bold">EF PINK</span><br><span>#FF0084</span>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-green-pea">
+                <div class="color-label"><span class="font-weight-bold">GREEN PEA
+/SUCCESS</span><br><span>#74D17F</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-tomatito">
+                <div class="color-label"><span class="font-weight-bold">TOMATITO
+/ERROR</span><br><span>#DE4C4C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-matte-gold">
+                <div class="color-label"><span class="font-weight-bold">MATTE GOLD
+/REWARD</span><br><span>#C9B188</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-eggshell">
+                <div class="color-label"><span class="font-weight-bold">EGGSHELL
+/CARDS</span><br><span class="text-gray-dark">#FAF7F2</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-rain">
+                <div class="color-label"><span class="font-weight-bold">RAIN
+/DISABLED</span><br><span>#8B8B8B</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-dark-gray">
+                <div class="color-label"><span class="font-weight-bold">DARK GRAY
+/GNDS</span><br><span>#666666</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-y-2">
+            <div class="col-md-push-6 col-md-6">
+              <dfn class="text-gray-light">The following colours have been used and developed for learning materials and classroom materials.</dfn>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-aqua">
+                <div class="color-label"><span class="font-weight-bold">AQUA</span><br><span>#09B79D</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-toxic-mint">
+                <div class="color-label"><span class="font-weight-bold">TOXIC-MINT</span><br><span>#38DDB9</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-olive">
+                <div class="color-label"><span class="font-weight-bold">OLIVE</span><br><span>#98D01F</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-mango">
+                <div class="color-label"><span class="font-weight-bold">MANGO</span><br><span>#F9BA2D</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-tangerine">
+                <div class="color-label"><span class="font-weight-bold">TANGERINE</span><br><span>#F79546</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-sumrf">
+                <div class="color-label"><span class="font-weight-bold">SUMRF</span><br><span>#3BA0DC</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-barney">
+                <div class="color-label"><span class="font-weight-bold">BARNEY</span><br><span>#8B6DB2</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-pink">
+                <div class="color-label"><span class="font-weight-bold">PINK</span><br><span>#F66F9F</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-boring-pink">
+                <div class="color-label"><span class="font-weight-bold">BORING-PINK</span><br><span>#F1385A</span></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-4">
+              <div class="color-box text-color-contrast bg-orangine">
+                <div class="color-label"><span class="font-weight-bold">ORANGINE</span><br><span>#FF6100</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2.2-->
+      <section id="sec-type" class="typography bg-warm-grey">
+        <div class="container">
+          <h2>2.2 TYPOGRAPHY</h2>
+          <div class="row m-b-3">
+            <div class="col-md-push-6 col-md-6">
+              <dfn class="text-gray-light">Good typography adds personality to an application. It can help to set the tone in the absence of visual elements.</dfn>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <p>Helvetica is EF flagship font. In mobile apps it is used in a variety of ways, 75 bold capitals for headlines, 35 Thin and 45 Light Title case for a more friendly headline, 45 Light for body copy and 55 Roman wide tracked caps for buttons.</p>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-3 col-xs-6">
+                  <div class="card text-xs-center font-card">
+                    <div class="card-block p-y-3">
+                      <div class="card-text letters text-thin">abc</div>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">35 thin</div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="card text-xs-center font-card">
+                    <div class="card-block p-y-3">
+                      <div class="card-text letters text-light">abc</div>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">45 light</div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="card text-xs-center font-card">
+                    <div class="card-block p-y-3">
+                      <div class="card-text letters text-medium">abc</div>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">65 medium</div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="card text-xs-center font-card">
+                    <div class="card-block p-y-3">
+                      <div class="card-text letters text-bold">abc</div>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">75 bold</div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="card text-xs-center font-card">
+                    <div class="card-block p-y-3">
+                      <h1 class="card-text">CHANGE COURSE</h1>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">h1- 46 px - 75 bold</div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="card text-xs-center font-card">
+                    <div class="card-block p-y-3">
+                      <h2 class="card-text">PRESENTATIONS</h2>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">h2 - 36 px - 75 bold</div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="card text-xs-center font-card">
+                    <div class="card-block p-y-3">
+                      <h3 class="card-text">William Fergusson</h3>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">h3 - 30 px - 45 light</div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="card text-xs-center font-card">
+                    <div class="card-block p-y-3">
+                      <h4 class="card-text">Details</h4>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">h3 - 20 px - 45 thin</div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="card font-card">
+                    <div class="card-block p-y-3">
+                      <p class="card-text">It makes me happy when people are kind and accepting toward each other, looking out for each other, living the truth that we are all connected to and responsible for each other. It makes me mad when people suffer.</p>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">CONTENT - 14 PX - 45 LIGHT - 20 PX LINE SPACING</div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="card font-card">
+                    <div class="card-block p-y-3">
+                      <h4 class="card-title">Education</h4>
+                      <div class="card-title text-bold">Napier University</div>
+                      <p class="card-text">MSc Hospitality Management. Edinburgh, UK, 2001 - 2004</p>
+                      <div class="card-title text-bold">Oxford Brookes University</div>
+                      <p class="card-text">Bachelors with Honours: Languages for Business (Spanish and French), 2005 - 2006</p>
+                      <h4 class="card-title">Certifications</h4>
+                      <div class="card-title text-bold">TEFL/TESOL Certificate</div>
+                      <p class="card-text">40 hours intensive TEFL qualification, 2015</p>
+                    </div>
+                    <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">example h4 and content mix. 45 light -  75 bold</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-t-3">
+            <div class="col-md-4 col-xs-12">
+              <p>Georgia is a supporting font. It is used to create an academic an more traditional contrast when Helvetica feels too modern or unvaried in designs.</p>
+            </div>
+            <div class="col-md-8">
+              <div class="card text-xs-center font-card">
+                <div class="card-block p-y-3">
+                  <div class="card-text notes text-notes text-xs-center">After completing this course you will be able to:</div>
+                </div>
+                <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">notes - 16 px (variable) - Georgia Italic</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-t-3">
+            <div class="col-md-4">
+              <p>Garamond Italic is only used in one place. This is in title lock ups to create a pleasing contrast to Helvetica Bold Caps.</p>
+            </div>
+            <div class="col-md-8 col-xs-12">
+              <div class="card text-xs-center font-card">
+                <div class="card-block p-y-3">
+                  <h4 class="card-text text-notrans text-contrast text-xs-center">After completing this course you will be able to:</h4>
+                </div>
+                <div class="card-footer font-weight-lighter text-gray-light p-y-2 text-uppercase">contrast - Garamond Italic</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div style="margin-bottom:-2em;padding-bottom:2em;" class="container bg-white p-t-2">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <p>Lock ups<br>H1 + Icon</p>
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <div class="text-xs-center m-y-2">
+              <h3 class="lockup"><span style="font-size: 100%;" class="icon icon-book"></span></h3>
+              <h1>change course</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <p>Lock ups for Learning materials<br>H1 + Garamond note + Icon</p>
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <div class="text-xs-center m-y-2">
+              <div style="font-size: 150%;" class="icon icon-book"></div>
+              <h3 class="text-capitalize lockup">Browser more modules</h3>
+              <h1>levels & topics</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2.3-->
+      <section id="imagery" class="bg-black text-color-contrast">
+        <div class="container-fluid">
+          <div class="container">
+            <h2>2.3 IMAGERY</h2>
+            <div class="row m-b-3">
+              <div class="col-lg-push-6 col-lg-4 col-md-push-5 col-md-6">
+                <dfn>This helps to set the tone of an application. Different apps will employ different types of imagery including photography and illustration. The underlying EF principles of giving our students ‘confidence’ and ‘freedom’ through our product use should be the starting point to making image choices.</dfn>
+              </div>
+            </div>
+            <div class="imagery-frame">
+              <div class="row m-t-3">
+                <div class="col-lg-push-6 col-lg-4 col-md-push-5 col-md-6">
+                  <dfn class="hidden-xs-down">Consider the story the image is trying to tell. Model actions should feel believable and styling should be authentic to our audience. Lightning should set an inspiring mood. Pretentious smiles and actions should be avoided.</dfn>
+                </div>
+              </div>
+              <div class="imagery">
+                <div class="row row-xs-bottom">
+                  <div class="col-xs-4">
+                            <div style="background-image:url('images/student-1.png');" class="image">
+                              <div style="padding-bottom:69.2622951%;" class="image-overlay"></div>
+                            </div>
+                  </div>
+                  <div class="col-xs-8">
+                            <div style="background-image:url('images/student-2.png')" class="image">
+                              <div style="padding-bottom:58.1113801%" class="image-overlay"></div>
+                            </div>
+                  </div>
+                </div>
+                <div class="row row-xs-top">
+                  <div class="col-xs-3 col-xs-push-2">
+                            <div style="background-image:url('images/student-3.png')" class="image">
+                              <div style="padding-bottom:100%" class="image-overlay"></div>
+                            </div>
+                  </div>
+                  <div class="col-xs-4 col-xs-push-2">
+                            <div style="background-image:url('images/student-4.png')" class="image">
+                              <div style="padding-bottom:168.0693069%" class="image-overlay"></div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-y-2 hidden-sm-up"></div>
+            <div class="p-y-3 hidden-xs-down"></div>
+            <div class="p-y-3"></div>
+          </div>
+        </div>
+        <div style="padding-bottom: 3em; margin-bottom: -3em;" class="bg-white text-black">
+          <div style="background-image:url('images/hero.png');" class="ef-banner"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-push-1 col-lg-6 col-md-9 col-xs-12">
+                <div class="card ef-card">
+                  <h3 class="text-notrans">Neue Light. Short.</h3>
+                  <p> Att plugga engelska i Boston med EF lockar språkintresserade från hela världen som vill uppleva USAs universitetsstad på nära håll som student.</p>
+                  <p>Plugga engelska i Boston och utveckla språket i hjärtat av den amerikanska universitetsvärlden. Utöver traditionella språkkurser, kan du förbereda dig för en framtid inom näringslivet eller den akademiska världen genom EFs examensförberedande språkkurser samt våra språkkurser som integreras med ekonomi eller andra ämnen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="banner"></div>
+            <div class="imagery p-t-2">
+              <!-- lg-->
+              <div class="row hidden-md-down">
+                <div class="col-lg-6">
+                          <div style="background-image:url('images/newyork.png')" class="image">
+                            <div class="image-overlay">
+                              <h1>CITY NAME 36PX</h1>
+                              <div class="lockup">USA</div>
+                            </div>
+                          </div>
+                </div>
+                <div class="col-lg-6">
+                          <div style="background-image:url('images/cape-town.png')" class="image">
+                            <div class="image-overlay">
+                              <h1>CAPE TOWN</h1>
+                              <div class="lockup">South Africa</div>
+                            </div>
+                          </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="row">
+                    <div class="col-lg-8">
+                              <div style="background-image:url('images/st-julian.png')" class="image">
+                                <div class="image-overlay">
+                                  <h1>ST JULIAN'S</h1>
+                                  <div class="lockup">Malta</div>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="col-lg-4">
+                              <div style="background-image:url('images/sydney.png')" class="image">
+                                <div class="image-overlay">
+                                  <h1>SYDNEY</h1>
+                                  <div class="lockup">Australia</div>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="col-lg-4">
+                              <div style="background-image:url('images/rome.png')" class="image">
+                                <div class="image-overlay">
+                                  <h1>ROME</h1>
+                                  <div class="lockup">Italy</div>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="col-lg-8">
+                              <div style="background-image:url('images/beijing.png')" class="image">
+                                <div class="image-overlay">
+                                  <h1>BEIJING</h1>
+                                  <div class="lockup">China</div>
+                                </div>
+                              </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                          <div style="background-image:url('images/paris.png')" class="image image-y-2">
+                            <div class="image-overlay">
+                              <h1>PARIS</h1>
+                              <div class="lockup">France</div>
+                            </div>
+                          </div>
+                </div>
+              </div>
+              <!-- md, sm, xs-->
+              <div class="row hidden-lg-up">
+                <div class="col-xs-12">
+                          <div style="background-image:url('images/newyork.png')" class="image">
+                            <div class="image-overlay">
+                              <h1>CITY NAME 36PX</h1>
+                              <div class="lockup">USA</div>
+                            </div>
+                          </div>
+                </div>
+                <div class="col-xs-12">
+                          <div style="background-image:url('images/cape-town.png')" class="image">
+                            <div class="image-overlay">
+                              <h1>CAPE TOWN</h1>
+                              <div class="lockup">South Africa</div>
+                            </div>
+                          </div>
+                </div>
+                <div class="col-xs-12">
+                          <div style="background-image:url('images/st-julian.png')" class="image">
+                            <div class="image-overlay">
+                              <h1>ST JULIAN'S</h1>
+                              <div class="lockup">Malta</div>
+                            </div>
+                          </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                              <div style="background-image:url('images/sydney.png')" class="image">
+                                <div class="image-overlay">
+                                  <h1>SYDNEY</h1>
+                                  <div class="lockup">Australia</div>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12">
+                              <div style="background-image:url('images/rome.png')" class="image">
+                                <div class="image-overlay">
+                                  <h1>ROME</h1>
+                                  <div class="lockup">Italy</div>
+                                </div>
+                              </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                          <div style="background-image:url('images/paris.png')" class="image image-y-2">
+                            <div class="image-overlay">
+                              <h1>PARIS</h1>
+                              <div class="lockup">France</div>
+                            </div>
+                          </div>
+                </div>
+                <div class="col-xs-12">
+                          <div style="background-image:url('images/beijing.png')" class="image">
+                            <div class="image-overlay">
+                              <h1>BEIJING</h1>
+                              <div class="lockup">China</div>
+                            </div>
+                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2.4-->
+      <section id="sec-icons" style="background-color:#F1F4F4;" class="icons">
+        <div class="container">
+          <h2>2.2 ICONS</h2>
+          <div class="row m-b-3">
+            <div class="col-md-push-6 col-md-6">
+              <dfn class="text-gray-light">Icons represents entities, objects and illustrate specific user actions. Any future icon designs should be created as part of this set and follow the stylistic feature.</dfn>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-share"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">share</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">share</span><span style="font-size:10px;" class="hidden-sm-up">share</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-delete"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">delete</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">delete</span><span style="font-size:10px;" class="hidden-sm-up">delete</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-help"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">help</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">help</span><span style="font-size:10px;" class="hidden-sm-up">help</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-edit"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">edit</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">edit</span><span style="font-size:10px;" class="hidden-sm-up">edit</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-lock"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">lock</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">lock</span><span style="font-size:10px;" class="hidden-sm-up">lock</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-unlock"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">unlock</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">unlock</span><span style="font-size:10px;" class="hidden-sm-up">unlock</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-location"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">location</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">location</span><span style="font-size:10px;" class="hidden-sm-up">location</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-email"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">email</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">email</span><span style="font-size:10px;" class="hidden-sm-up">email</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-speech"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">speech</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">speech</span><span style="font-size:10px;" class="hidden-sm-up">speech</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-dialogue"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">dialogue</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">dialogue</span><span style="font-size:10px;" class="hidden-sm-up">dialogue</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-comment"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">comment</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">comment</span><span style="font-size:10px;" class="hidden-sm-up">comment</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-refresh"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">refresh</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">refresh</span><span style="font-size:10px;" class="hidden-sm-up">refresh</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-settings"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">settings</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">settings</span><span style="font-size:10px;" class="hidden-sm-up">settings</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-calendar"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">calendar</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">calendar</span><span style="font-size:10px;" class="hidden-sm-up">calendar</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-clock"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">clock</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">clock</span><span style="font-size:10px;" class="hidden-sm-up">clock</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-tick"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">tick</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">tick</span><span style="font-size:10px;" class="hidden-sm-up">tick</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-sound"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">sound</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">sound</span><span style="font-size:10px;" class="hidden-sm-up">sound</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-login"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">login</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">login</span><span style="font-size:10px;" class="hidden-sm-up">login</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-logout"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">logout</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">logout</span><span style="font-size:10px;" class="hidden-sm-up">logout</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-save"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">save</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">save</span><span style="font-size:10px;" class="hidden-sm-up">save</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-bookmark"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">bookmark</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">bookmark</span><span style="font-size:10px;" class="hidden-sm-up">bookmark</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-like"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">like</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">like</span><span style="font-size:10px;" class="hidden-sm-up">like</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-dislike"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">dislike</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">dislike</span><span style="font-size:10px;" class="hidden-sm-up">dislike</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-magnify"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">magnify</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">magnify</span><span style="font-size:10px;" class="hidden-sm-up">magnify</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-map"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">map</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">map</span><span style="font-size:10px;" class="hidden-sm-up">map</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-notification-ok"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">notification-ok</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">notification-ok</span><span style="font-size:10px;" class="hidden-sm-up">notification-ok</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-notification"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">notification</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">notification</span><span style="font-size:10px;" class="hidden-sm-up">notification</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-exclamation"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">exclamation</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">exclamation</span><span style="font-size:10px;" class="hidden-sm-up">exclamation</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-reward"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">reward</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">reward</span><span style="font-size:10px;" class="hidden-sm-up">reward</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-folder"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">folder</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">folder</span><span style="font-size:10px;" class="hidden-sm-up">folder</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-document"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">document</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">document</span><span style="font-size:10px;" class="hidden-sm-up">document</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-shopping-cart"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">shopping-cart</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">shopping-cart</span><span style="font-size:10px;" class="hidden-sm-up">shopping-cart</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-image"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">image</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">image</span><span style="font-size:10px;" class="hidden-sm-up">image</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-desktop"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">desktop</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">desktop</span><span style="font-size:10px;" class="hidden-sm-up">desktop</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-laptop"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">laptop</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">laptop</span><span style="font-size:10px;" class="hidden-sm-up">laptop</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-tablet"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">tablet</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">tablet</span><span style="font-size:10px;" class="hidden-sm-up">tablet</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-mobile"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">mobile</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">mobile</span><span style="font-size:10px;" class="hidden-sm-up">mobile</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-camera"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">camera</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">camera</span><span style="font-size:10px;" class="hidden-sm-up">camera</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-headphones"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">headphones</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">headphones</span><span style="font-size:10px;" class="hidden-sm-up">headphones</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-headset"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">headset</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">headset</span><span style="font-size:10px;" class="hidden-sm-up">headset</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-phone"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">phone</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">phone</span><span style="font-size:10px;" class="hidden-sm-up">phone</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-website"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">website</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">website</span><span style="font-size:10px;" class="hidden-sm-up">website</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-bed"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">bed</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">bed</span><span style="font-size:10px;" class="hidden-sm-up">bed</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-hotel"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">hotel</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">hotel</span><span style="font-size:10px;" class="hidden-sm-up">hotel</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-meal"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">meal</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">meal</span><span style="font-size:10px;" class="hidden-sm-up">meal</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-city"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">city</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">city</span><span style="font-size:10px;" class="hidden-sm-up">city</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-ticket"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">ticket</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">ticket</span><span style="font-size:10px;" class="hidden-sm-up">ticket</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-airplane"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">airplane</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">airplane</span><span style="font-size:10px;" class="hidden-sm-up">airplane</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-boat"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">boat</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">boat</span><span style="font-size:10px;" class="hidden-sm-up">boat</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-car"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">car</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">car</span><span style="font-size:10px;" class="hidden-sm-up">car</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-bus"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">bus</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">bus</span><span style="font-size:10px;" class="hidden-sm-up">bus</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-train"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">train</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">train</span><span style="font-size:10px;" class="hidden-sm-up">train</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-bicycle"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">bicycle</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">bicycle</span><span style="font-size:10px;" class="hidden-sm-up">bicycle</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-walking"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">walking</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">walking</span><span style="font-size:10px;" class="hidden-sm-up">walking</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-book"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">book</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">book</span><span style="font-size:10px;" class="hidden-sm-up">book</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-binoculars"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">binoculars</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">binoculars</span><span style="font-size:10px;" class="hidden-sm-up">binoculars</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-wine-glass"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">wine-glass</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">wine-glass</span><span style="font-size:10px;" class="hidden-sm-up">wine-glass</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-cocktail-glass"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">cocktail-glass</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">cocktail-glass</span><span style="font-size:10px;" class="hidden-sm-up">cocktail-glass</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-anchor"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">anchor</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">anchor</span><span style="font-size:10px;" class="hidden-sm-up">anchor</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-tennis"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">tennis</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">tennis</span><span style="font-size:10px;" class="hidden-sm-up">tennis</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-subway"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">subway</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">subway</span><span style="font-size:10px;" class="hidden-sm-up">subway</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-gym"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">gym</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">gym</span><span style="font-size:10px;" class="hidden-sm-up">gym</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-library"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">library</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">library</span><span style="font-size:10px;" class="hidden-sm-up">library</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-aquarium"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">aquarium</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">aquarium</span><span style="font-size:10px;" class="hidden-sm-up">aquarium</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-wrench"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">wrench</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">wrench</span><span style="font-size:10px;" class="hidden-sm-up">wrench</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-park"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">park</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">park</span><span style="font-size:10px;" class="hidden-sm-up">park</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-football"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">football</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">football</span><span style="font-size:10px;" class="hidden-sm-up">football</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-agile-indicator"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">agile-indicator</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">agile-indicator</span><span style="font-size:10px;" class="hidden-sm-up">agile-indicator</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-hand"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">hand</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">hand</span><span style="font-size:10px;" class="hidden-sm-up">hand</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-exam"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">exam</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">exam</span><span style="font-size:10px;" class="hidden-sm-up">exam</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-golf"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">golf</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">golf</span><span style="font-size:10px;" class="hidden-sm-up">golf</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-skiing"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">skiing</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">skiing</span><span style="font-size:10px;" class="hidden-sm-up">skiing</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-world"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">world</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">world</span><span style="font-size:10px;" class="hidden-sm-up">world</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-history"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">history</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">history</span><span style="font-size:10px;" class="hidden-sm-up">history</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-science"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">science</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">science</span><span style="font-size:10px;" class="hidden-sm-up">science</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-nature"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">nature</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">nature</span><span style="font-size:10px;" class="hidden-sm-up">nature</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-teacher"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">teacher</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">teacher</span><span style="font-size:10px;" class="hidden-sm-up">teacher</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-globe"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">globe</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">globe</span><span style="font-size:10px;" class="hidden-sm-up">globe</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-money"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">money</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">money</span><span style="font-size:10px;" class="hidden-sm-up">money</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-business"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">business</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">business</span><span style="font-size:10px;" class="hidden-sm-up">business</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-surfing"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">surfing</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">surfing</span><span style="font-size:10px;" class="hidden-sm-up">surfing</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-star"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">star</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">star</span><span style="font-size:10px;" class="hidden-sm-up">star</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-paper"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">paper</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">paper</span><span style="font-size:10px;" class="hidden-sm-up">paper</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-new"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">new</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">new</span><span style="font-size:10px;" class="hidden-sm-up">new</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-piggy-bank"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">piggy-bank</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">piggy-bank</span><span style="font-size:10px;" class="hidden-sm-up">piggy-bank</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-shovel"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">shovel</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">shovel</span><span style="font-size:10px;" class="hidden-sm-up">shovel</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-beach"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">beach</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">beach</span><span style="font-size:10px;" class="hidden-sm-up">beach</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-hourglass"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">hourglass</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">hourglass</span><span style="font-size:10px;" class="hidden-sm-up">hourglass</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-certificate"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">certificate</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">certificate</span><span style="font-size:10px;" class="hidden-sm-up">certificate</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-luggage"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">luggage</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">luggage</span><span style="font-size:10px;" class="hidden-sm-up">luggage</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-crescent-moon"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">crescent-moon</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">crescent-moon</span><span style="font-size:10px;" class="hidden-sm-up">crescent-moon</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-hrs24"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">hrs24</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">hrs24</span><span style="font-size:10px;" class="hidden-sm-up">hrs24</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-alert"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">alert</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">alert</span><span style="font-size:10px;" class="hidden-sm-up">alert</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-plus"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">plus</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">plus</span><span style="font-size:10px;" class="hidden-sm-up">plus</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-amusement"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">amusement</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">amusement</span><span style="font-size:10px;" class="hidden-sm-up">amusement</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-sun"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">sun</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">sun</span><span style="font-size:10px;" class="hidden-sm-up">sun</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-brochure"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">brochure</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">brochure</span><span style="font-size:10px;" class="hidden-sm-up">brochure</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-zoo"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">zoo</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">zoo</span><span style="font-size:10px;" class="hidden-sm-up">zoo</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-snow"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">snow</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">snow</span><span style="font-size:10px;" class="hidden-sm-up">snow</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-soccer"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">soccer</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">soccer</span><span style="font-size:10px;" class="hidden-sm-up">soccer</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-museum"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">museum</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">museum</span><span style="font-size:10px;" class="hidden-sm-up">museum</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-theatre"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">theatre</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">theatre</span><span style="font-size:10px;" class="hidden-sm-up">theatre</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-swimming"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">swimming</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">swimming</span><span style="font-size:10px;" class="hidden-sm-up">swimming</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-diving"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">diving</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">diving</span><span style="font-size:10px;" class="hidden-sm-up">diving</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-video"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">video</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">video</span><span style="font-size:10px;" class="hidden-sm-up">video</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-student"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">student</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">student</span><span style="font-size:10px;" class="hidden-sm-up">student</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-person"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">person</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">person</span><span style="font-size:10px;" class="hidden-sm-up">person</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-speaking"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">speaking</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">speaking</span><span style="font-size:10px;" class="hidden-sm-up">speaking</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-child"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">child</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">child</span><span style="font-size:10px;" class="hidden-sm-up">child</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-lesson"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">lesson</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">lesson</span><span style="font-size:10px;" class="hidden-sm-up">lesson</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-art"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">art</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">art</span><span style="font-size:10px;" class="hidden-sm-up">art</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-lifebuoy"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">lifebuoy</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">lifebuoy</span><span style="font-size:10px;" class="hidden-sm-up">lifebuoy</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-compass"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">compass</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">compass</span><span style="font-size:10px;" class="hidden-sm-up">compass</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-baseball"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">baseball</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">baseball</span><span style="font-size:10px;" class="hidden-sm-up">baseball</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-horse-riding"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">horse-riding</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">horse-riding</span><span style="font-size:10px;" class="hidden-sm-up">horse-riding</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-cinema"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">cinema</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">cinema</span><span style="font-size:10px;" class="hidden-sm-up">cinema</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-fire"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">fire</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">fire</span><span style="font-size:10px;" class="hidden-sm-up">fire</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-umbrella"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">umbrella</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">umbrella</span><span style="font-size:10px;" class="hidden-sm-up">umbrella</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-shopping"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">shopping</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">shopping</span><span style="font-size:10px;" class="hidden-sm-up">shopping</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-sunny"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">sunny</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">sunny</span><span style="font-size:10px;" class="hidden-sm-up">sunny</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-rainy"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">rainy</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">rainy</span><span style="font-size:10px;" class="hidden-sm-up">rainy</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-backpack"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">backpack</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">backpack</span><span style="font-size:10px;" class="hidden-sm-up">backpack</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-lightbulb"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">lightbulb</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">lightbulb</span><span style="font-size:10px;" class="hidden-sm-up">lightbulb</span></p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-4">
+              <div class="text-xs-center">
+                <div style="font-size: 40px;" class="font-weight-normal icon icon-home"></div>
+                <p class="font-weight-lighter text-gray-light p-y-2"><span style="font-size:20px;" class="hidden-md-down">home</span><span style="font-size:14px;" class="hidden-lg-up hidden-xs-down">home</span><span style="font-size:10px;" class="hidden-sm-up">home</span></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 3.1-->
+      <div id="sec-layout"></div>
+      <section id="layout-blocks" class="p-t-3 hidden-xs-down">
+        <div class="container">
+          <h2 id="sec-layout-blocks">3.1 layout blocks
+            <div class="ef-layout-blocks">
+              <div class="media">
+                <div class="media-left media-middle"><a href="javascript:;" class="pull-sm-right"><img style="width:100%" src="./images/media-1.png" alt="Conversation Class" class="media-object"></a></div>
+                <div class="media-body media-middle p-a-3">
+                  <div class="icon icon-lesson font-size-24 p-y-1"></div>
+                  <h4 class="text-notes text-capitalize">Today's conversational class</h4>
+                  <h3 class="media-heading text-capitalize">Asking for directions</h3>
+                  <p class="font-weight-normal">Classes start every hour, 24/7 and give you the confidence to interact with English speakers. No preparation needed.</p>
+                  <p class="p-b-1 text-gray-light font-italic font-weight-normal">Next class starts in 12 minutes | 42 minutes</p>
+                  <div class="ef-btn ef-btn-black"> GO TO CLASS</div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left media-middle"><a href="javascript:;" class="pull-sm-right"><img src="./images/media-2.png" alt="Conversation Class" class="media-object"></a></div>
+                <div class="media-body media-middle p-a-3">
+                  <h4 class="text-notes text-capitalize">Tomorrow's Class</h4>
+                  <h3 class="media-heading text-capitalize">You're still lost. Asking again.</h3>
+                  <p class="p-b-1 text-gray-light font-italic font-weight-normal">First class starts at 7:00 A.M.</p>
+                  <div class="ef-btn ef-btn-other font-size-14 pull-left"> SHOW WEEK SCHEDULEl</div>
+                </div>
+              </div>
+            </div>
+          </h2>
+        </div>
+      </section>
+      <section id="micro-layouts" class="m p-t-3">
+        <div class="container">
+          <h2 id="sec-micro-layouts">3.2 micro layouts</h2>
+          <div class="m-y-3 hidden-md-down">
+            <div class="ef-layout-unit-progress">
+              <div class="media">
+                <div class="media-left media-top">
+                  <h4 class="text-notes text-capitalize">Unit 1 &nbsp;<span class="ef-badge-completed"></span></h4>
+                  <h2 class="media-heading">Holidays</h2>
+                  <p class="font-weight-normal">Passed on 13th July 2014</p>
+                </div>
+                <div class="media-body media-top">
+                  <table class="ef-layout-table">
+                    <tr>
+                      <th></th>
+                      <th class="time font-weight-bold text-gray-lighter text-uppercase font-size-13">total time</th>
+                      <th class="score font-weight-bold text-gray-lighter text-uppercase font-size-13">total score</th>
+                      <th colspan="3"></th>
+                    </tr>
+                    <tr>
+                      <td>Talking about flight arrangements</td>
+                      <td class="time">05 mins</td>
+                      <td class="score">29 %</td>
+                      <td class="devices">
+                        <div class="icon icon-mobile font-size-32"></div>
+                        <div style="font-size: 400%" class="icon icon-desktop"></div>
+                      </td>
+                      <td><span class="ef-badge-completed"></span></td>
+                    </tr>
+                    <tr>
+                      <td>Checking in for a flight</td>
+                      <td class="time">24 mins</td>
+                      <td class="score">15 %</td>
+                      <td class="devices">
+                        <div class="icon icon-mobile font-size-32"></div>
+                      </td>
+                      <td><span class="ef-badge-completed"></span></td>
+                    </tr>
+                    <tr>
+                      <td>Helping someone get to a hotel</td>
+                      <td class="time">66 mins</td>
+                      <td class="score">99 %</td>
+                      <td class="devices">
+                        <div class="icon icon-mobile font-size-32"></div>
+                        <div style="font-size: 400%" class="icon icon-desktop"></div>
+                      </td>
+                      <td><span class="ef-badge-completed"></span></td>
+                    </tr>
+                    <tr>
+                      <td>Writting about past travels</td>
+                      <td class="time">101 mins</td>
+                      <td class="score">100 %</td>
+                      <td class="devices">
+                        <div class="icon icon-mobile font-size-32"></div>
+                        <div style="font-size: 400%" class="icon icon-desktop"></div>
+                      </td>
+                      <td><span class="ef-badge-completed"></span></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-y-3">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="ef-layout-entrance">
+                  <div class="center-block icon icon-book font-size-32 p-y-1"></div>
+                  <h3 class="text-capitalize">Main title here</h3>
+                  <p class="indent-1 text-notes">Subtitle or brief message goes here. Maximum in two lines and with attention to brevity and precision.</p>
+                  <div class="m-y-3">
+                    <table class="ef-layout-table">
+                      <tr>
+                        <td>Describing your experience</td>
+                        <td><span class="ef-badge-completed"></span></td>
+                      </tr>
+                      <tr>
+                        <td>Disagreements and compilations</td>
+                        <td><span class="ef-badge-completed"></span></td>
+                      </tr>
+                      <tr>
+                        <td>Recommending a hotel</td>
+                        <td>
+                          <button class="ef-btn ef-btn-other pull-right-xs"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Describing experiences</td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <button class="center-block ef-btn ef-btn-main">CONTINUE</button>
+                </div>
+              </div>
+              <div class="p-y-3 hidden-sm-up"></div>
+              <div class="col-md-6 col-md-push-1">
+                <div class="ef-layout-entrance">
+                  <div class="center-block icon icon-lesson font-size-32 p-y-1"></div>
+                  <h3 class="text-capitalize">Group Lesson: Asking for directions</h3>
+                  <p class="indent-1 text-notes">It's very common to get lost in a place we are not familiar with. Learn how to ask strangers for directions</p>
+                  <div class="m-y-3">
+                    <div class="countdown">
+                      <table>
+                        <tr>
+                          <td>00</td>
+                          <td>20</td>
+                          <td>45</td>
+                        </tr>
+                        <tr>
+                          <th>hour</th>
+                          <th>min</th>
+                          <th>sec</th>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="p-b-2">
+                    <p class="indent-2 text-gray-light">Be ready when the classroom opens by completing a compatibility check.</p>
+                  </div>
+                  <button class="center-block ef-btn ef-btn-main">CHECK MY SYSTEM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4.1-->
+      <section id="banners" class="section-banner bg-warm-paper">
+        <div class="container">
+          <h2>4.1 BANNERS</h2>
+        </div>
+        <div class="p-y-2">
+          <div class="ef-banner">
+            <div class="ef-banner-body">
+              <div class="container">
+                <div class="banner-slogan">
+                  <p class="current-module">Your current module</p>
+                  <p class="current-module-name">General English</p>
+                  <p class="level">Level 3, Beginner  |  Unit 1: Times and Days</p>
+                </div>
+                <div class="banner-link"><a href="javascript:;" class="ef-btn ef-btn-continue">CONTINUE</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4.2-->
+      <section id="breadcrumbs" class="section-breadcrumbs bg-warm-paper">
+        <div class="container">
+          <h2>4.2 BREADCRUMBS</h2>
+          <ol class="ef-breadcrumb">
+            <li class="hidden-lg-down"><a href="javascript:;">
+                <p class="title">language</p>
+                <p class="desc">English</p></a></li>
+            <li class="hidden-sm-down"><a href="javascript:;">
+                <p class="title">DESTINATION</p>
+                <p class="desc">Brisbane - Australia</p></a></li>
+            <li class="hidden-md-down"><a href="javascript:;">
+                <p class="title">COURSE</p>
+                <p class="desc">Cambridge Exam Prep</p></a></li>
+            <li class="active"><a href="javascript:;">
+                <p class="title">Date</p>
+                <p class="desc">13-10-13 > 27 -06-14</p></a></li>
+            <li>
+              <p class="title">SUMMARY</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- 4.3-->
+      <section id="buttons" class="section-button bg-warm-paper">
+        <div class="container">
+          <h2>4.3 buttons</h2>
+          <div class="p-t-1">
+            <div class="row">
+              <div class="col col-lg-3 col-md-6 col-xs-12">
+                <p class="p-a-2 btn-bg-main">
+                  <button class="ef-btn ef-btn-main">MAIN CTA</button>
+                </p>
+                <p class="p-a-2 btn-bg-black">
+                  <button class="ef-btn ef-btn-black">BLACK CTA</button>
+                </p>
+                <p class="p-a-2 btn-bg-continue">
+                  <button class="ef-btn ef-btn-continue">CONTINUE</button>
+                </p>
+              </div>
+              <div class="col col-lg-3 col-md-6 col-xs-12">
+                <p class="p-a-2 btn-bg-main">
+                  <button class="ef-btn ef-btn-main-outline">SECONDARY</button>
+                </p>
+                <p class="p-a-2 btn-bg-black">
+                  <button class="ef-btn ef-btn-black-outline">SECONDARY</button>
+                </p>
+                <p class="p-a-2 btn-bg-continue">
+                  <button class="ef-btn ef-btn-continue-outline">SECONDARY</button>
+                </p>
+              </div>
+              <div class="col col-lg-3 col-md-6 col-xs-12">
+                <p class="p-a-2">
+                  <button class="ef-btn ef-btn-other">EVERYTHING ELSE</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4.4-->
+      <section id="cards" class="section-cards bg-warm-paper">
+        <div class="container">
+          <h2>4.4 CONTENT CARDS VARIATIONS & teacher cards</h2>
+          <div class="p-y-2 hidden-sm-down">
+            <div class="row row-xs-bottom">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="example-content-cards">
+                  <h3>GE REGULAR</h3>
+                </div>
+                <div class="card ef-card ef-card-course card-inverse">
+                  <div style="background-image:url('images/06elementary.png')" class="card-img-top">
+                    <div class="card-img-overlay">
+                      <h1 class="card-text font-weight-medium">06</h1>
+                      <h2 class="card-text font-weight-lighter">Elementary</h2>
+                    </div>
+                  </div>
+                  <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="example-content-cards">
+                  <h3>BUSINESS &amp; STT</h3>
+                </div>
+                <div class="card ef-card ef-card-course card-inverse">
+                  <div style="background-image:url('images/negotiation.png')" class="card-img-top">
+                    <div class="card-img-overlay">
+                      <h2 class="card-text font-weight-lighter">Negotiations</h2>
+                    </div>
+                  </div>
+                  <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="example-content-cards">
+                  <h3>INDUSTRY</h3>
+                </div>
+                <div class="card ef-card ef-card-course card-inverse">
+                  <div style="background-image:url('images/mitarbeiterf-hrung-und.png')" class="card-img-top">
+                    <div class="card-img-overlay">
+                      <h2 class="card-text font-weight-lighter">Mitarbeiterführung Und Managment asdasdasdasdasda</h2>
+                    </div>
+                  </div>
+                  <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                  <div class="ef-card-link"><a href="javascript:;">learn more</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-xs-bottom">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="example-content-cards hidden-md-up">
+                  <h3>GE REGULAR</h3>
+                </div>
+                <div class="card ef-card ef-card-course card-inverse">
+                  <div style="background-image:url('images/upper-advanced.png')" class="card-img-top">
+                    <div class="card-img-overlay">
+                      <h1 class="card-text font-weight-medium">16</h1>
+                      <h2 class="card-text font-weight-lighter">Upper Advanced</h2>
+                    </div>
+                  </div>
+                  <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="example-content-cards hidden-md-up">
+                  <h3>BUSINESS &amp; STT</h3>
+                </div>
+                <div class="card ef-card ef-card-course card-inverse">
+                  <div style="background-image:url('images/toeic.png')" class="card-img-top">
+                    <div class="card-img-overlay">
+                      <h2 class="card-text font-weight-lighter">TOEIC</h2>
+                    </div>
+                  </div>
+                  <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-y-2 hidden-sm-down"></div>
+          <div class="row row-xs-bottom">
+            <div class="example-content-cards pull-out hidden-lg-down">
+              <h3>NORMAL STATE</h3>
+            </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="example-content-cards">
+                            <h3>unCompleted course</h3>
+                          </div>
+                          <div class="card ef-card ef-card-course card-inverse stateful ef-uncompleted-course ">
+                            <div style="background-image:url('images/toeic.png')" class="card-img-top">
+                              <div class="card-img-overlay">
+                                <h1 class="card-text font-weight-medium">01</h1>
+                                <h2 class="card-text font-weight-lighter">Beginner</h2>
+                              </div>
+                            </div>
+                            <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                            <div class="ef-card-link"><a href="javascript:;">learn more</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="example-content-cards">
+                            <h3>Completed course</h3>
+                          </div>
+                          <div class="card ef-card ef-card-course card-inverse stateful ef-completed-course ">
+                            <div style="background-image:url('images/toeic.png')" class="card-img-top">
+                              <div class="card-course-status"><span class="ef-badge-completed"></span></div>
+                              <div class="card-img-overlay">
+                                <h1 class="card-text font-weight-medium">01</h1>
+                                <h2 class="card-text font-weight-lighter">Beginner</h2>
+                              </div>
+                            </div>
+                            <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                            <div class="ef-card-link"><a href="javascript:;">learn more</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="example-content-cards">
+                            <h3>CURRENT course</h3>
+                          </div>
+                          <div class="card ef-card ef-card-course card-inverse stateful ef-current-course ">
+                            <div style="background-image:url('images/toeic.png')" class="card-img-top">
+                              <div class="card-course-status">Your currrent course</div>
+                              <div class="card-img-overlay">
+                                <h1 class="card-text font-weight-medium">01</h1>
+                                <h2 class="card-text font-weight-lighter">Beginner</h2>
+                              </div>
+                            </div>
+                            <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                            <div class="ef-card-link"><a href="javascript:;">learn more</a>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <div class="row row-xs-bottom">
+            <div class="example-content-cards pull-out hidden-lg-down">
+              <h3>SELECTED STATE</h3>
+            </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="example-content-cards hidden-md-up">
+                            <h3>unCompleted course</h3>
+                          </div>
+                          <div class="card ef-card ef-card-course card-inverse stateful ef-uncompleted-course card-selected">
+                            <div style="background-image:url('images/toeic.png')" class="card-img-top">
+                              <div class="card-img-overlay">
+                                <h1 class="card-text font-weight-medium">01</h1>
+                                <h2 class="card-text font-weight-lighter">Beginner</h2>
+                              </div>
+                            </div>
+                            <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                            <div class="ef-card-link"><a href="javascript:;" class="selected">close</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="example-content-cards hidden-md-up">
+                            <h3>Completed course</h3>
+                          </div>
+                          <div class="card ef-card ef-card-course card-inverse stateful ef-completed-course card-selected">
+                            <div style="background-image:url('images/toeic.png')" class="card-img-top">
+                              <div class="card-course-status"><span class="ef-badge-completed"></span></div>
+                              <div class="card-img-overlay">
+                                <h1 class="card-text font-weight-medium">01</h1>
+                                <h2 class="card-text font-weight-lighter">Beginner</h2>
+                              </div>
+                            </div>
+                            <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                            <div class="ef-card-link"><a href="javascript:;" class="selected">close</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <div class="example-content-cards hidden-md-up">
+                            <h3>CURRENT course</h3>
+                          </div>
+                          <div class="card ef-card ef-card-course card-inverse stateful ef-current-course card-selected">
+                            <div style="background-image:url('images/toeic.png')" class="card-img-top">
+                              <div class="card-course-status">Your currrent course</div>
+                              <div class="card-img-overlay">
+                                <h1 class="card-text font-weight-medium">01</h1>
+                                <h2 class="card-text font-weight-lighter">Beginner</h2>
+                              </div>
+                            </div>
+                            <div class="card-block">This course will teach you the basics of effective military communication, including how to give briefings and to write orders, radio messages and reports.</div>
+                            <div class="ef-card-link"><a href="javascript:;" class="selected">close</a>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <div class="p-y-2"></div>
+          <h2>4.4.1 TEACHER CARDS CONTENT & MICRO CARDS</h2>
+          <div class="p-y-3">
+            <div class="card ef-card ef-card-teacher ef-card-teacher-lg">
+              <div class="card-content">
+                <div style="background-image:url('images/teacher.png')" class="card-img-top"></div>
+                <div class="card-block">
+                  <h4 class="text-notes text-capitalize"><span class="icon icon-teacher"></span>&nbsp;
+                    Teacher
+                  </h4>
+                  <h3 class="text-capitalize">William Fergusson</h3>
+                  <div class="m-y-1"></div>
+                  <div class="blockquote">I love teaching English more than I love my own mother. I have so much fun teaching with EF here in London!</div>
+                </div>
+                <div class="card-block card-block-details text-uppercase font-size-11">
+                  <ul class="row list">
+                    <li class="col-md-3 col-xs-6">
+                      <div class="text-bold text-center">speaks</div><span class="text-gray-light">british<br />english</span><img src="images/british.png">
+                    </li>
+                    <li class="col-md-3 col-xs-6">
+                      <div class="text-bold text-center">student rating</div>
+                                  <div class="font-size-24"><span class="icon icon-star_fill text-matte-gold"></span><span class="icon icon-star_fill text-matte-gold"></span><span class="icon icon-star_fill text-matte-gold"></span><span class="icon icon-star_fill text-matte-gold"></span><span class="icon icon-star_fill text-gray-light"></span></div>
+                    </li>
+                    <div class="col-spacer hidden-md-up p-t-1"></div>
+                    <li class="col-md-3 col-xs-6">
+                      <div class="text-bold text-center">bilingual in</div><span class="text-gray-light">spanish</span>&nbsp;<img src="images/lingual.png">
+                    </li>
+                    <li class="col-md-3 col-xs-6">
+                      <div class="text-bold text-center">availability</div>
+                      <div class="text-gray-light text-xs-center">good</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="m-y-2 btn ef-btn ef-btn-main">BOOK A PRIVATE CLASS</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-a-1 hidden-xs-down">
+            <div class="card ef-card">
+              <div style="max-width: 400px" class="card-block p-x-0 text-xs-center center-block">
+                <table class="ef-table ef-table-2-col m-y-2">
+                  <caption>Details</caption>
+                  <tr>
+                    <th>Lives in:</th>
+                    <td>London, UK</td>
+                  </tr>
+                  <tr>
+                    <th>Gender:</th>
+                    <td>Male</td>
+                  </tr>
+                  <tr>
+                    <th>Birthday:</th>
+                    <td>1st Februrary</td>
+                  </tr>
+                  <tr>
+                    <th>Speaks:</th>
+                    <td>
+                      English (Native)
+                      Spanish (Advanced)
+                      French (Beginner)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Industry experience:</th>
+                    <td>
+                      Insurance
+                      Finance
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Teaching specialisms:</th>
+                    <td>
+                      Business English
+                      Insurance English
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="p-a-1 hidden-xs-down">
+            <div class="card ef-card">
+              <div style="max-width: 600px" class="card-block p-y-2 center-block">
+                <h3 class="text-capitalize">About</h3>
+                <p>It makes me happy when people are kind and accepting toward each other, looking out for each other, living the truth that we are all connected to and responsible for each other. It makes me mad when people suffer. I am good at painting, writing, sewing, singing, dancing, running, cooking, researching, performing, planning, teaching, learning, and lots of other things. I have never knowingly eaten a dog, though there is always the chance that once just slipped in, perhaps when I was asleep.</p><br>
+                <h3 class="text-capitalize">Interests</h3>
+                <p>What makes me happy: Cooking, learning languages, nature, friends and family, my dog, improving & challenging myself My favorite foods: Italian & Mexican... and noodles! If I could be doing anything right now, I would: travel to some spanish speaking country to make my spanish better!</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-y-2 hidden-xs-down"></div>
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <div class="card ef-card ef-card-teacher ef-card-teacher-sm">
+                <div class="card-content">
+                  <div style="background-image:url('images/teacher1.png')" class="card-img-top"></div>
+                  <div class="card-block">
+                    <h5 class="text-notes text-capitalize"><span class="icon icon-teacher"></span>&nbsp;
+                      Teacher
+                    </h5>
+                    <h4 class="text-capitalize">William Fergusson</h4>
+                  </div>
+                  <div class="card-block card-block-details text-uppercase font-size-11">
+                    <ul class="row list">
+                      <li class="col-xs-6"><span class="text-gray-light">british<br />english</span><img src="images/british.png"></li>
+                      <li class="col-xs-6"><span class="text-gray-light">bilingual<br/>danish</span><img src="images/lingual.png"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-spacer hidden-md-up p-t-1"></div>
+            <div class="col-md-4 col-xs-12">
+              <div class="card ef-card ef-card-teacher ef-card-teacher-sm">
+                <div class="card-content">
+                  <div style="background-image:url('images/teacher2.png')" class="card-img-top"></div>
+                  <div class="card-block">
+                    <h5 class="text-notes text-capitalize"><span class="icon icon-teacher"></span>&nbsp;
+                      Teacher
+                    </h5>
+                    <h4 class="text-capitalize">Johan Sanders</h4>
+                  </div>
+                  <div class="card-block card-block-details text-uppercase font-size-11">
+                    <ul class="row list">
+                      <li class="col-xs-6"><span class="text-gray-light">british <br /> english</span><img src="images/british.png"></li>
+                      <li class="col-xs-6"><span class="text-gray-light">bilingual <br /> russian</span><img src="images/lingual.png"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-spacer hidden-md-up p-t-1"></div>
+            <div class="col-md-4 col-xs-12">
+              <div class="card ef-card ef-card-teacher ef-card-teacher-sm">
+                <div class="card-content">
+                  <div style="background-image:url('images/teacher3.png')" class="card-img-top"></div>
+                  <div class="card-block">
+                    <h5 class="text-notes text-capitalize"><span class="icon icon-teacher"></span>&nbsp;
+                      Teacher
+                    </h5>
+                    <h4 class="text-capitalize">Claire Johnson</h4>
+                  </div>
+                  <div class="card-block card-block-details text-uppercase font-size-11">
+                    <ul class="row list">
+                      <li class="col-xs-12"><span class="text-gray-light">british<br />english</span><img src="images/british.png"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4.5-->
+      <section id="controls" class="controls">
+        <div class="container">
+          <h2>4.5 common UI controls</h2>
+          <div class="m-t-3">
+            <div class="row">
+              <div class="col-sm-4 col-xs-12">
+                <h4 class="text-gray-light">Progress Bars
+                  <div class="m-y-2">
+                    <div class="ef-progress">
+                      <div role="progressbar" style="width: 1%;" class="ef-progress-bar progress-bar-success">1%</div>
+                    </div>
+                    <div class="ef-progress">
+                      <div role="progressbar" style="width: 60%;" class="ef-progress-bar progress-bar-success">60%</div>
+                    </div>
+                  </div>
+                </h4>
+              </div>
+              <div class="col-sm-8 col-xs-12">
+                <h4 class="text-gray-light">Sliders</h4>
+                <div class="m-y-2">
+                  <input type="text" data-toggle="slider" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="250">
+                </div>
+                <div class="m-y-1"><br></div>
+                <div class="m-y-1">
+                  <input type="text" data-toggle="slider" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3 col-xs-4">
+                <h4 class="text-gray-light">Switches Outline</h4>
+                <div style="font-size: 15px" class="m-y-2">
+                  <input type="checkbox" checked="">
+                </div>
+                <div style="font-size: 15px" class="m-y-2">
+                  <input type="checkbox" checked="" data-inverse="true">
+                </div>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <h4 class="text-gray-light">Switches Disabled</h4>
+                <div style="font-size: 15px" class="m-y-2">
+                  <input type="checkbox" disabled checked="">
+                </div>
+                <div style="font-size: 15px" class="m-y-2">
+                  <input type="checkbox" disabled checked="" data-inverse="true">
+                </div>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <h4 class="text-gray-light">Switches Small</h4>
+                <div style="font-size: 10px" class="m-y-2">
+                  <input type="checkbox" checked>
+                </div>
+                <div style="font-size: 10px" class="m-y-2">
+                  <input type="checkbox" checked="" data-inverse="true">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h4 class="text-gray-light">Tool Tips</h4>
+              <div class="m-y-2 tooltips"><span data-toggle="tooltip" data-placement="top" data-title="Top Tooltip" class="top m-l-2 m-r-3"></span><span data-toggle="tooltip" data-placement="right" data-title="Left Tooltip" class="right m-l-3"></span>
+                <div class="m-y-2"></div><span data-toggle="tooltip" data-placement="left" data-title="Right Tooltip" class="left m-l-2 m-r-3"></span><span data-toggle="tooltip" data-placement="bottom" data-title="Bottom Tooltip" class="bottom m-l-3"></span>
+                <script>
+                  $('[data-toggle="tooltip"]').tooltip({
+                  template:
+                  '<div class="tooltip ef-tooltip" role="tooltip">' +
+                      '<div class="tooltip-arrow"></div>' +
+                      '<div class="tooltip-inner"></div>' +
+                  '</div>',
+                  trigger: 'manual'
+                  }).tooltip('show');
+                  
+                </script>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <h4 class="text-gray-light">Pagination & Navigation</h4>
+              <div class="m-y-1">
+                <nav>
+                  <ul class="ef-pagination pagination">
+                    <li class="page-nav disabled"><a href="javascript:;" class="page-link"><span class="icon icon-arrow-long-left"></span></a></li>
+                    <li class="page-item active"><a href="javascript:;" class="page-link">1</a></li>
+                                  <li class="page-dot">&#x00B7;&#x00B7;&#x00B7;</li>
+                    <li class="page-item hidden-sm-down"><a href="javascript:;" class="page-link">5</a></li>
+                                  <li class="page-dot hidden-sm-down">&#x00B7;&#x00B7;&#x00B7;</li>
+                    <li class="page-item"><a href="javascript:;" class="page-link">99</a></li>
+                    <li class="page-nav"><a href="javascript:;" class="page-link"><span class="icon icon-arrow-long-right"></span></a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="m-y-1">
+                <nav>
+                  <ul class="ef-pagination pagination">
+                    <li class="page-nav"><a href="javascript:;" class="page-link"><span class="icon icon-arrow-long-left"></span></a></li>
+                    <li class="page-item"><a href="javascript:;" class="page-link">1</a></li>
+                                  <li class="page-dot">&#x00B7;&#x00B7;&#x00B7;</li>
+                    <li class="page-item hidden-sm-down"><a href="javascript:;" class="page-link">5</a></li>
+                                  <li class="page-dot hidden-sm-down">&#x00B7;&#x00B7;&#x00B7;</li>
+                    <li class="page-item active"><a href="javascript:;" class="page-link">99</a></li>
+                    <li class="page-nav disabled"><a href="javascript:;" class="page-link"><span class="icon icon-arrow-long-right"></span></a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="m-y-1">
+                <nav style="max-width: 250px;">
+                  <ul class="pager ef-pager">
+                    <li class="pager-prev"><a href="javascript:;" class="text-uppercase">go back</a></li>
+                    <li class="pager-next"><a href="javascript:;" class="text-uppercase">next</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="m-y-3">
+            <h4 class="text-gray-light">Combo boxes</h4>
+            <div class="row">
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div class="dropdown ef-combo m-y-1">
+                  <button data-toggle="dropdown" class="btn ef-btn-black dropdown-toggle text-xs-left"><span class="text-uppercase">COMBO BOX</span></button>
+                              <div style="max-height: 300px" class="dropdown-menu">
+                                <h3 class="dropdown-group-title">Travel English</h3>
+                                <div class="dropdown-group"><a href="javascript:;" class="dropdown-item">TRAVEL ENGLISH</a><a href="javascript:;" class="dropdown-item">BUSINESS WRITING</a><a href="javascript:;" class="dropdown-item">NEGOTIATIONS</a><a href="javascript:;" class="dropdown-item">MEETINGS</a></div>
+                                <h3 class="dropdown-group-title">Business English</h3>
+                                <div class="dropdown-group"><a href="javascript:;" class="dropdown-item">APPOINTMENTS</a><a href="javascript:;" class="dropdown-item">PRESENTATIONS</a><a href="javascript:;" class="dropdown-item">NEGOTIATIONS</a><a href="javascript:;" class="dropdown-item">MEETINGS</a></div>
+                              </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div class="dropdown ef-combo m-y-1">
+                  <button data-toggle="dropdown" class="btn ef-btn-black-outline dropdown-toggle text-xs-left"><span class="text-uppercase">COMBO BOX ALT</span></button>
+                              <div style="max-height: 300px" class="dropdown-menu">
+                                <h3 class="dropdown-group-title">Travel English</h3>
+                                <div class="dropdown-group"><a href="javascript:;" class="dropdown-item">TRAVEL ENGLISH</a><a href="javascript:;" class="dropdown-item">BUSINESS WRITING</a><a href="javascript:;" class="dropdown-item">NEGOTIATIONS</a><a href="javascript:;" class="dropdown-item">MEETINGS</a></div>
+                                <h3 class="dropdown-group-title">Business English</h3>
+                                <div class="dropdown-group"><a href="javascript:;" class="dropdown-item">APPOINTMENTS</a><a href="javascript:;" class="dropdown-item">PRESENTATIONS</a><a href="javascript:;" class="dropdown-item">NEGOTIATIONS</a><a href="javascript:;" class="dropdown-item">MEETINGS</a></div>
+                              </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
+                <div class="row bg-contrast-grey p-y-2">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="dropdown ef-combo m-y-1">
+                      <button data-toggle="dropdown" class="btn ef-btn-continue dropdown-toggle text-xs-left"><span class="text-uppercase">COMBO BOX</span></button>
+                                  <div style="max-height: 300px" class="dropdown-menu">
+                                    <h3 class="dropdown-group-title">Travel English</h3>
+                                    <div class="dropdown-group"><a href="javascript:;" class="dropdown-item">TRAVEL ENGLISH</a><a href="javascript:;" class="dropdown-item">BUSINESS WRITING</a><a href="javascript:;" class="dropdown-item">NEGOTIATIONS</a><a href="javascript:;" class="dropdown-item">MEETINGS</a></div>
+                                    <h3 class="dropdown-group-title">Business English</h3>
+                                    <div class="dropdown-group"><a href="javascript:;" class="dropdown-item">APPOINTMENTS</a><a href="javascript:;" class="dropdown-item">PRESENTATIONS</a><a href="javascript:;" class="dropdown-item">NEGOTIATIONS</a><a href="javascript:;" class="dropdown-item">MEETINGS</a></div>
+                                  </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="dropdown ef-combo m-y-1">
+                      <button data-toggle="dropdown" class="btn ef-btn-continue-outline dropdown-toggle text-xs-left"><span class="text-uppercase">COMBO BOX ALT</span></button>
+                                  <div style="max-height: 300px" class="dropdown-menu">
+                                    <h3 class="dropdown-group-title">Travel English</h3>
+                                    <div class="dropdown-group"><a href="javascript:;" class="dropdown-item">TRAVEL ENGLISH</a><a href="javascript:;" class="dropdown-item">BUSINESS WRITING</a><a href="javascript:;" class="dropdown-item">NEGOTIATIONS</a><a href="javascript:;" class="dropdown-item">MEETINGS</a></div>
+                                    <h3 class="dropdown-group-title">Business English</h3>
+                                    <div class="dropdown-group"><a href="javascript:;" class="dropdown-item">APPOINTMENTS</a><a href="javascript:;" class="dropdown-item">PRESENTATIONS</a><a href="javascript:;" class="dropdown-item">NEGOTIATIONS</a><a href="javascript:;" class="dropdown-item">MEETINGS</a></div>
+                                  </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-y-3">
+            <h4 class="text-gray-light">Dropdown</h4>
+            <div class="row">
+              <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                <div class="dropdown ef-dropdown">
+                  <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle text-xs-left"><span class="text-uppercase">Age</span></button>
+                  <div style="max-height: 300px" class="dropdown-menu"><a href="javascript:;" class="dropdown-item">18</a><a href="javascript:;" class="dropdown-item">19</a><a href="javascript:;" class="dropdown-item">20</a><a href="javascript:;" class="dropdown-item">21</a><a href="javascript:;" class="dropdown-item">22</a><a href="javascript:;" class="dropdown-item">23</a><a href="javascript:;" class="dropdown-item">24</a><a href="javascript:;" class="dropdown-item">25</a><a href="javascript:;" class="dropdown-item">26</a><a href="javascript:;" class="dropdown-item">27</a><a href="javascript:;" class="dropdown-item">28</a><a href="javascript:;" class="dropdown-item">29</a><a href="javascript:;" class="dropdown-item">30</a><a href="javascript:;" class="dropdown-item">31</a><a href="javascript:;" class="dropdown-item">32</a><a href="javascript:;" class="dropdown-item">33</a><a href="javascript:;" class="dropdown-item">34</a><a href="javascript:;" class="dropdown-item">35</a><a href="javascript:;" class="dropdown-item">36</a><a href="javascript:;" class="dropdown-item">37</a><a href="javascript:;" class="dropdown-item">38</a><a href="javascript:;" class="dropdown-item">39</a><a href="javascript:;" class="dropdown-item">40</a><a href="javascript:;" class="dropdown-item">41</a><a href="javascript:;" class="dropdown-item">42</a><a href="javascript:;" class="dropdown-item">43</a><a href="javascript:;" class="dropdown-item">44</a><a href="javascript:;" class="dropdown-item">45</a><a href="javascript:;" class="dropdown-item">46</a><a href="javascript:;" class="dropdown-item">47</a><a href="javascript:;" class="dropdown-item">48</a><a href="javascript:;" class="dropdown-item">49</a><a href="javascript:;" class="dropdown-item">50</a><a href="javascript:;" class="dropdown-item">51</a><a href="javascript:;" class="dropdown-item">52</a><a href="javascript:;" class="dropdown-item">53</a><a href="javascript:;" class="dropdown-item">54</a><a href="javascript:;" class="dropdown-item">55</a><a href="javascript:;" class="dropdown-item">56</a><a href="javascript:;" class="dropdown-item">57</a><a href="javascript:;" class="dropdown-item">58</a><a href="javascript:;" class="dropdown-item">59</a><a href="javascript:;" class="dropdown-item">60</a><a href="javascript:;" class="dropdown-item">61</a><a href="javascript:;" class="dropdown-item">62</a><a href="javascript:;" class="dropdown-item">63</a><a href="javascript:;" class="dropdown-item">64</a><a href="javascript:;" class="dropdown-item">65</a><a href="javascript:;" class="dropdown-item">66</a><a href="javascript:;" class="dropdown-item">67</a><a href="javascript:;" class="dropdown-item">68</a><a href="javascript:;" class="dropdown-item">69</a><a href="javascript:;" class="dropdown-item">70</a><a href="javascript:;" class="dropdown-item">71</a><a href="javascript:;" class="dropdown-item">72</a><a href="javascript:;" class="dropdown-item">73</a><a href="javascript:;" class="dropdown-item">74</a><a href="javascript:;" class="dropdown-item">75</a><a href="javascript:;" class="dropdown-item">76</a><a href="javascript:;" class="dropdown-item">77</a><a href="javascript:;" class="dropdown-item">78</a><a href="javascript:;" class="dropdown-item">79</a><a href="javascript:;" class="dropdown-item">80</a><a href="javascript:;" class="dropdown-item">81</a><a href="javascript:;" class="dropdown-item">82</a><a href="javascript:;" class="dropdown-item">83</a><a href="javascript:;" class="dropdown-item">84</a><a href="javascript:;" class="dropdown-item">85</a><a href="javascript:;" class="dropdown-item">86</a><a href="javascript:;" class="dropdown-item">87</a><a href="javascript:;" class="dropdown-item">88</a><a href="javascript:;" class="dropdown-item">89</a><a href="javascript:;" class="dropdown-item">90</a><a href="javascript:;" class="dropdown-item">91</a><a href="javascript:;" class="dropdown-item">92</a><a href="javascript:;" class="dropdown-item">93</a><a href="javascript:;" class="dropdown-item">94</a><a href="javascript:;" class="dropdown-item">95</a><a href="javascript:;" class="dropdown-item">96</a><a href="javascript:;" class="dropdown-item">97</a><a href="javascript:;" class="dropdown-item">98</a><a href="javascript:;" class="dropdown-item">99</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4.6-->
+      <section id="dialogues" class="modals bg-warm-grey">
+        <div class="container">
+          <h2>4.6 dialogues</h2>
+          <div class="m-t-3">
+            <div class="row">
+              <div class="col-lg-3 col-xs-12 p-y-1">
+                <button data-toggle="modal" data-target="#t1" aria-hidden="true" class="ef-btn ef-btn-main">Modal Primary 1</button>
+              </div>
+              <div class="col-lg-3 col-xs-12 p-y-1">
+                <button data-toggle="modal" data-target="#t2" aria-hidden="true" class="ef-btn ef-btn-main">Modal Primary 2</button>
+              </div>
+              <div class="col-lg-3 col-xs-12 p-y-1">
+                <button data-toggle="modal" data-target="#t3" aria-hidden="true" class="ef-btn ef-btn-main">Modal Inverse</button>
+              </div>
+              <div class="col-lg-3 col-xs-12 p-y-1">
+                <button data-toggle="modal" data-target="#t4" aria-hidden="true" class="ef-btn ef-btn-main">Modal Error</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="t1" class="modal ef-modal modal-primary text-xs-center fade">
+        <div role="document" class="modal-dialog">
+          <div style="max-width: 450px;" class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>
+              <h5 class="modal-title">Week Schedule</h5>
+            </div>
+            <div class="modal-body">
+              <table class="ef-table weekly-schedule text-xs-left">
+                <tr>
+                  <th>Monday</th>
+                  <td>Expanding your vocabulary</td>
+                </tr>
+                <tr>
+                  <th>Tuesday</th>
+                  <td>Solving a puzzle</td>
+                </tr>
+                <tr>
+                  <th>Wednesday</th>
+                  <td>Making big decisions</td>
+                </tr>
+                <tr>
+                  <th>Thursday</th>
+                  <td>Taking part in a trial</td>
+                </tr>
+                <tr>
+                  <th>Friday</th>
+                  <td>Understanding computers</td>
+                </tr>
+                <tr>
+                  <th>Sunday</th>
+                  <td>Keeping fit</td>
+                </tr>
+              </table>
+              <div class="center-block p-y-1 text-matte-gold"><span class="icon icon-world">&nbsp;</span>All times follow Eastern Standard Time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="t2" class="modal ef-modal modal-primary text-xs-center fade">
+        <div role="document" class="modal-dialog">
+          <div style="max-width: 400px;" class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>
+              <h5 class="modal-title">Title of the dialog here</h5>
+            </div>
+            <div class="modal-body">
+              <p class="center-block">This I have produced as a scantling of Jack's great eloquence and force of his reasoning upon such abstruse matters</p>
+              <p>
+                <button class="ef-btn ef-btn-main">MAIN CTA</button>
+              </p>
+              <p>
+                <button class="ef-btn ef-btn-other">EVERYTHING ELSE</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="t3" class="modal ef-modal fade">
+        <div role="document" class="modal-dialog">
+          <div style="max-width: 450px;" class="modal-content">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>
+            <div class="modal-body">
+              <p class="center-block">This I have produced as a scantling of Jack's great eloquence and force of his reasoning upon such abstruse matters</p>
+              <p>
+                <button class="ef-btn ef-btn-other pull-left">EVERYTHING ELSE</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="t4" class="modal ef-modal ef-modal modal-error fade">
+        <div role="document" class="modal-dialog">
+          <div style="max-width: 450px;" class="modal-content">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>
+            <div class="modal-body">
+              <p><span style="font-size: 2em;font-weight:bold;" class="icon icon-cross text-bold text-tomatito"></span></p>
+              <p class="center-block">This I have produced as a scantling of Jack's great eloquence and force of his reasoning upon such abstruse matters</p>
+              <p>
+                <button class="ef-btn ef-btn-other pull-left">EVERYTHING ELSE</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4.8-->
+      <section id="menu-tabs" class="section-tabs bg-warm-eggshell">
+        <div class="container">
+          <h2>4.8 HEADER & MENUS/TABS</h2>
+        </div>
+        <div class="p-y-3">
+          <nav class="navbar ef-navbar bg-white">
+            <button type="button" data-toggle="collapse" data-target="#main-nav" class="navbar-toggler hidden-sm-up"><span class="icon icon-ef"></span></button>
+            <button class="navbar-toggler pull-xs-right hidden-sm-up navbar-toggler-avatar dropdown"><a href="javascript:;" data-toggle="dropdown" class="nav-link"><span class="icon icon-arrow-sm-down"></span><img src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg" class="user-picture user-picture-small img-circle"></a>
+                        <div class="dropdown-menu"><a href="javascript:;" class="dropdown-item"><i class="font-weight-normal icon icon-person"></i>YOUR PROFILE</a>
+                          <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item"><i class="font-weight-normal icon icon-settings"></i>ACCOUNT SETTINGS</a>
+                          <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item"><i class="font-weight-normal icon icon-logout"></i>LOGOUT</a>
+                        </div>
+            </button>
+            <div id="main-nav" class="container collapse navbar-toggleable-xs"><a href="javascript:;" class="navbar-brand"><span class="icon">EF</span></a>
+              <ul class="nav navbar-nav">
+                <li id="exDropdownMenu" class="nav-item dropdown open"><a href="javascript:;" data-toggle="dropdown" data-target="#exDropdownMenu" class="nav-link">course</a>
+                  <div class="dropdown-menu"><a href="javascript:;" class="dropdown-item">CURRENT COURSE</a>
+                    <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item">PROGRESS</a>
+                    <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item">ASSESSMENT TEST</a>
+                    <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item">CHANGE COURSE</a>
+                    <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item">APPS & TOOLS</a>
+                  </div>
+                </li>
+                <li class="nav-item active"><a href="javascript:;" class="nav-link">CLASSES</a></li>
+                <li class="nav-item"><a href="javascript:;" class="nav-link">ADMIN</a></li>
+                <li class="nav-item"><a href="javascript:;" class="nav-link">help</a></li>
+              </ul>
+              <ul class="nav navbar-nav pull-lg-right pull-md-right pull-sm-right hidden-xs-down">
+                <li class="nav-item dropdown open dropdown-right"><a href="javascript:;" data-toggle="dropdown" class="nav-link"><span class="icon icon-arrow-sm-down"></span><img src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg" class="user-picture user-picture-small img-circle"></a>
+                            <div class="dropdown-menu"><a href="javascript:;" class="dropdown-item"><i class="font-weight-normal icon icon-person"></i>YOUR PROFILE</a>
+                              <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item"><i class="font-weight-normal icon icon-settings"></i>ACCOUNT SETTINGS</a>
+                              <div class="dropdown-divider"></div><a href="javascript:;" class="dropdown-item"><i class="font-weight-normal icon icon-logout"></i>LOGOUT</a>
+                            </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="p-y-3"></div>
+        <div class="p-y-3 hidden-xs-down"></div>
+        <div class="p-y-3 hidden-xs-down"></div>
+        <div class="container text-md-center">
+          <ul class="nav ef-nav">
+            <li class="nav-item"><a href="javascript:;" data-toggle="tab" class="nav-link active">GENERAL ENGLISH</a></li>
+            <li class="nav-item"><a href="javascript:;" data-toggle="tab" class="nav-link">BUSINESS</a></li>
+            <li class="nav-item"><a href="javascript:;" data-toggle="tab" class="nav-link">INDUSTRY</a></li>
+            <li class="nav-item hidden-xs-down"><a href="javascript:;" data-toggle="tab" class="nav-link">TRAVEL</a></li>
+            <li class="nav-item hidden-sm-down"><a href="javascript:;" data-toggle="tab" class="nav-link">TOEFL/TOEIC PREPARATION</a></li>
+          </ul>
+        </div>
+        <script>
+          $(function() {
+              $(".ef-nav a").tab();
+          });
+          
+        </script>
+        <div class="p-y-3"></div>
+      </section>
+      <!-- 4.9-->
+      <section id="info-bars" class="section-alert bg-warm-paper">
+        <div class="container">
+          <h2>4.10 INFORMATION BARS & MESSAGES (EXPLORATION)
+          </h2>
+        </div>
+        <div class="p-y-3">
+          <div role="alert" class="alert ef-alert alert-dismissible fade in ef-infobar text-color-contrast bg-matte-gold">
+            <button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <div class="container clearfix"><span class="alert-avatar"><img src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg" class="user-picture user-picture-small img-circle"></span><span class="alert-msg"><span class="user-name">Francis Evans:</span> Your private lesson “Describing Clothes  Clothes Describing Clothes” is about to start in 02:59</span><a href="javascript:;" class="alert-link">GO TO CLASSROOM</a></div>
+          </div>
+          <div role="alert" class="alert ef-alert alert-dismissible fade in ef-infobar text-color-contrast bg-rain">
+            <button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <div class="container clearfix"><span class="alert-avatar"><img src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg" class="user-picture user-picture-small img-circle"></span><span class="alert-msg"><span class="user-name">Francis Evans:</span> Your private lesson “Describing Clothes  Clothes Describing Clothes” is about to start in 02:59</span><a href="javascript:;" class="alert-link">GO TO CLASSROOM</a></div>
+          </div>
+          <div role="alert" class="alert ef-alert alert-dismissible fade in ef-infobar text-color-contrast bg-gray-dark">
+            <button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <div class="container clearfix"><span class="alert-avatar"><img src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg" class="user-picture user-picture-small img-circle"></span><span class="alert-msg"><span class="user-name">Francis Evans:</span> Your private lesson “Describing Clothes  Clothes Describing Clothes” is about to start in 02:59</span><a href="javascript:;" class="alert-link">GO TO CLASSROOM</a></div>
+          </div>
+          <div role="alert" class="alert ef-alert alert-dismissible fade in ef-infobar text-color-contrast bg-black">
+            <button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <div class="container clearfix"><span class="alert-avatar"><img src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg" class="user-picture user-picture-small img-circle"></span><span class="alert-msg"><span class="user-name">Francis Evans:</span> Your private lesson “Describing Clothes  Clothes Describing Clothes” is about to start in 02:59</span><a href="javascript:;" class="alert-link">GO TO CLASSROOM</a></div>
+          </div>
+          <div role="alert" class="alert ef-alert alert-dismissible fade in ef-infobar text-color-contrast bg-white">
+            <button type="button" data-dismiss="alert" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <div class="container clearfix"><span class="alert-avatar"><img src="http://77fhp9.com1.z0.glb.clouddn.com/lijun.jpg" class="user-picture user-picture-small img-circle"></span><span class="alert-msg"><span class="user-name">Francis Evans:</span> Your private lesson “Describing Clothes  Clothes Describing Clothes” is about to start in 02:59</span><a href="javascript:;" class="alert-link">GO TO CLASSROOM</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="nav navbar-nav text-left">
+              <li class="nav-item"><a target="_blank" href="https://github.com/englishtown/gudstrap4" class="nav-link">Github</a></li>
+              <li class="nav-item divider"></li>
+              <li class="nav-item"><a target="_blank" href="https://englishtown.github.io//gudstrap" class="nav-link">GUDStrap 3</a></li>
+              <li class="nav-item divider"></li>
+              <li class="nav-item"><a target="_blank" href="http://v4-alpha.getbootstrap.com" class="nav-link">Bootstrap 4</a></li>
+            </ul>
+            <p class="copyright">
+              © Signum International S.a r.l Luxembourg Luzern Branch, a company of EF Education First Group.
+              Company reserves all rights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
